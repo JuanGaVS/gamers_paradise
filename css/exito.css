@@ -1,0 +1,61 @@
+/* Reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{font-size:100%;}
+
+/* etiquetas */
+body{
+    
+    
+    
+    }/*Fin de body*/
+ #contenedor{
+    width: 850px;
+    height: 1028px;
+}/* Fin de id contenedor */
+
+#contenido{
+    background-color:#afafaf;
+    position: relative;
+    margin: 119px 0 0 0;
+    width: 635px;
+    height: 950px;
+    border: solid 1px;
+}/*Fin de id contenido*/
+
+#contenido .titulo{
+    position:relative;
+    display: block;
+   /* text-align: center;*/
+    top: 72px;
+    left:216px;
+    font-size: 25px;
+    color: #004080;
+    
+}/*Fin de id class titulo*/
+#contenido .informacion{
+    position:relative;
+    display: block;
+    top: 231px;
+    font-size: 11px;
+    padding-left:108px;
+    padding-right: 119px;
+    
+    
+}/*Fin de id class informacion*/
+#contenido .imagen{
+    position:relative;
+    height: 323px;
+    width: 293px;
+    display: block;
+    top: 540px;
+    background-image: url('../imagenes/img-campana2.png');
+    padding-left:280px ;
+    
+    
+    
+}/*Fin de id class imagen*/
+#footer{
+    width: 635px;
+    height: 78px;
+}/*Fin de id footer*/
+
+/* clases-seudoclases */

@@ -1,0 +1,96 @@
+/* CSS Document */
+@font-face {
+font-family: "Fondamento";
+src: url("../resources/fonts/Fondamento-Regular.ttf")
+}
+
+@font-face {
+font-family: "DroidSerif";
+src: url("../resources/fonts/DroidSerif.ttf")
+}
+
+#prelike {
+	width: 810px;
+	height: 1000px;
+	background: url(../imagenes/img_campana.png);
+}
+
+#wrapper{
+	margin: auto;
+	width: 810px;
+	height: 1000px;
+	background:url(../imagenes/bg.gif) repeat;
+	border: solid gray 1px;
+	border-radius: 50px;
+}
+
+#instrucciones {
+	margin: 120px 87px;
+	width 635px;
+	height: 360px;
+}
+
+.titulos {
+	
+	font-family: Fondamento, "Linux Libertine G", "Lucida Calligraphy";
+	font-size: 48px;
+	color: #0b0e80;
+	
+}
+
+.parrafos {
+	font-family: DroidSerif, "Arial", "Sans Serif";
+	font-size: 12px;
+	color: #000;
+}
+
+#titulo-instrucciones {
+	width: 620px;
+	height: 76px;
+	background: url(../imagenes/titulo-instrucciones.png);
+	
+}
+
+#texto-instrucciones {
+	padding: 12px 7px;
+	width: 635px;
+	height: 182px;
+	display: block;
+}
+
+
+#contenedor-boton-iniciar {
+	
+	height: 94px;
+	width: 634px;
+	display: block;
+	
+}
+
+.boton-iniciar {
+	
+	height: 37px;
+	width:192px;
+	background: url(../imagenes/button.png);
+	margin: auto;
+}
+
+.texto-botones {
+	font-family: Fondamento, "Linux Libertine G", "Lucida Calligraphy";
+	font-size: 30px;
+	color: #000;
+	text-align: center;
+}
+
+.imagen-campana-peq{
+	margin: 120px auto 30px auto;
+	background:url(../imagenes/img-campana2.png);
+	width: 293px;
+	height: 323px;
+}
+
+#footer {
+	margin: 24px auto;
+	text-align: center;
+	height: 30px;
+}
