@@ -1,6 +1,5 @@
 <?php
 
-
 function login($username, $password) {
 
     require_once '../entities/User.php';
@@ -9,8 +8,8 @@ function login($username, $password) {
     $login_success = $user->user_login($username, $password);
 
     if ($login_success) {
-        session_start();
-        $_SESSION['username'] = $username;
+        if (!isset($_SESSION)) { session_start(); }
+        $_SESSION['user'] = $username;
         header('Location: admin.php');
         return '1';
     } else {
@@ -18,16 +17,19 @@ function login($username, $password) {
     }
 }
 
+
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
     login($_POST['username'], $_POST['password']);
-}/*
-  elseif ($_SERVER['REQUEST_METHOD'] == 'GET') {
-  if($_SESSION['username'] != '' || $_SESSION['username'] != NULL ){
-  header('Location: admin.php');
-  }
-  } */
+    
+} else {
+    if (!isset($_SESSION)) { session_start(); }
+    if (isset($_SESSION['user'])) {
+        header('Location: admin.php');
+    }
+}
 ?>
 
 <!doctype html>
