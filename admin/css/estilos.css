@@ -7,17 +7,17 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 /* CSS Document */
 @font-face {
 font-family: "Verlag Light";
-src: url("../../resources/fonts/Verlag/Verla-Light.otf")
+src: url("../../resources/fonts/Verlag/Verlag-Light.otf")
 }
 
 @font-face {
 font-family: "Verlag Book";
-src: url("../../resources/fonts/Verlag/Verla-Book.otf")
+src: url("../../resources/fonts/Verlag/Verlag-Book.otf")
 }
 
 @font-face {
 font-family: "Verlag Black";
-src: url("../../resources/fonts/Verlag/Verla-Black.otf")
+src: url("../../resources/fonts/Verlag/Verlag-Black.otf")
 }
 
 
