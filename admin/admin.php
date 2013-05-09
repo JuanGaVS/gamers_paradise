@@ -3,6 +3,31 @@
     if (!isset($_SESSION['user'])) {
         header('Location: login.php');
     }
+    
+    $pageGet = $_GET['page'];
+    $page = null;
+    
+    switch ($pageGet){
+        case 'usuarios':
+            $page = 'usuarios.php';
+        break;
+        case 'concursantes':
+            $page = 'concursantes.php';
+        break;
+        case 'juegos':
+            $page = 'juegos.php';
+        break;
+        case 'consolas':
+            $page = 'consolas.php';
+        break;
+        case 'cuestionario':
+            $page = 'cuestionario.php';
+        break;
+        default :
+            $page = 'admin-intro.php';
+        break;
+    }
+    
 ?>
 
 <!DOCTYPE html>
@@ -22,15 +47,16 @@
                 
                 <div id="nav">
                     <ul id="menu">
-                        <li><a href="#">Usuarios</a></li>
-                        <li><a href="#">Concursantes</a></li>
-                        <li><a href="#">Juegos</a></li>
-                        <li><a href="#">Consolas</a></li>
-                        <li><a href="#">Cuestionario</a></li>
+                        <li><a href="admin.php?page=usuarios">Usuarios</a></li>
+                        <li><a href="admin.php?page=concursantes">Concursantes</a></li>
+                        <li><a href="admin.php?page=juegos">Juegos</a></li>
+                        <li><a href="admin.php?page=consolas">Consolas</a></li>
+                        <li><a href="admin.php?page=cuestionario">Cuestionario</a></li>
                         <li><a href="logout.php">Cerrar Sesión</a></li>
                     </ul>
                 </div>
                 <div id="main">
+                    <object type="text/html" data="<?php echo $page;?>" width="558px" height="555px"></object>
                     
                 </div>
                 
