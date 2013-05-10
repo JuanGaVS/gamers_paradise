@@ -81,13 +81,11 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 }
 
 #instrucciones {
-	background: url(../imagenes/console-tv.png) no-repeat;
-	width: 405px;
-	height: 442px;
-	position: relative;
-	z-index: 1;
-	top: 395px;
-	left: 404px;
+	height:160px;
+	width:810px;
+	display: block;
+	float: left;
+	background: #FFF;
 }
 
 #footer-title{
@@ -138,14 +136,19 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 	background:url(../imagenes/console-tv.png) no-repeat;
 	width:405px;
 	height:442px;
-	position:absolute;
-	z-index:1;	
+	position:relative;
+	z-index:1;
+	top:350px;
+	left:404px;	
 }
 
 #couch-friends{
 	background:url(../imagenes/couch-friends.png) no-repeat;
 	width:342px;
 	height:269px;
+	position:relative;
+	top:135px;
+	z-index:0;
 }
 
 #titulo-instrucciones {
