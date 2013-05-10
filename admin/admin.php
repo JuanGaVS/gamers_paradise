@@ -8,20 +8,20 @@
     $page = null;
     
     switch ($pageGet){
-        case 'usuarios':
-            $page = 'usuarios.php';
+        case 'users':
+            $page = 'users.php';
         break;
-        case 'concursantes':
-            $page = 'concursantes.php';
+        case 'contestants':
+            $page = 'contestants.php';
         break;
-        case 'juegos':
-            $page = 'juegos.php';
+        case 'games':
+            $page = 'games.php';
         break;
-        case 'consolas':
-            $page = 'consolas.php';
+        case 'consoles':
+            $page = 'consoles.php';
         break;
-        case 'cuestionario':
-            $page = 'cuestionario.php';
+        case 'survey':
+            $page = 'survey.php';
         break;
         default :
             $page = 'admin-intro.php';
@@ -47,11 +47,11 @@
                 
                 <div id="nav">
                     <ul id="menu">
-                        <li><a href="admin.php?page=usuarios">Usuarios</a></li>
-                        <li><a href="admin.php?page=concursantes">Concursantes</a></li>
-                        <li><a href="admin.php?page=juegos">Juegos</a></li>
-                        <li><a href="admin.php?page=consolas">Consolas</a></li>
-                        <li><a href="admin.php?page=cuestionario">Cuestionario</a></li>
+                        <li><a href="admin.php?page=users">Usuarios</a></li>
+                        <li><a href="admin.php?page=contestants">Concursantes</a></li>
+                        <li><a href="admin.php?page=games">Juegos</a></li>
+                        <li><a href="admin.php?page=consoles">Consolas</a></li>
+                        <li><a href="admin.php?page=survey">Cuestionario</a></li>
                         <li><a href="logout.php">Cerrar Sesión</a></li>
                     </ul>
                 </div>
