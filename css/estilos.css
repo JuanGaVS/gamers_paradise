@@ -75,10 +75,21 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 	background:url(../imagenes/bg.png) no-repeat;
 }
 
+#titulo{
+	width:405px;
+	height:60px;
+	display:block;
+	float:right;
+	padding: 80px 95px 80px 0;
+}
+
 #instrucciones {
-	margin: 120px 87px;
-	width: 635px;
-	height: 360px;
+	height:160px;
+	width:810px;
+	display: block;
+	float: left;
+	background: #FFF;
+	margin-left:0px;
 }
 
 #footer-title{
