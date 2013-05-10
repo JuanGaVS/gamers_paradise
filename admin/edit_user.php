@@ -1,6 +1,5 @@
 <?php require_once('../Connections/localhost.php'); ?>
 <?php require_once('../entities/User.php'); ?>
-
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -131,7 +130,7 @@ $totalRows_rs_editUser = mysql_num_rows($rs_editUser);
       <td><span id="sprypassword1">
       <label for="password"></label>
       <input type="password" name="password" id="password" />
-      <span class="passwordRequiredMsg">A value is required.</span></span></td>
+</span></td>
 </tr>
     <tr>
       <th scope="row">Confirmación Contraseña</th>
@@ -150,8 +149,8 @@ $totalRows_rs_editUser = mysql_num_rows($rs_editUser);
   <input type="hidden" name="MM_update" value="form1" />
 </form>
 <script type="text/javascript">
-var sprypassword2 = new Spry.Widget.ValidationPassword("sprypassword1");
-var sprypassword1 = new Spry.Widget.ValidationPassword("sprypassword2");
+var sprypassword2 = new Spry.Widget.ValidationPassword("sprypassword1", {isRequired:false});
+var sprypassword1 = new Spry.Widget.ValidationPassword("sprypassword2", {isRequired:false});
 </script>
 </body>
 </html>
