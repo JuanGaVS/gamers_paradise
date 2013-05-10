@@ -132,6 +132,23 @@ class User {
     
     }
     
+    public function userUpdateWithoutPassword(){
+        $connection = new DBConnection();
+        $conn = $connection->getConnection();
+        try{
+            $statement = $conn->prepare("UPDATE tb_users SET first_name = ?, last_name = ?, email = ?, salt = ?, WHERE username = ?");
+            $statement->bindParam(1, $this->first_name);
+            $statement->bindParam(2, $this->last_name);
+            $statement->bindParam(3, $this->email);
+            $statement->bindParam(4, $this->salt);
+            $statement->bindParam(5,  $this->username);
+            $statement->execute();
+        }catch (PDOException $e) {
+            echo $e->getMessage();
+        }
+    
+    }
+    
     public function userDelete($username){
         $connection = new DBConnection();
         $conn = $connection->getConnection();
