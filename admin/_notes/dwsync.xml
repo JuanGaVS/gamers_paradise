@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="login.php" server="C:/AppServ/www/gamers_paradise/" local="130125566320586169" remote="130125566320000000" Dst="0" />
-<file name="admin.php" server="C:/AppServ/www/gamers_paradise/" local="130125590901052091" remote="130125590900000000" Dst="0" />
-<file name="logout.php" server="C:/AppServ/www/gamers_paradise/" local="130125581477833114" remote="130125581470000000" Dst="0" />
-<file name="admin-intro.php" server="C:/AppServ/www/gamers_paradise/" local="130125592715735885" remote="130125592710000000" Dst="0" />
+<file name="login.php" server="C:/AppServ/www/gamers_paradise/" local="130126034360000000" remote="130126034360000000" Dst="0" />
+<file name="admin.php" server="C:/AppServ/www/gamers_paradise/" local="130126039080000000" remote="130126039080000000" Dst="0" />
+<file name="logout.php" server="C:/AppServ/www/gamers_paradise/" local="130126034360000000" remote="130126034360000000" Dst="0" />
+<file name="admin-intro.php" server="C:/AppServ/www/gamers_paradise/" local="130126034360000000" remote="130126034360000000" Dst="0" />
 <file name="concursantes.php" server="C:/AppServ/www/gamers_paradise/" local="130125590051713512" remote="130125590050000000" Dst="0" />
 <file name="consolas.php" server="C:/AppServ/www/gamers_paradise/" local="130125590116437214" remote="130125590110000000" Dst="0" />
 <file name="cuestionario.php" server="C:/AppServ/www/gamers_paradise/" local="130125590172320410" remote="130125590170000000" Dst="0" />
 <file name="juegos.php" server="C:/AppServ/www/gamers_paradise/" local="130125590212062683" remote="130125590210000000" Dst="0" />
 <file name="usuarios.php" server="C:/AppServ/www/gamers_paradise/" local="130125590261885533" remote="130125590260000000" Dst="0" />
+<file name="consoles.php" server="C:/AppServ/www/gamers_paradise/" local="130126034360000000" remote="130126034360000000" Dst="0" />
+<file name="contestants.php" server="C:/AppServ/www/gamers_paradise/" local="130126034360000000" remote="130126034360000000" Dst="0" />
+<file name="games.php" server="C:/AppServ/www/gamers_paradise/" local="130126063160000000" remote="130126063160000000" Dst="0" />
+<file name="survey.php" server="C:/AppServ/www/gamers_paradise/" local="130126034360000000" remote="130126034360000000" Dst="0" />
+<file name="users.php" server="C:/AppServ/www/gamers_paradise/" local="130126034360000000" remote="130126034360000000" Dst="0" />
 </dwsync>
