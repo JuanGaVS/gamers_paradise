@@ -1,6 +1,11 @@
-<?php require_once('../Connections/localhost.php'); ?>
-<?php require_once('../entities/User.php'); ?>
-<?php
+<?php 
+if (!isset($_SESSION)) { session_start(); }
+    if (!isset($_SESSION['user'])) {
+        header('Location: login.php');
+    }
+require_once('../Connections/localhost.php');
+require_once('../entities/User.php'); 
+
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
 {
@@ -96,10 +101,15 @@ $totalRows_rs_editUser = mysql_num_rows($rs_editUser);
 <title>Untitled Document</title>
 <script src="../SpryAssets/SpryValidationPassword.js" type="text/javascript"></script>
 <link href="../SpryAssets/SpryValidationPassword.css" rel="stylesheet" type="text/css" />
+
+<style>
+.validation-error{color:#F00;}
+</style>
+
 </head>
 
 <body>
-<form id="form1" name="form1" method="POST" action="<?php echo $editFormAction; ?>">
+<form id="form_edit_user" name="form1" method="POST" action="<?php echo $editFormAction; ?>">
   <table width="309" border="1">
     <tr>
       <th width="191" scope="row">Usuario</th>
@@ -152,6 +162,9 @@ $totalRows_rs_editUser = mysql_num_rows($rs_editUser);
 var sprypassword2 = new Spry.Widget.ValidationPassword("sprypassword1", {isRequired:false});
 var sprypassword1 = new Spry.Widget.ValidationPassword("sprypassword2", {isRequired:false});
 </script>
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js" type="text/javascript"></script>
+<script src="js/validate.js" type="text/javascript"></script>
 </body>
 </html>
 <?php

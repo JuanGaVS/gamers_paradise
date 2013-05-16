@@ -194,7 +194,18 @@ class User {
     }
     
     
-
+    public function getUsers(){
+        $connection = new DBConnection();
+        $conn = $connection->getConnection();
+        try{
+            $statement = $conn->prepare("SELECT username, first_name, last_name, email from tb_users");
+            $statement->execute();
+            $result = $statement->fetchAll();
+            return json_encode($result);
+        }catch (PDOException $e) {
+            echo $e->getMessage();
+        }
+    }
 
     
     

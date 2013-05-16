@@ -1,5 +1,10 @@
-<?php require_once('../Connections/localhost.php'); ?>
-<?php
+<?php require_once('../Connections/localhost.php');
+
+if (!isset($_SESSION)) { session_start(); }
+    if (!isset($_SESSION['user'])) {
+        header('Location: login.php');
+}
+
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
 {
@@ -31,26 +36,11 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
 }
 }
 
-$maxRows_rs_users = 10;
-$pageNum_rs_users = 0;
-if (isset($_GET['pageNum_rs_users'])) {
-  $pageNum_rs_users = $_GET['pageNum_rs_users'];
-}
-$startRow_rs_users = $pageNum_rs_users * $maxRows_rs_users;
-
 mysql_select_db($database_localhost, $localhost);
 $query_rs_users = "SELECT username, first_name, last_name, email FROM tb_users ORDER BY username ASC";
-$query_limit_rs_users = sprintf("%s LIMIT %d, %d", $query_rs_users, $startRow_rs_users, $maxRows_rs_users);
-$rs_users = mysql_query($query_limit_rs_users, $localhost) or die(mysql_error());
+$rs_users = mysql_query($query_rs_users, $localhost) or die(mysql_error());
 $row_rs_users = mysql_fetch_assoc($rs_users);
-
-if (isset($_GET['totalRows_rs_users'])) {
-  $totalRows_rs_users = $_GET['totalRows_rs_users'];
-} else {
-  $all_rs_users = mysql_query($query_rs_users);
-  $totalRows_rs_users = mysql_num_rows($all_rs_users);
-}
-$totalPages_rs_users = ceil($totalRows_rs_users/$maxRows_rs_users)-1;
+$totalRows_rs_users = mysql_num_rows($rs_users);
 ?>
 <!--
 To change this template, choose Tools | Templates
@@ -83,7 +73,7 @@ and open the template in the editor.
         <td><?php echo $row_rs_users['first_name']; ?></td>
         <td><?php echo $row_rs_users['last_name']; ?></td>
         <td><?php echo $row_rs_users['email']; ?></td>
-        <td align="center"><a href="edit_user.php?username=<?php echo $row_rs_users['username']; ?>">Editar</a> | <a href="users.php?username=<?php echo $row_rs_users['username']; ?>">Eliminar</a></td>
+        <td align="center"><a href="edit_user.php?username=<?php echo $row_rs_users['username']; ?>">Editar</a> | <a href="delete_user.php?username=<?php echo $row_rs_users['username']; ?>">Eliminar</a></td>
       </tr>
       <?php } while ($row_rs_users = mysql_fetch_assoc($rs_users)); ?>
       <tr>
