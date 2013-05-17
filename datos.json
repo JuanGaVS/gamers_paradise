@@ -1,0 +1,18 @@
+{
+
+"empleados":
+    [
+        {
+        "Nombre" : "Elena",
+        "Edad": 26,
+        "Aficiones": ["Música", "Cine"],
+        "Residencia": "Madrid"
+        },
+        {
+        "Nombre" : "Luis",
+        "Edad": 31,
+        "Aficiones": ["Teatro", "Cine", "Fútbol"],
+        "Residencia": "Madrid"
+        }
+    ]
+}

@@ -63,15 +63,13 @@ and open the template in the editor.
     <p>&nbsp;</p>
     <table border="1">
       <tr>
-        <td width="163">ID Consola</td>
         <td width="122">Nombre Consola</td>
         <td width="122">Acciones</td>
       </tr>
       <?php do { ?>
         <tr>
-          <td><?php echo $row_rs_Consoles['console_id']; ?></td>
           <td><?php echo $row_rs_Consoles['name']; ?></td>
-          <td><a href="edit_console.php">Editar</a> | <a href="delete_console.php">Eliminar</a></td>
+          <td><a href="edit_console.php?console_id=<?php echo $row_rs_Consoles['console_id']; ?>">Editar</a> | <a href="delete_console.php?console_id=<?php echo $row_rs_Consoles['console_id']; ?>">Eliminar </a></td>
         </tr>
         <?php } while ($row_rs_Consoles = mysql_fetch_assoc($rs_Consoles)); ?>
     </table>
