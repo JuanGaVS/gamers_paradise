@@ -18,16 +18,14 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
     font-family: "Verlag Black";
     src: url("../resources/fonts/Verlag/Verlag-Black.otf")
 }
-labels {
-    font-family: Verlag Book, Arial, Sans Serif;
-    font-size: 18px;
-    color: #3f3f3c;
-}
+
 
 
 #wrapper{ margin: auto;  width: 808px; height:899px;   background: url('../imagenes/bg.png');}
-#titulacion{display: block; float: left;width:823px; height: 153px;  }
-#text{display:block; float: left; margin: 0 0 0 263px; }
+#titulacion{display: block; float: left;width:823px; height: 153px; margin: 44px; }
+#text{display:block; float: left; margin: 12px 0 0 263px; }
+#text h1{ font-family: 'Verlag Light'; font-size: 40px; }
+
 #sugerecias{}
 #escoger{}
 .Columna{}
@@ -40,6 +38,4 @@ labels {
     width: 810px;
     position: absolute;
     top: 835px;
-
-
 }
