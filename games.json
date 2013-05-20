@@ -7,18 +7,9 @@
 			"name" : "New Super Mario Bros Wii",
 			"description": "La historia inicia cuando se está celebrando el cumpleaaños de Peach en su castillo y un extraño pastel se recibe en la puerta. Cuando llega a Peach, salen del pastel Bowser Jr. y los otros siete Koopalings, quienes atrapan a la princesa del Reino Champiñón en el mismo pastel del que salieron y se la llevan; y en persecución de estos, van Mario, Luigi, un Toad azul y un Toad amarillo. Los items traje propulsor y traje de pingüino los tiran los otros Toad desde el Castillo de Peach. Son ocho mundos que tendrán a cada uno de los Koopalings como jefe. y el final con Bowser igual que en el juego Super Mario Bros 3.",
 			"trailer_url": "http://www.youtube.com/embed/8mIjseFBqxo",
-			"dirbase": "games/snmb/",
-			"consoles": ["wii"],
-			"pictures": ["01.jpg","02.jpg","03.jpg"]
-        },
-        {
-        "id" : "02",
-			"name" : "New Super Mario Bros Wii",
-			"description": "La historia inicia cuando se está celebrando el cumpleaaños de Peach en su castillo y un extraño pastel se recibe en la puerta. Cuando llega a Peach, salen del pastel Bowser Jr. y los otros siete Koopalings, quienes atrapan a la princesa del Reino Champiñón en el mismo pastel del que salieron y se la llevan; y en persecución de estos, van Mario, Luigi, un Toad azul y un Toad amarillo. Los items traje propulsor y traje de pingüino los tiran los otros Toad desde el Castillo de Peach. Son ocho mundos que tendrán a cada uno de los Koopalings como jefe. y el final con Bowser igual que en el juego Super Mario Bros 3.",
-			"trailer_url": "http://www.youtube.com/embed/8mIjseFBqxo",
-			"dirbase": "games/snmb/",
-			"consoles": ["wii"],
-			"pictures": ["01.jpg","02.jpg","03.jpg"]
+			"consoles": ["1,2"],
+			"pictures": ["games/snmb/01.jpg","games/snmb/02.jpg","games/snmb/03.jpg"]
         }
+        
     ]
 }

@@ -1,9 +1,16 @@
 <?php 
 
-require_once './dal/GameDAL.php';
+$str_datos = file_get_contents("games.json");
+$datos = json_decode($str_datos,true);
+ 
+echo $datos["games"];
 
-$gDal = new GameDAL();
-$gDal->importJson();
+ foreach ($datos["games"] as $game){
+
+	 echo $game["id"];
+	 echo "<br/>";
+
+}
  
 
 ?>
