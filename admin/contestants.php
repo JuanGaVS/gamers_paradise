@@ -60,35 +60,42 @@ and open the template in the editor.
         
         ?>
         </p>
-    <p><a href="filter_contestant.php">Filtrar</a></p>
-    <table border="1">
-      <tr>
-        <td>ID Concursante</td>
-        <td>Primer Nombre</td>
-        <td>Segundo Nombre</td>
-        <td>Apellidos</td>
-        <td>Género</td>
-        <td>Locale</td>
-        <td>Edad desde</td>
-        <td>Edad hasta</td>
-        <td>Cumpleaños</td>
-        <td>Fecha Like</td>
-      </tr>
-      <?php do { ?>
-        <tr>
-          <td><?php echo $row_rs_Contestants['contestant_id']; ?></td>
-          <td><?php echo $row_rs_Contestants['first_name']; ?></td>
-          <td><?php echo $row_rs_Contestants['middle_name']; ?></td>
-          <td><?php echo $row_rs_Contestants['last_name']; ?></td>
-          <td><?php echo $row_rs_Contestants['gender']; ?></td>
-          <td><?php echo $row_rs_Contestants['locale']; ?></td>
-          <td><?php echo $row_rs_Contestants['age_range_min']; ?></td>
-          <td><?php echo $row_rs_Contestants['age_range_max']; ?></td>
-          <td><?php echo $row_rs_Contestants['birthday']; ?></td>
-          <td><?php echo $row_rs_Contestants['date_added']; ?></td>
-        </tr>
-        <?php } while ($row_rs_Contestants = mysql_fetch_assoc($rs_Contestants)); ?>
-    </table>
+        <?php if ($totalRows_rs_Contestants > 0) { // Show if recordset not empty ?>
+  <p><a href="filter_contestant.php">Filtrar</a></p>
+  <?php } // Show if recordset not empty ?>
+        <?php if ($totalRows_rs_Contestants > 0) { // Show if recordset not empty ?>
+          <table border="1">
+            <tr>
+              <td>ID Concursante</td>
+              <td>Primer Nombre</td>
+              <td>Segundo Nombre</td>
+              <td>Apellidos</td>
+              <td>Género</td>
+              <td>Locale</td>
+              <td>Edad desde</td>
+              <td>Edad hasta</td>
+              <td>Cumpleaños</td>
+              <td>Fecha Like</td>
+            </tr>
+            <?php do { ?>
+              <tr>
+                <td><?php echo $row_rs_Contestants['contestant_id']; ?></td>
+                <td><?php echo $row_rs_Contestants['first_name']; ?></td>
+                <td><?php echo $row_rs_Contestants['middle_name']; ?></td>
+                <td><?php echo $row_rs_Contestants['last_name']; ?></td>
+                <td><?php echo $row_rs_Contestants['gender']; ?></td>
+                <td><?php echo $row_rs_Contestants['locale']; ?></td>
+                <td><?php echo $row_rs_Contestants['age_range_min']; ?></td>
+                <td><?php echo $row_rs_Contestants['age_range_max']; ?></td>
+                <td><?php echo $row_rs_Contestants['birthday']; ?></td>
+                <td><?php echo $row_rs_Contestants['date_added']; ?></td>
+              </tr>
+              <?php } while ($row_rs_Contestants = mysql_fetch_assoc($rs_Contestants)); ?>
+          </table>
+          <?php } // Show if recordset not empty ?>
+        <?php if ($totalRows_rs_Contestants == 0) { // Show if recordset empty ?>
+          <div class="rs-empty">No hay registros de concursantes</div>
+          <?php } // Show if recordset empty ?>
     </body>
 </html>
 <?php

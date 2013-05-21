@@ -90,9 +90,13 @@ if (!isset($_SESSION)) { session_start(); }
             </div>
         </div>
         
-        <?php
+        <p>
+          <?php
         
         // put your code here
         ?>
+        </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
     </body>
 </html>
