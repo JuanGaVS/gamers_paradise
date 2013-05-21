@@ -12,26 +12,26 @@
  */
 class Question {
     //put your code here
-    private $quiestion_id;
+    private $question_id;
     private $text;
     private $type_multiple;
     
     private $choices;
             
     function __construct() {
-        $this->quiestion_id=0;
+        $this->question_id=0;
         $this->text="";
         $this->type_multiple=false;
         
         $this->choices = array();
     }
     
-    public function getQuiestion_id() {
-        return $this->quiestion_id;
+    public function getQuestion_id() {
+        return $this->question_id;
     }
 
-    public function setQuiestion_id($quiestion_id) {
-        $this->quiestion_id = $quiestion_id;
+    public function setQuestion_id($question_id) {
+        $this->question_id = $quiestion_id;
     }
 
     public function getText() {
