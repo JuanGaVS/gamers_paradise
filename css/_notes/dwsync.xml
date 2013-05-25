@@ -5,6 +5,12 @@
 <file name="exito.css" server="C:/AppServ/www/gamers_paradise/" local="130126034360000000" remote="130126034360000000" Dst="0" />
 <file name="instrucciones.css" server="C:/AppServ/www/gamers_paradise/" local="130126034360000000" remote="130126034360000000" Dst="0" />
 <file name="reset.css" server="C:/AppServ/www/gamers_paradise/" local="130126034360000000" remote="130126034360000000" Dst="0" />
+<<<<<<< HEAD
+<file name="estilos.css" server="C:/AppServ/www/gamersparadise/" local="130135664848552045" remote="130135664840000000" Dst="0" />
+<file name="exito.css" server="C:/AppServ/www/gamersparadise/" local="130135664848582076" remote="130135664840000000" Dst="0" />
+<file name="instrucciones.css" server="C:/AppServ/www/gamersparadise/" local="130135664848612094" remote="130135664840000000" Dst="0" />
+<file name="reset.css" server="C:/AppServ/www/gamersparadise/" local="130135664848632107" remote="130135664840000000" Dst="0" />
+=======
 <file name="sugerencias.css" server="C:/AppServ/www/gamers_paradise/" local="130135874311379863" remote="130135874310000000" Dst="0" />
 =======
 <file name="estilos.css" server="C:/AppServ/www/gamers_paradise/" local="130126439507803522" remote="130126439500000000" Dst="0" />
@@ -12,4 +18,5 @@
 <file name="instrucciones.css" server="C:/AppServ/www/gamers_paradise/" local="130123427070146489" remote="130123427070000000" Dst="0" />
 <file name="reset.css" server="C:/AppServ/www/gamers_paradise/" local="130123427070166490" remote="130123427070000000" Dst="0" />
 >>>>>>> 2208e2d12d43d4ab391e32671abfd179996b142d
+>>>>>>> 90f8df2b9aef43952e168a773044eca3a5a50b10
 </dwsync>
