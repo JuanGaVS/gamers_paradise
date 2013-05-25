@@ -231,7 +231,6 @@ class QuestionDAL {
                     $choiceObject = new Choice();
                     $choiceObject->setChoice_id( $choice['choice_id'] );
                     $choiceObject->setText( $choice['text'] );
-                    
                     $question->addChoice($choiceObject);
                     
                 }
