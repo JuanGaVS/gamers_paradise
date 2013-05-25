@@ -1,0 +1,46 @@
+{
+
+"consoles":
+    [
+        {
+            "id" : "01",
+	    "name" : "PS3"
+        },
+        {
+            "id" : "02",
+	    "name" : "Wii"
+        },
+        {
+            "id" : "03",
+	    "name" : "Xbox 360"
+        },
+        {
+            "id" : "04",
+	    "name" : "Wii U"
+        },
+        {
+            "id" : "05",
+	    "name" : "Nintendo DS"
+        },
+        {
+            "id" : "06",
+	    "name" : "PC"
+        },
+        {
+            "id" : "07",
+	    "name" : "Xbox 720"
+        },
+        {
+            "id" : "08",
+	    "name" : "PS4"
+        },
+        {
+            "id" : "09",
+	    "name" : "PS Vita"
+        },
+        {
+            "id" : "10",
+	    "name" : "Nintendo 3DS"
+        }
+    ]
+}

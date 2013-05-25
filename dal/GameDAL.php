@@ -5,10 +5,10 @@
  * and open the template in the editor.
  */
 
-require_once 'entities/Game.php';
-require_once 'entities/Console.php';
-require_once 'entities/DBConnection.php';
-require_once 'dal/GameDAL.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/gamers_paradise/' .'entities/Game.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/gamers_paradise/' .'entities/Console.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/gamers_paradise/' .'entities/DBConnection.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/gamers_paradise/' .'dal/ConsoleDAL.php';
 
 /**
  * Description of GameDAL
@@ -166,11 +166,15 @@ class GameDAL {
       
     }
 
-    public function importJson() {
+    public function importJson($stsr_datos) {
 
+        try {
+            
         
 
-        $str_datos = file_get_contents("games.json");
+        $str_datos = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/gamers_paradise/'."games.json");
+        
+        
         $datos = json_decode($str_datos, true);
 
         foreach ($datos["games"] as $game) {
@@ -192,25 +196,102 @@ class GameDAL {
 
             foreach ($consoles as $console) {
 
-                //check console existence
-                //recover console name
-                //create console
+                
+                $cDAL = new ConsoleDAL();
+                
+                $consoleEnt = $cDAL->getConsole($console);
+                
+                if($consoleEnt != null){
+                    $game->addConsole($consoleEnt);
+                }
+                else{
+                    //ERROR CONSOLE DOES NOT EXIST
+                }
+                
+                
+               
 
-                /* CHANGE THIS */
-                $csl = new Console();
-                $csl->setConsole_id($console);
-                $csl->setName("consola");
-                /* UNTIL THIS */
-
-
-                //add console
-                $game->addConsole($csl);
+               
             }
 
 
 
             $this->gameAdd($game);
         }
+        
+        return 0;//correcto
+        
+        }  catch (Exception $e){
+            return 1;
+        }
+    }
+    
+    public function truncateGames(){
+        $statement = $this->conn->prepare("TRUNCATE table tb_game");
+        $statement->execute();
+    }
+    
+    public function getGame($game_id){
+        
+        
+        $game = new Game();
+
+
+        try {
+            $statement = $this->conn->prepare("select name, trailer_url, description from tb_game where game_id = ?");
+            $statement->bindParam(1, $game_id);
+            $statement->execute();
+            $gRow = $statement->fetch();
+            
+            $game->setGame_id($game_id);
+            $game->setName($gRow['name']);
+            $game->setTrailer_url($gRow['trailer_url']);
+            $game->setDescription($gRow['description']);
+            
+            
+            
+            $st2 = $this->conn->prepare("select c.console_id, c.name from tb_game_console gc, tb_console c where gc.console_id = c.console_id and gc.game_id = ?");
+            $st2->bindParam(1, $game_id);
+            $st2->execute();
+            
+            $consoles = $st2->fetchAll();
+            
+            foreach ($consoles as $console){
+                $console_name = $console['name'];
+                $console_id = $console['console_id'];
+                
+                $consoleEnt = new Console();
+                $consoleEnt->setConsole_id($console_id);
+                $consoleEnt->setName($console_name);
+                
+                $game->addConsole($consoleEnt);
+                
+                
+                
+            }
+            
+            $st3 = $this->conn->prepare("select picture_url from tb_game_pictures where game_id = ?");
+            $st3->bindParam(1, $game_id);
+            $st3->execute();
+            
+            $pictures = $st3->fetchAll();
+            
+            foreach ($pictures as $picture){
+                
+                
+                $game->addPicture($picture['picture_url']);
+                
+            }
+            
+            return $game;
+            
+        } catch (PDOException $e) {
+            return null;
+            echo $e->getMessage();
+        }
+
+       
+        
     }
 
 }
