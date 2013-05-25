@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 -- phpMyAdmin SQL Dump
+=======
+﻿-- phpMyAdmin SQL Dump
+>>>>>>> f17338cc9e226f2dbb7c9e782de07ac49cc897c4
 -- version 2.10.3
 -- http://www.phpmyadmin.net
 -- 
@@ -309,3 +313,102 @@ CREATE TABLE `tb_users` (
 -- 
 
 INSERT INTO `tb_users` VALUES ('kporras07', 'Kevin', 'Porras', 'kporras07@gmail.com', '899eed8ceddd1f40dd1991f69f5b990a', '8327dc24f48a257ceb89850ff549d71e8314334a7ee2722c7f74592cc510c577ed0d235c89c53afcd6f54632c2a2bf196447c89fd7fc0e9de4f8cb7018ffbfa1');
+<<<<<<< HEAD
+=======
+
+
+
+
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('1', '1');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('1', '2');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('1', '3');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('1', '4');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('1', '5');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('1', '6');
+
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('2', '1');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('2', '2');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('2', '3');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('2', '4');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('2', '5');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('2', '6');
+
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('3', '7');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('3', '8');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('3', '9');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('3', '10');
+
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('4', '11');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('4', '12');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('4', '13');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('4', '14');
+
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('5', '15');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('5', '16');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('5', '17');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('5', '18');
+
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('6', '19');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('6', '20');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('6', '21');
+
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('7', '22');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('7', '23');
+
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('8', '24');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('8', '25');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('8', '26');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('8', '27');
+
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('9', '28');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('9', '29');
+
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('10', '30');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('10', '32');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('10', '33');
+
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('11', '34');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('11', '35');
+INSERT INTO `gamers_paradise`.`tb_question_choice` ( `question_id` , `choice_id` )
+VALUES ('11', '36');
+>>>>>>> f17338cc9e226f2dbb7c9e782de07ac49cc897c4
