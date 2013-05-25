@@ -28,8 +28,7 @@ $questions = $quuestionDAL->getQuestions();
     	<p><?php echo $question->getText(); ?></p>
         <div id="choices">
         <?php foreach ($question->getChoices() as $choice){?>
-        	<input type="checkbox" value="<?php echo( $choice->getChoice_id() );?>" name="<?php $question->getQuestion_id();?>"/> 
-            <?php echo( $choice->getText()); ?> 
+        	<input type="checkbox" value="<?php echo( $choice->getChoice_id() );?>"  id="<?php echo $choice->getChoice_id();?>" name="<?php echo $question->getQuestion_id();?>"/> <?php echo $choice->getText(); ?>   
             <br/>
         <?php }?>
         </div>

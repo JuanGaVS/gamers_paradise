@@ -31,7 +31,7 @@ class Question {
     }
 
     public function setQuestion_id($question_id) {
-        $this->question_id = $quiestion_id;
+        $this->question_id = $question_id;
     }
 
     public function getText() {
