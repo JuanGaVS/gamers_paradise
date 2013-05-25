@@ -224,17 +224,18 @@ class QuestionDAL {
                 
                 
                 
-                $statement = $this->conn->prepare("select c.choice_id, c.text from tb_choices c, tb_question_choice qc where c.choice_id = qc.choice_id and qc.question_id = ? ");
+                $statement = $this->conn->prepare("select c.choice_id cid, text from tb_choices c, tb_question_choice qc where c.choice_id = qc.choice_id and qc.question_id = ? ");
                 $statement->bindParam(1, $row['question_id']);
                 $statement->execute();
-                $choices = $statement->fetch();
+                $choices = $statement->fetchAll();
                 
                 foreach ( $choices as $choice ){
                     $choiceObject = new Choice();
-                    $choiceObject->setChoice_id( $choice['choice_id'] );
+                    
+                    
+                    $choiceObject->setChoice_id( $choice['cid'] );
                     $choiceObject->setText( $choice['text'] );
                     
-                    echo 'choiceText '.$choice['text'];
                     
                     $question->addChoice($choiceObject);
                     
