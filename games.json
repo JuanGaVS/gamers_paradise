@@ -1,0 +1,97 @@
+{
+
+"games":
+    [
+        {
+            "id" : "01",
+	    "name" : "New Super Mario Bros Wii",
+	    "description": "La historia inicia cuando se está celebrando el cumpleaaños de Peach en su castillo y un extraño pastel se recibe en la puerta. Cuando llega a Peach, salen del pastel Bowser Jr. y los otros siete Koopalings, quienes atrapan a la princesa del Reino Champiñón en el mismo pastel del que salieron y se la llevan; y en persecución de estos, van Mario, Luigi, un Toad azul y un Toad amarillo. Los items traje propulsor y traje de pingüino los tiran los otros Toad desde el Castillo de Peach. Son ocho mundos que tendrán a cada uno de los Koopalings como jefe. y el final con Bowser igual que en el juego Super Mario Bros 3.",
+	    "trailer_url": "http://www.youtube.com/embed/8mIjseFBqxo",
+	    "consoles": ["2"],
+	    "pictures": ["games/snmb/01.jpg","games/snmb/02.jpg","games/snmb/03.jpg"],
+            "vendor" : "Nintendo"
+        },
+        {
+            "id" : "02",
+            "name" : "Splinter Cell Blacklist",
+	    "description": "Splinter Cell Blacklist de Tom Clancy ofrece un modo cooperativo para dos jugadores con 4 tipos de misiones y 14 mapas con pantalla partida para 2 jugadores. Juega como Sam Fisher o Isaac Briggs (un aperativo de la CIA) y juega a dos: ayuda a tu compañero de equipo a acceder a partes del mapa a las que no podrías acceder tú solo, crea tus propias tácticas en función de tu estilo de juego y cubríos las espaldas mutuamente para completar misiones. ",
+	    "trailer_url": "http://www.youtube.com/embed/wYGoFH6bWXg",
+	    "consoles": ["1,3,4"],
+	    "pictures": ["games/SplinterCellBlacklist/01.jpg","games/SplinterCellBlacklist/02.jpg","games/SplinterCellBlacklist/03.jpg"],
+            "vendor" : "Ubisoft"
+        },
+        {
+            "id" : "03",
+            "name" : "Call of Juarez Gunslinger",
+	    "description": "Call of Juarez Gunslinger es un auténtico homenaje al Salvaje Oeste y sus historias. Los jugadores vivirán el épico viaje de Silas Greaves, un rudo cazarecompensas que pasó su vida persiguiendo a los forajidos más conocidos de la época. Ha llegado la hora de que Silas cuente narre sus vivencias, vinculadas por completo a las del Salvaje Oeste, una mezcla de mitos y hechos históricos.",
+	    "trailer_url": "http://www.youtube.com/embed/OHh2RHuswqA",
+	    "consoles": ["1,3,4"],
+	    "pictures": ["games/CallofJuarezGunslinger/01.jpg","games/CallofJuarezGunslinger/02.jpg","games/CallofJuarezGunslinger/03.jpg"],
+            "vendor" : "Ubisoft"
+        },
+        {
+            "id" : "04",
+            "name" : "Batman Arkham Origins",
+	    "description": "Batman: Arkham Origins estará basado en una ciudad de Gotham aun más extensa y será una precuela que tendrá lugar unos años antes de que se produjeran los hechos narrados en Batman: Arkham Asylum y Batman: Arkham City, los dos primeros juegos de la franquicia. Ambientado antes de que los criminales más peligrosos aterrorizaran a los habitantes de Gotham, el juego mostrará a un joven Batman que deberá enfrentarse a uno de los momentos más críticos de su corta carrera como azote del crimen y que definirá su camino para convertirse en el Caballero Oscuro. Mientras la historia se desarrolla, los jugadores se encontrarán con importantes personajes por primera vez y forjar importantes relaciones.",
+	    "trailer_url": "http://www.youtube.com/embed/zhfVYdhb0jo",
+	    "consoles": ["1,3,4,10,9,6"],
+	    "pictures": ["games/BatmanArkhamOrigins/01.jpg","games/BatmanArkhamOrigins/02.jpg","games/BatmanArkhamOrigins/03.jpg"],
+            "vendor" : "WB Games"
+        },
+        {
+            "id" : "05",
+            "name" : "Diablo 3",
+	    "description": "Diablo III es un videojuego de rol de acción (aRPG), desarrollado por Blizzard Entertainment. Ésta es la continuación de Diablo II y la tercera parte de la serie que fue creada por la compañía estadounidense Blizzard. Su temática es de fantasía oscura y terrorífica.",
+	    "trailer_url": "http://www.youtube.com/embed/de2KlsLnIVU",
+	    "consoles": ["8,1,6"],
+	    "pictures": ["games/Diablo3/01.jpg","games/Diablo3/02.jpg","games/Diablo3/03.jpg"],
+            "vendor" : "Blizzard"
+        },
+        {
+            "id" : "06",
+            "name" : "Assassin's Creed 4 Black Flag",
+	    "description": "Assassin's Creed 4 Black Flag nos sumerge en la aterradora vida de los piratas . Únete a la tripulación del Capitán Edward Kenway bajo la badera negra y explora este corto pero brutal periodo de la historia.",
+	    "trailer_url": "http://www.youtube.com/embed/R2EVWKn1HcQ",
+	    "consoles": ["1,3,6,4,8"],
+	    "pictures": ["games/Assassin'sCreed4BlackFlag/01.jpg","games/Assassin'sCreed4BlackFlag/02.jpg","games/Assassin'sCreed4BlackFlag/03.jpg"],
+            "vendor" : "Ubisoft"
+        },
+        {
+            "id" : "07",
+            "name" : "Ride to Hell Route 666",
+	    "description": "¿Harto de dudar entre la acción y la estrategia? Deep Silver combina ahora ambos aspectos en un solo juego: Ride to Hell: Route 666 permite a los jugadores experimentar todo el estilo de vida de las bandas de moteros, aunque aquellos que pretendan dominar la infame Ruta 66 tendrán que actuar con inteligencia.",
+	    "trailer_url": "http://www.youtube.com/embed/5CY3q76VfVc",
+	    "consoles": ["3"],
+	    "pictures": ["games/RidetoHellRoute666/01.jpg","games/RidetoHellRoute666/02.jpg","games/RidetoHellRoute666/03.jpg"],
+            "vendor" : "Deep Silver"
+        },
+        {
+            "id" : "08",
+            "name" : "Resident Evil Revelations",
+	    "description": "Iniciándose la aventura cuando Jill Valentine y su compañero Parker Luciani llegan al Queen Zenobia, un buque abandonado en mitad del Mediterráneo en el que tan solo 94 minutos antes se había perdido contacto con Chris Redfield, aunque no tardaremos en darnos cuenta que todo es una trampa del grupo terrorista Veltro, el cual se creía ya disuelto.A partir de ahí el juego nos invita a superar una serie de fases con la peculiaridad de que cada una de ellas irá saltando de un punto a otro de la trama, e incluso no harán retroceder en la historia a modo de flashbacks para poder tener una visión más global de todo lo sucedido, tomando así el control directo en algún momento de la partida de cada uno de los diferentes protagonistas de la aventura.",
+	    "trailer_url": "http://www.youtube.com/embed/A5QTLtLr844",
+	    "consoles": ["1,3,4,10,6"],
+	    "pictures": ["games/ResidentEvilRevelations/01.jpg","games/ResidentEvilRevelations/02.jpg","games/ResidentEvilRevelations/03.jpg"],
+            "vendor" : "Capcom"
+        },
+        {
+            "id" : "09",
+            "name" : "Heroes Of Might And Magic 6",
+	    "description": "Heroes of Might and Magic (Héroes de magia y poder) es un saga de videojuegos que se desarrolla en el mismo universo ficticio de espadas, dragones y fantasía medieval que la saga Might and Magic. Sin embargo, mientras que Might and Magic es una serie de videojuegos de rol en primera persona, Heroes son videojuegos de rol táctico por turno.El jugador controla un ejército compuesto por héroes y una gran variedad de criaturas que tiene que vencer a los demás ejércitos que luchan por el control del escenario, o bien ha de cumplir otra condición de victoria especificada en el propio escenario.",
+	    "trailer_url": "http://www.youtube.com/embed/wEBGPcRBnQU",
+	    "consoles": ["6"],
+	    "pictures": ["games/HeroesOfMightAndMagic6/01.jpg","games/HeroesOfMightAndMagic6/02.jpg","games/HeroesOfMightAndMagic6/03.jpg"],
+            "vendor" : "Ubisoft"
+        },
+        {
+            "id" : "10",
+            "name" : "Super Street Fighter IV",
+	    "description": "Super Street Fighter IV es un videojuego de lucha producido por Capcom para las consolas PlayStation 3, Xbox 360 y Nintendo 3DS. La mayor novedad será la inclusión de diez nuevos personajes. Primero la inédita Juri Han y los dos clásicos de Street Fighter II que faltaban en el plantel de Street Fighter IV, T. Hawk y Dee Jay. Más adelante se confirmaron tres personajes más: Guy y Cody (provenientes de Final Fight) y Adon, personaje proveniente del Street Fighter original. Después se confirmó la presencia de Ibuki, Dudley y Makoto, los tres provenientes de Street Fighter III y por último a Hakan, otro nuevo personaje.",
+	    "trailer_url": "http://www.youtube.com/embed/pzyog8wzGRQ",
+	    "consoles": ["1,3,10,6"],
+	    "pictures": ["games/SuperStreetFighterIV/01.jpg","games/SuperStreetFighterIV/02.jpg","games/SuperStreetFighterIV/03.jpg"],
+            "vendor" : "Capcom"
+        }
+
+    ]
+}

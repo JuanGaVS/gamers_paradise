@@ -1,10 +1,10 @@
 <?php
 function login($username, $password) {
 
-    require_once '../entities/User.php';
+    require_once '../dal/UserDAL.php';
 
-    $user = new User();
-    $login_success = $user->user_login($username, $password);
+    $userDAL = new UserDAL();
+    $login_success = $userDAL->user_login($username, $password);
 
     if ($login_success) {
         if (!isset($_SESSION)) { session_start(); }

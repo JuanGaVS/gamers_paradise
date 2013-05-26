@@ -20,9 +20,6 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
     src: url("../resources/fonts/Verlag/Verlag-Black.otf")
 }
 
-#instrucciones {
-    margin: 50px;
-}
 
 .labels {
     font-family: Verlag Book, Arial, Sans Serif;
@@ -75,10 +72,36 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 	background:url(../imagenes/bg.png) no-repeat;
 }
 
+#titulo{
+	width: 405px;
+	height: 50px;
+	display: block;
+	float: right;
+	padding: 80px 95px 80px 0;
+}
+#survey {
+	height: 625px;
+	width: 575px;
+	margin-top: 0px;
+	display: block;
+	float: left;
+}
+#sidebar {
+	height: 625px;
+	width: 235px;
+	margin-top: 0px;
+	display: block;
+	float: left;
+}
+
+
+
 #instrucciones {
-	margin: 120px 87px;
-	width: 635px;
-	height: 360px;
+	height:160px;
+	width:810px;
+	display: block;
+	float: left;
+	background: #FFF;
 }
 
 #footer-title{
@@ -111,12 +134,37 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
     color: #3f3f3c;
 }
 
+.paragraphs-12 {
+    font-family: Verlag Book, Arial, Sans Serif;
+    font-size: 12px;
+    color: #3f3f3c;
+}
+
 .information{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     color: #fcfbfa;
     text-align: center;
 
+}
+
+#console-tv{
+	background:url(../imagenes/console-tv.png) no-repeat;
+	width:405px;
+	height:442px;
+	position:relative;
+	z-index:1;
+	top:350px;
+	left:404px;	
+}
+
+#couch-friends{
+	background:url(../imagenes/couch-friends.png) no-repeat;
+	width:342px;
+	height:269px;
+	position:relative;
+	top:135px;
+	z-index:0;
 }
 
 #titulo-instrucciones {
