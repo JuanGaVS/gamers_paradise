@@ -11,7 +11,7 @@ $questions = $quuestionDAL->getQuestions();
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>Survey</title>
 <link href="css/estilos.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -22,19 +22,28 @@ $questions = $quuestionDAL->getQuestions();
   </div>
   <div id="survey">
   <form id="survey">
-  <?php foreach ($questions as $question){?>
+  <?php 
+  $number = 1;
+  foreach ($questions as $question){?>
   	<div class="question">
-    
-    	<p><?php echo $question->getText(); ?></p>
+    	<p><?php echo $number . ")" .  $question->getText(); ?></p>
         <div id="choices">
         <?php foreach ($question->getChoices() as $choice){?>
-        	<input type="checkbox" value="<?php echo( $choice->getChoice_id() );?>"  id="<?php echo $choice->getChoice_id();?>" name="<?php echo $question->getQuestion_id();?>"/> <?php echo $choice->getText(); ?>   
+        	<?php if( $question->getType_multiple( ) == 1 ){ ?>
+        	<input type="checkbox" value="<?php echo( $choice->getChoice_id() );?>"  id="<?php echo $choice->getChoice_id();?>" name="<?php echo $question->getQuestion_id();?>"/> <?php echo $choice->getText(); ?>
             <br/>
-        <?php }?>
+        	<?php }/*Fin de if multiple.*/
+			else{?>
+            <input type="radio"  name="<?php echo( $question->getQuestion_id( ) );?>" value="<?php echo( $choice->getChoice_id() );?>">
+        		<?php echo $choice->getText(); ?>
+        	</input>
+            <?php }//Fin de else. ?>
+        <?php }//Fin de foreach choices. ?>
         </div>
-    
     </div>
-  <?php }?>
+    <br/>
+  <?php $number += 1; }//Fin de foreach question. ?>
+  <button>Siguiente</button>
   </form>
   </div>
   <div id="sidebar">
