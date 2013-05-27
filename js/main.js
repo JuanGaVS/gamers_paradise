@@ -21,16 +21,24 @@ function changeQuestions( ){
 }//Fin de function changeQuestions
 
 $( '.buttonNext' ).on( 'click', function( ){
-	alert( "'.buttonNext'" );
-	$( '.question' ).hide( );
-	$( '.question2' ).show( );
-	$( this ).val( 'Atras' );
-	$( this ).addClass( 'buttonBack' );
+	//alert( $('.question').css("display") );
+	if( $('.question').css("display") != 'none' ){
+		$( '.question' ).hide( );
+		$( '.question2' ).show( );
+		$( this ).val( 'Atras' );
+	}
+	else{
+		$( '.question2' ).hide( );
+		$( '.question' ).show( );
+		$( this ).val( 'Siguiente' );
+	}//Fin de else.
+	/*$( this ).addClass( 'buttonBack' );
 	$( this ).removeClass( 'buttonNext' );
+	$( this ).off( 'click' );*/
     changeQuestions( );
 });
 
-$( '.buttonBack' ).on( 'click', function( ){
+/*$( '.buttonBack' ).on( 'click', function( ){
 	alert( "'.buttonBack'" );
 	$( '.question2' ).hide( );
 	$( '.question' ).show( );
@@ -38,7 +46,7 @@ $( '.buttonBack' ).on( 'click', function( ){
 	$( this ).addClass( 'buttonNext' );
 	$( this ).removeClass( 'buttonBack' );
     changeQuestions( );
-});
+});*/
 
 //DOM is ready
 $(document).ready(function() {

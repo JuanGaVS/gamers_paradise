@@ -16,6 +16,13 @@ $(document).ready(function() {
 	$('.banner').hide();
 	$('#banner-section1').show();
 
+	$('#slideshow').cycle({ 
+    fx:     'fade', 
+    speed:  'fast', 
+    timeout: 0, 
+    next:   '#next', 
+    prev:   '#prev' 
+	});
 
 
 });

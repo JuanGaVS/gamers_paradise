@@ -17,6 +17,9 @@ $games = $gDAL->getGames();
     <body>
 
         <div id="sidebar" class="sidebar">
+           
+            <div id="slideshow">
+            
             <a href="#" target="_blank">
                 <div class="banner" id="banner-section1">
 
@@ -85,12 +88,7 @@ for ($actualIndex = 3; $actualIndex < 6; $actualIndex++) {
             
 
 
-            <div id="sidebar-bottom">
-                <div id="sidebar-prevnext">
-                    <div id="prev"></div>
-                    <div id="next"></div>
-                </div>
-            </div>
+            
 
             
 
@@ -118,9 +116,14 @@ for ($actualIndex = 6; $actualIndex < 9; $actualIndex++) {
 
             </div>
 
+        </div>
 
-
-
+<div id="sidebar-bottom">
+                <div id="sidebar-prevnext">
+                    <div id="prev"></div>
+                    <div id="next"></div>
+                </div>
+            </div>
 
 
         </div>
