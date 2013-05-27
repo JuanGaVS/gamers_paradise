@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
+<<<<<<< HEAD
 <file name="estilos.css" server="C:/AppServ/www/gamers_paradise/" local="130140920086677167" remote="130140920080000000" Dst="0" />
 <file name="exito.css" server="C:/AppServ/www/gamers_paradise/" local="130123427070126488" remote="130123427070000000" Dst="0" />
 <file name="instrucciones.css" server="C:/AppServ/www/gamers_paradise/" local="130123427070146489" remote="130123427070000000" Dst="0" />
 <file name="reset.css" server="C:/AppServ/www/gamers_paradise/" local="130123427070166490" remote="130123427070000000" Dst="0" />
+=======
+<file name="estilos.css" server="C:/AppServ/www/gamers_paradise/" local="130140892757269638" remote="130140892750000000" Dst="0" />
+<file name="exito.css" server="C:/AppServ/www/gamers_paradise/" local="130126034360000000" remote="130126034360000000" Dst="0" />
+<file name="instrucciones.css" server="C:/AppServ/www/gamers_paradise/" local="130126034360000000" remote="130126034360000000" Dst="0" />
+<file name="reset.css" server="C:/AppServ/www/gamers_paradise/" local="130126034360000000" remote="130126034360000000" Dst="0" />
+>>>>>>> 1e33fcaac3fa8eda9feb337e5fee801f483c0c89
 <file name="estilos.css" server="C:/AppServ/www/gamersparadise/" local="130135664848552045" remote="130135664840000000" Dst="0" />
 <file name="exito.css" server="C:/AppServ/www/gamersparadise/" local="130135664848582076" remote="130135664840000000" Dst="0" />
 <file name="instrucciones.css" server="C:/AppServ/www/gamersparadise/" local="130135664848612094" remote="130135664840000000" Dst="0" />
 <file name="reset.css" server="C:/AppServ/www/gamersparadise/" local="130135664848632107" remote="130135664840000000" Dst="0" />
-<file name="sugerencias.css" server="C:/AppServ/www/gamers_paradise/" local="130135905493746240" remote="130135905490000000" Dst="0" />
-<file name="sidebar.css" server="C:/AppServ/www/gamers_paradise/" local="130140892284826992" remote="130140892280000000" Dst="0" />
+<file name="sugerencias.css" server="C:/AppServ/www/gamers_paradise/" local="130135874311379863" remote="130135874310000000" Dst="0" />
+<file name="sidebar.css" server="C:/AppServ/www/gamers_paradise/" local="130140893790518737" remote="130140893790000000" Dst="0" />
 </dwsync>
