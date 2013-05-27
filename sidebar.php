@@ -15,7 +15,6 @@ $games = $gDAL->getGames();
     </head>
 
     <body>
-
         <div id="sidebar" class="sidebar">
            
             <div id="slideshow">

@@ -26,7 +26,7 @@ $questions = $quuestionDAL->getQuestions();
   $number = 1;
   foreach ($questions as $question){?>
   	<div class= "question<?php if( $number > 5 ){ echo "2"; }  ?>"  >
-    	<p><?php echo $number . ")" .  $question->getText(); ?></p>
+    	<?php echo $number . ")" .  $question->getText(); ?>
         <div id="choices">
         <?php foreach ($question->getChoices() as $choice){?>
         	<?php if( $question->getType_multiple( ) == 1 ){ ?>
