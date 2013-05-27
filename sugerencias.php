@@ -23,17 +23,17 @@
 		<div class="columna" >
 			<div class= "filas"></div>
             
-			<input type="radio"; id="radio1" name="seleccion">1</input>
+			<input class="seleccion" type="radio"; id="radio1" name="seleccion" value="1"/>
 			<div class= "filas"></div>
-			<input type="radio"; id="radio2" name="seleccion">2</input>
+			<input class="seleccion" type="radio"; id="radio2" name="seleccion" value="2"/>
 			<div class= "filas"></div>
-			<input type="radio"; id="radio3" name="seleccion">3</input>
+			<input class="seleccion" type="radio"; id="radio3" name="seleccion" value="3"/>
 		</div>
 		<div class= "columna">
 		<div class= "filas"></div>
-			<input type="radio"; id="radio4" name="seleccion">4</input>
+			<input class="seleccion" type="radio"; id="radio4" name="seleccion" value="4"/>
 			<div class= "filas"></div>
-			<input type="radio"; id="radio5" name="seleccion">5</input>
+			<input class="seleccion" type="radio"; id="radio5" name="seleccion" value="5"/>
 	  </div>
 	</div>
 	<div id="escoger"> </escoger>

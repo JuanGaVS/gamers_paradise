@@ -17,9 +17,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
+require_once $_SERVER['DOCUMENT_ROOT'] . '/gamers_paradise/' . 'entities/Console.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/gamers_paradise/' . 'entities/DBConnection.php';
 
-require_once '../entities/Console.php';
-require_once '../entities/DBConnection.php';
 
 
 /**
