@@ -30,11 +30,11 @@ $questions = $quuestionDAL->getQuestions();
         <div id="choices">
         <?php foreach ($question->getChoices() as $choice){?>
         	<?php if( $question->getType_multiple( ) == 1 ){ ?>
-        	<input type="checkbox" value="<?php echo( $choice->getChoice_id() );?>"  id="<?php echo $choice->getChoice_id();?>" name="<?php echo $question->getQuestion_id();?>"/> <?php echo $choice->getText(); ?>
+        	<input class="choice" type="checkbox" value="<?php echo( $choice->getChoice_id() );?>"  id="<?php echo $choice->getChoice_id();?>" name="<?php echo $question->getQuestion_id();?>"/> <?php echo $choice->getText(); ?>
             
         	<?php }/*Fin de if multiple.*/
 			else{?>
-            <input type="radio"  name="<?php echo( $question->getQuestion_id( ) );?>" value="<?php echo( $choice->getChoice_id() );?>">
+            <input class="choice" type="radio"  name="<?php echo( $question->getQuestion_id( ) );?>" value="<?php echo( $choice->getChoice_id() );?>">
         		<?php echo $choice->getText(); ?>
         	</input>
             <?php }//Fin de else. ?>
