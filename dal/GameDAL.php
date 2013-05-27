@@ -293,6 +293,78 @@ class GameDAL {
        
         
     }
+    
+      public function getGames(){
+        
+        
+        $games = array();
+
+
+        try {
+            $statement = $this->conn->prepare("select game_id, name, trailer_url, description from tb_game");
+            $statement->execute();
+            $reults = $statement->fetchAll();
+            
+            foreach ($reults as $gRow) {
+            $game = new Game();
+                $game_id = $gRow['game_id'];
+                
+            $game->setGame_id($game_id);
+            $game->setName($gRow['name']);
+            $game->setTrailer_url($gRow['trailer_url']);
+            $game->setDescription($gRow['description']);
+          
+            
+            $st2 = $this->conn->prepare("select c.console_id, c.name from tb_game_console gc, tb_console c where gc.console_id = c.console_id and gc.game_id = ?");
+            $st2->bindParam(1, $game_id);
+            $st2->execute();
+            
+            $consoles = $st2->fetchAll();
+            
+            foreach ($consoles as $console){
+                $console_name = $console['name'];
+                $console_id = $console['console_id'];
+                
+                $consoleEnt = new Console();
+                $consoleEnt->setConsole_id($console_id);
+                $consoleEnt->setName($console_name);
+                
+                $game->addConsole($consoleEnt);
+                
+                
+                
+            }
+            
+            $st3 = $this->conn->prepare("select picture_url from tb_game_pictures where game_id = ?");
+            $st3->bindParam(1, $game_id);
+            $st3->execute();
+            
+            $pictures = $st3->fetchAll();
+            
+            foreach ($pictures as $picture){
+                
+                
+                $game->addPicture($picture['picture_url']);
+                
+            }
+            
+            $games [] = $game;
+          
+            }
+            
+            return $games;
+            
+        } catch (PDOException $e) {
+            return null;
+            echo $e->getMessage();
+        }
+
+       
+        
+    }
+    
+    
+   
 
 }
 

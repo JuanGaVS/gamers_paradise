@@ -22,7 +22,7 @@
 
 .game-title{
 	font-family: Verlag Light, "Linux Libertine G", "Lucida Calligraphy";
-    font-size: 18px;
+    font-size: 12px;
     color: #5f5f5f;
     text-align: center;
 	margin-top: 15px;
@@ -33,25 +33,52 @@
 }
 
 .banner{
-	height: 525px;
+	height: 545px;
 	width: 235px;
 	position: absolute;
 	z-index: 2;
 	left: 0;
 	top: 0;
-	background: #3F6;
+	
 	display: block;
 	float: left;
 }
 
+#banner-section1{
+	
+	/*display: none;*/
+	background:url(../imagenes/banners/01.jpg);
+	height: 545px;
+	width: 235px;
+	
+}
+
+#banner-section2{
+	
+	background:url(../imagenes/banners/02.jpg);
+	height: 545px;
+	width: 235px;
+	display: none;
+	
+}
+
+#banner-section3{
+	
+	background:url(../imagenes/banners/03.jpg);
+	height: 545px;
+	width: 235px;
+	display: none;
+	
+}
+
 .games-sidebar{
-	height: 525px;
+	height: 545px;
 	width: 235px;
 	position: absolute;
-	z-index: 3;
+	
 	left: 0;
 	top: 0;
-	background: #939;
+	
 }
 
 .game-sidebar{
@@ -63,13 +90,67 @@
 	float: left;
 }
 
-#sidebar-prevnext{
-	
-	margin-top:10px;
-	height: 35px;
-	width: 72px;
+#sidebar-bottom{
+	padding-top:12px;
+	height: 103px;
+	width: 235px;
 	text-align: center;
 	background: #FFC;
+	left: 0px;
+	top: 545px;
+	position: absolute;
+	
 	
 }
+
+#sidebar-prevnext{
+	
+	/*margin-top:12px;*/
+	height: 35px;
+	width: 235px;
+	left: 82px;
+	/*top: 545px;*/
+	position: relative;
+	
+	
+}
+
+#prev{
+	background:url(../imagenes/pagination.png) 0 0;
+	width: 34px;
+	height: 34px;
+	display: block;
+	float: left;
+	cursor: pointer;
+}
+
+#next{
+	background:url(../imagenes/pagination.png) 34px 0;
+	width: 34px;
+	height: 34px;
+	display: block;
+	float: left;
+	margin-left: 4px;
+	cursor: pointer;
+}
+
+#games-section1{
+	display: block;
+	z-index: 5;
+	background: #939;
+}
+
+#games-section2{
+	display: none;
+	z-index: 4;
+	background: #0F9;
+}
+
+#games-section3{
+	display: none;
+	z-index: 3;
+	background: #00F;
+}
+
+
 

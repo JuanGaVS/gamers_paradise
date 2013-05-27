@@ -94,6 +94,10 @@ class Game {
         return $this->contestants;
     }
     
+    public function getFirstPicture(){
+        return $this->pictures[0];
+    }
+    
    
     
  
