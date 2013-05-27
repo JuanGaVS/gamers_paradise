@@ -1,4 +1,4 @@
-{
+﻿{
 
 "games":
     [
@@ -17,7 +17,7 @@
 	    "description": "Splinter Cell Blacklist de Tom Clancy ofrece un modo cooperativo para dos jugadores con 4 tipos de misiones y 14 mapas con pantalla partida para 2 jugadores. Juega como Sam Fisher o Isaac Briggs (un aperativo de la CIA) y juega a dos: ayuda a tu compañero de equipo a acceder a partes del mapa a las que no podrías acceder tú solo, crea tus propias tácticas en función de tu estilo de juego y cubríos las espaldas mutuamente para completar misiones. ",
 	    "trailer_url": "http://www.youtube.com/embed/wYGoFH6bWXg",
 	    "consoles": ["1,3,4"],
-	    "pictures": ["games/SplinterCellBlacklist/01.jpg","games/SplinterCellBlacklist/02.jpg","games/SplinterCellBlacklist/03.jpg"],
+	    "pictures": ["games/SplinterCellBlacklist/01.jpg","games/SplinterCellBlacklist/02.jpg","games/SplinterCellBlacklist/03.png"],
             "vendor" : "Ubisoft"
         },
         {
@@ -44,7 +44,7 @@
 	    "description": "Diablo III es un videojuego de rol de acción (aRPG), desarrollado por Blizzard Entertainment. Ésta es la continuación de Diablo II y la tercera parte de la serie que fue creada por la compañía estadounidense Blizzard. Su temática es de fantasía oscura y terrorífica.",
 	    "trailer_url": "http://www.youtube.com/embed/de2KlsLnIVU",
 	    "consoles": ["8,1,6"],
-	    "pictures": ["games/Diablo3/01.jpg","games/Diablo3/02.jpg","games/Diablo3/03.jpg"],
+	    "pictures": ["games/Diablo3/01.jpeg","games/Diablo3/02.jpg","games/Diablo3/03.jpeg"],
             "vendor" : "Blizzard"
         },
         {
@@ -89,7 +89,7 @@
 	    "description": "Super Street Fighter IV es un videojuego de lucha producido por Capcom para las consolas PlayStation 3, Xbox 360 y Nintendo 3DS. La mayor novedad será la inclusión de diez nuevos personajes. Primero la inédita Juri Han y los dos clásicos de Street Fighter II que faltaban en el plantel de Street Fighter IV, T. Hawk y Dee Jay. Más adelante se confirmaron tres personajes más: Guy y Cody (provenientes de Final Fight) y Adon, personaje proveniente del Street Fighter original. Después se confirmó la presencia de Ibuki, Dudley y Makoto, los tres provenientes de Street Fighter III y por último a Hakan, otro nuevo personaje.",
 	    "trailer_url": "http://www.youtube.com/embed/pzyog8wzGRQ",
 	    "consoles": ["1,3,10,6"],
-	    "pictures": ["games/SuperStreetFighterIV/01.jpg","games/SuperStreetFighterIV/02.jpg","games/SuperStreetFighterIV/03.jpg"],
+	    "pictures": ["games/SuperStreetFighterIV/01.jpg","games/SuperStreetFighterIV/02.jpg","games/SuperStreetFighterIV/03.png"],
             "vendor" : "Capcom"
         }
 
