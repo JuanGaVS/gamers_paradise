@@ -224,9 +224,11 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 
 /* Encuesta */
 .question2{
+	position:relative;
 	display: none;
 }
 
-/*.question{
+.question{
+	position:relative;
 	margin: 16px auto 0px auto;
-}*/
+}
