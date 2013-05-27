@@ -81,9 +81,10 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 }
 #survey {
 	height: 625px;
-	width: 575px;
+	width: 549px;
 	margin-left: 16px;
 	margin-top: 23px;
+	margin-right: 10px;
 	display: block;
 	float: left;
 }
@@ -224,11 +225,18 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 
 /* Encuesta */
 .question2{
-	position:relative;
 	display: none;
 }
 
 .question{
-	position:relative;
-	margin: 16px auto 0px auto;
+	margin: 0px 0px 15px 0px;
 }
+
+#choices{
+	margin: 26px 0px 0px 0px;
+}
+
+
+
+
+

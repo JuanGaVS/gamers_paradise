@@ -31,7 +31,7 @@ $questions = $quuestionDAL->getQuestions();
         <?php foreach ($question->getChoices() as $choice){?>
         	<?php if( $question->getType_multiple( ) == 1 ){ ?>
         	<input type="checkbox" value="<?php echo( $choice->getChoice_id() );?>"  id="<?php echo $choice->getChoice_id();?>" name="<?php echo $question->getQuestion_id();?>"/> <?php echo $choice->getText(); ?>
-            <br/>
+            
         	<?php }/*Fin de if multiple.*/
 			else{?>
             <input type="radio"  name="<?php echo( $question->getQuestion_id( ) );?>" value="<?php echo( $choice->getChoice_id() );?>">
@@ -41,14 +41,12 @@ $questions = $quuestionDAL->getQuestions();
         <?php }//Fin de foreach choices. ?>
         </div>
     </div>
-    <br/>
   <?php $number += 1; }//Fin de foreach question. ?>
   <input type="button" class="buttonNext" name="button" id="button" value="Siguiente"/>
   </form>
   </div>
   <div id="sidebar">
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
+    <object type="text/html" data="sidebar.php" width="334px" height="660px"></object>
   </div>
 </div>
 </body>
