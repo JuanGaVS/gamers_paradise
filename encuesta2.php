@@ -47,7 +47,7 @@ $questions = $quuestionDAL->getQuestions();
   </form>
   </div>
   <div id="sidebar">
-    <object type="text/html" data="sidebar.php" width="235px" height="625px"></object>
+    <object type="text/html" data="sidebar.php" width="334px" height="660px"></object>
   </div>
 </div>
 </body>
