@@ -12,14 +12,16 @@ var slide6 = $('#games-section3');
 
 $(document).ready(function() {
 
-    $('.games-sidebar').hide();
-	$('.banner').hide();
-	$('#banner-section1').show();
+   // $('.games-sidebar').hide();
+	//$('.banner').hide();
+	//$('#banner-section1').show();
 
 	$('#slideshow').cycle({ 
-    fx:     'fade', 
-    speed:  'fast', 
-    timeout: 0, 
+    fx:     'blindX, blindY, blindZ, cover, curtainX, curtainY, fade, fadeZoom, growX, growY, scrollUp, scrollDown, scrollLeft, scrollRight, scrollHorz, scrollVert, shuffle, slideX, slideY, toss, turnUp, turnDown, turnLeft, turnRight, uncover, wipe, zoom', 
+	async: 'true',
+    speed:  'slow', 
+    timeout: 5000, 
+	pause: 1,
     next:   '#next', 
     prev:   '#prev' 
 	});
