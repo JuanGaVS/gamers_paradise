@@ -48,16 +48,12 @@
 	
 	/*display: none;*/
 	background:url(../imagenes/banners/01.jpg);
-	height: 545px;
-	width: 235px;
 	
 }
 
 #banner-section2{
 	
 	background:url(../imagenes/banners/02.jpg);
-	height: 545px;
-	width: 235px;
 	display: none;
 	
 }
@@ -65,8 +61,6 @@
 #banner-section3{
 	
 	background:url(../imagenes/banners/03.jpg);
-	height: 545px;
-	width: 235px;
 	display: none;
 	
 }
