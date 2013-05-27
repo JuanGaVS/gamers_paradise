@@ -82,7 +82,8 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 #survey {
 	height: 625px;
 	width: 575px;
-	margin-top: 0px;
+	margin-left: 16px;
+	margin-top: 23px;
 	display: block;
 	float: left;
 }
@@ -223,5 +224,11 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 
 /* Encuesta */
 .question2{
+	position:relative;
 	display: none;
+}
+
+.question{
+	position:relative;
+	margin: 16px auto 0px auto;
 }
