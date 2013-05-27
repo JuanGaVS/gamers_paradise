@@ -173,7 +173,7 @@ class GameDAL {
         
 
         $str_datos = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/gamers_paradise/'."games.json");
-        
+        echo "Prueba loro ". $_SERVER['DOCUMENT_ROOT'].'/gamers_paradise/'."games.json";
         
         $datos = json_decode($str_datos, true);
 
