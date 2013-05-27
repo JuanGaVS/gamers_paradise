@@ -81,8 +81,10 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 }
 #survey {
 	height: 625px;
-	width: 575px;
-	margin-top: 0px;
+	width: 549px;
+	margin-left: 16px;
+	margin-top: 23px;
+	margin-right: 10px;
 	display: block;
 	float: left;
 }
@@ -225,3 +227,16 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 .question2{
 	display: none;
 }
+
+.question{
+	margin: 0px 0px 15px 0px;
+}
+
+#choices{
+	margin: 26px 43px 0px 31px;
+}
+
+
+
+
+

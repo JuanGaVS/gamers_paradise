@@ -8,7 +8,7 @@
 <file name="prelike.php" server="C:/AppServ/www/gamers_paradise/" local="130126317690214139" remote="130126317690000000" Dst="0" />
 <file name="instrucciones.php" server="C:/AppServ/www/gamers_paradise/" local="130140781396272934" remote="130140781390000000" Dst="0" />
 <file name="1305_v1.zip" server="C:/AppServ/www/gamers_paradise/" local="130140781392702730" remote="130140781390000000" Dst="0" />
-<file name="games.json" server="C:/AppServ/www/gamers_paradise/" local="130140781394642841" remote="130140781390000000" Dst="0" />
+<file name="games.json" server="C:/AppServ/www/gamers_paradise/" local="130140943202027694" remote="130140943200000000" Dst="0" />
 <file name="process-json.php" server="C:/AppServ/www/gamers_paradise/" local="130140781396292935" remote="130140781390000000" Dst="0" />
 <file name=".gitignore" server="C:/AppServ/www/gamersparadise/" local="130135664846550707" remote="130135664840000000" Dst="0" />
 <file name="1305_v1.zip" server="C:/AppServ/www/gamersparadise/" local="130135664846900964" remote="130135664840000000" Dst="0" />
@@ -22,9 +22,11 @@
 <file name="README.md" server="C:/AppServ/www/gamersparadise/" local="130135664847011015" remote="130135664840000000" Dst="0" />
 <file name="2405_v1.zip" server="C:/AppServ/www/gamers_paradise/" local="130140781393232760" remote="130140781390000000" Dst="0" />
 <file name="Consolas.txt" server="C:/AppServ/www/gamers_paradise/" local="130140781393332766" remote="130140781390000000" Dst="0" />
-<file name="encuesta.php" server="C:/AppServ/www/gamers_paradise/" local="130140826919056688" remote="130140826910000000" Dst="0" />
-<file name="sugerencias.php" server="C:/AppServ/www/gamers_paradise/" local="130140921420421857" remote="130140921420000000" Dst="0" />
+<file name="encuesta.php" server="C:/AppServ/www/gamers_paradise/" local="130140943201937689" remote="130140943200000000" Dst="0" />
+<file name="sugerencias.php" server="C:/AppServ/www/gamers_paradise/" local="130140925290783229" remote="130140925290000000" Dst="0" />
 <file name="admin-games.txt" server="C:/AppServ/www/gamers_paradise/" local="130140781393442772" remote="130140781390000000" Dst="0" />
 <file name="consoles.json" server="C:/AppServ/www/gamers_paradise/" local="130140781394132812" remote="130140781390000000" Dst="0" />
-<file name="sidebar.php" server="C:/AppServ/www/gamers_paradise/" local="130140826919256700" remote="130140826910000000" Dst="0" />
+<file name="sidebar.php" server="C:/AppServ/www/gamers_paradise/" local="130140943202247706" remote="130140943200000000" Dst="0" />
+<file name="calls.php" server="C:/AppServ/www/gamers_paradise/" local="130140914993884280" remote="130140914990000000" Dst="0" />
+<file name="encuesta2.php" server="C:/AppServ/www/gamers_paradise/" local="130140943201977691" remote="130140943200000000" Dst="0" />
 </dwsync>
