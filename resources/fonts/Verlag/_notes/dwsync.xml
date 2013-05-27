@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
+<<<<<<< HEAD
 <file name="Verlag-Black.otf" server="C:/AppServ/www/gamers_paradise/" local="130126324968350226" remote="130126324960000000" Dst="0" />
 <file name="Verlag-BlackItalic.otf" server="C:/AppServ/www/gamers_paradise/" local="130126324968540237" remote="130126324960000000" Dst="0" />
 <file name="Verlag-Bold.otf" server="C:/AppServ/www/gamers_paradise/" local="130126324968660244" remote="130126324960000000" Dst="0" />
@@ -10,6 +11,18 @@
 <file name="Verlag-LightItalic.otf" server="C:/AppServ/www/gamers_paradise/" local="130126324969310281" remote="130126324960000000" Dst="0" />
 <file name="Verlag-XLight.otf" server="C:/AppServ/www/gamers_paradise/" local="130126324969370284" remote="130126324960000000" Dst="0" />
 <file name="Verlag-XLightItalic.otf" server="C:/AppServ/www/gamers_paradise/" local="130126324969750306" remote="130126324960000000" Dst="0" />
+=======
+<file name="Verlag-Black.otf" server="C:/AppServ/www/gamers_paradise/" local="129630024580000000" remote="129630024580000000" Dst="0" />
+<file name="Verlag-BlackItalic.otf" server="C:/AppServ/www/gamers_paradise/" local="129630024580000000" remote="129630024580000000" Dst="0" />
+<file name="Verlag-Bold.otf" server="C:/AppServ/www/gamers_paradise/" local="129630024700000000" remote="129630024700000000" Dst="0" />
+<file name="Verlag-BoldItalic.otf" server="C:/AppServ/www/gamers_paradise/" local="129630024600000000" remote="129630024600000000" Dst="0" />
+<file name="Verlag-Book.otf" server="C:/AppServ/www/gamers_paradise/" local="129630024660000000" remote="129630024660000000" Dst="0" />
+<file name="Verlag-BookItalic.otf" server="C:/AppServ/www/gamers_paradise/" local="129630024780000000" remote="129630024780000000" Dst="0" />
+<file name="Verlag-Light.otf" server="C:/AppServ/www/gamers_paradise/" local="129630024740000000" remote="129630024740000000" Dst="0" />
+<file name="Verlag-LightItalic.otf" server="C:/AppServ/www/gamers_paradise/" local="129630024780000000" remote="129630024780000000" Dst="0" />
+<file name="Verlag-XLight.otf" server="C:/AppServ/www/gamers_paradise/" local="129630024860000000" remote="129630024860000000" Dst="0" />
+<file name="Verlag-XLightItalic.otf" server="C:/AppServ/www/gamers_paradise/" local="129630024580000000" remote="129630024580000000" Dst="0" />
+>>>>>>> b75fb3a4a1144d14505bbcbda3a3bae47b74a352
 <file name="Verlag-Black.otf" server="C:/AppServ/www/gamersparadise/" local="130135664849842878" remote="130135664840000000" Dst="0" />
 <file name="Verlag-BlackItalic.otf" server="C:/AppServ/www/gamersparadise/" local="130135664849922935" remote="130135664840000000" Dst="0" />
 <file name="Verlag-Bold.otf" server="C:/AppServ/www/gamersparadise/" local="130135664849962974" remote="130135664840000000" Dst="0" />

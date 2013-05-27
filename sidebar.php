@@ -34,6 +34,8 @@ $games = $gDAL->getGames();
 <?php
 for ($actualIndex = 0; $actualIndex < 3; $actualIndex++) {
     ?>
+    <a href="juego.php?game_id=<?php echo $games[$actualIndex]->getGame_id(); ?>" target="_parent">
+    
                     <div class="game-sidebar">
 
 
@@ -42,7 +44,7 @@ for ($actualIndex = 0; $actualIndex < 3; $actualIndex++) {
                         </div>
                         <div class="game-title"><?php echo $games[$actualIndex]->getName(); ?></div>
                     </div>
-
+</a>
 <?php } ?>     
 
 
@@ -64,6 +66,7 @@ for ($actualIndex = 0; $actualIndex < 3; $actualIndex++) {
 <?php
 for ($actualIndex = 3; $actualIndex < 6; $actualIndex++) {
     ?>
+    <a href="juego.php?game_id=<?php echo $games[$actualIndex]->getGame_id(); ?>" target="_parent">
                     <div class="game-sidebar">
 
                         <div class="game-picture">
@@ -71,6 +74,7 @@ for ($actualIndex = 3; $actualIndex < 6; $actualIndex++) {
                         </div>
                         <div class="game-title"><?php echo $games[$actualIndex]->getName(); ?></div>
                     </div>
+                    </a>
 
 <?php } ?>     
 
@@ -100,6 +104,7 @@ for ($actualIndex = 3; $actualIndex < 6; $actualIndex++) {
 <?php
 for ($actualIndex = 6; $actualIndex < 9; $actualIndex++) {
     ?>
+    <a href="juego.php?game_id=<?php echo $games[$actualIndex]->getGame_id(); ?>" target="_parent">
                     <div class="game-sidebar">
 
                         <div class="game-picture">
@@ -107,6 +112,7 @@ for ($actualIndex = 6; $actualIndex < 9; $actualIndex++) {
                         </div>
                         <div class="game-title"><?php echo $games[$actualIndex]->getName(); ?></div>
                     </div>
+                    </a>
 
 <?php } ?>     
 
