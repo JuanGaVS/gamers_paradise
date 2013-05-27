@@ -25,7 +25,7 @@ $questions = $quuestionDAL->getQuestions();
   <?php 
   $number = 1;
   foreach ($questions as $question){?>
-  	<div class="question">
+  	<div class= "question<?php if( $number > 5 ){ echo "2"; }  ?>"  >
     	<p><?php echo $number . ")" .  $question->getText(); ?></p>
         <div id="choices">
         <?php foreach ($question->getChoices() as $choice){?>
@@ -43,7 +43,7 @@ $questions = $quuestionDAL->getQuestions();
     </div>
     <br/>
   <?php $number += 1; }//Fin de foreach question. ?>
-  <button>Siguiente</button>
+  <input type="button" class="buttonNext" name="button" id="button" value="Siguiente"/>
   </form>
   </div>
   <div id="sidebar">
@@ -52,4 +52,6 @@ $questions = $quuestionDAL->getQuestions();
   </div>
 </div>
 </body>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+	<script type="text/javascript" src="js/main.js" ></script>
 </html>
