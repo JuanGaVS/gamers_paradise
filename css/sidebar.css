@@ -1,0 +1,75 @@
+/* CSS Document */
+@font-face {
+    font-family: "Verlag Light";
+    src: url("../resources/fonts/Verlag/Verlag-Light.otf")
+}
+
+.sidebar{
+	margin: 60px 10px 0 0;
+	
+}
+
+#title-sidebar{
+	font-family: Verlag Light, "Linux Libertine G", "Lucida Calligraphy";
+    font-size: 24px;
+    color: #5f5f5f;
+    text-align: center;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	text-transform:uppercase;
+
+}
+
+.game-title{
+	font-family: Verlag Light, "Linux Libertine G", "Lucida Calligraphy";
+    font-size: 18px;
+    color: #5f5f5f;
+    text-align: center;
+	margin-top: 15px;
+	text-transform:uppercase;
+	position: relative;
+	display:block;
+
+}
+
+.banner{
+	height: 525px;
+	width: 235px;
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	background: #3F6;
+	display: block;
+	float: left;
+}
+
+.games-sidebar{
+	height: 525px;
+	width: 235px;
+	position: absolute;
+	z-index: 3;
+	left: 0;
+	top: 0;
+	background: #939;
+}
+
+.game-sidebar{
+	display:block;
+	position: relative;
+	margin: 20px 23px 0 23px;
+	height: 140px;
+	width: 185px;
+	float: left;
+}
+
+#sidebar-prevnext{
+	
+	margin-top:10px;
+	height: 35px;
+	width: 72px;
+	text-align: center;
+	background: #FFC;
+	
+}
+
