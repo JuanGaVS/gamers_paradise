@@ -65,7 +65,6 @@ class Game {
         $this->pictures = $pictures;
     }
 
-    
     public function getGame_id() {
         return $this->game_id;
     }
@@ -93,14 +92,10 @@ class Game {
     public function getContestants() {
         return $this->contestants;
     }
-    
-    public function getFirstPicture(){
+
+    public function getFirstPicture() {
         return $this->pictures[0];
     }
-    
-   
-    
- 
 
 }
 
