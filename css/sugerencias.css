@@ -24,7 +24,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 #wrapper{ margin: auto;  width: 808px; height:899px;   background: url('../imagenes/bg.png');}
 #titulacion{display: block; float: left;width:823px; height: 153px; margin: 44px; }
 #text{display:block; float: left; margin: 12px 0 0 263px; }
-#text h1{ font-family: 'Verlag Light'; font-size: 40px; }
+#text h1{ font-family: 'Verlag Ligh'; font-size: 40px; }
 
 #sugerecias{}
 #escoger{}
