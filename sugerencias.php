@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
-	<title>GamerParadice</title>
+	<title>GamerParadise</title>
 	<link href="css/sugerencias.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 
@@ -12,32 +12,29 @@
 			<h1> SUGERENCIAS PARA VOS</h1>
 			<h2> HAZ CLICK PARA VER UN REVIEW DEL JUEGO</h2>
 		</div>
-		
-		
-	</div>
-	<div id="sugerecias">
-		<div class= "Columna">
+</div>
+	
+<div id="mas-populares" >
+    <h1>MAS POPULARES</h1>
+    </div>
+    
+    <div id="sugerencias">
+    
+		<div class="columna" >
 			<div class= "filas"></div>
-			<div class= "filas seleccion"></div>
+            
+			<input class="seleccion" type="radio"; id="radio1" name="seleccion" value="1"/>
 			<div class= "filas"></div>
-			<div class= "filas seleccion"></div>
+			<input class="seleccion" type="radio"; id="radio2" name="seleccion" value="2"/>
 			<div class= "filas"></div>
-			<div class= "filas seleccion"></div>
+			<input class="seleccion" type="radio"; id="radio3" name="seleccion" value="3"/>
 		</div>
-		<div class= "Columna"></div>
+		<div class= "columna">
 		<div class= "filas"></div>
-			<div class= "filas seleccion"></div>
+			<input class="seleccion" type="radio"; id="radio4" name="seleccion" value="4"/>
 			<div class= "filas"></div>
-			<div class= "filas seleccion"></div>
-			<div class= "filas"></div>
-			<div class= "filas seleccion"></div>
-		<div class= "Columna"></div>
-		<div class= "filas"></div>
-			<div class= "filas seleccion"></div>
-			<div class= "filas"></div>
-			<div class= "filas seleccion"></div>
-			<div class= "filas"></div>
-			<div class= "filas seleccion"></div>
+			<input class="seleccion" type="radio"; id="radio5" name="seleccion" value="5"/>
+	  </div>
 	</div>
 	<div id="escoger"> </escoger>
 </div>
