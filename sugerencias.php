@@ -3,6 +3,7 @@
 <head>
 	<title>GamerParadise</title>
 	<link href="css/sugerencias.css" rel="stylesheet" type="text/css" media="screen">
+    
 </head>
 
 <body>
@@ -41,15 +42,27 @@
            <div class= "filas"></div>
 			<input class="seleccion" type="radio" id="radio1" name="seleccion" value="5"><label class="label">Nombre Juego</label></input>
 			
-            <div class= "filas"></div>
-            <input class="seleccion" type="radio" id="radio1" name="seleccion" value="6"><label class="label">Nombre Juego</label></input>
+            <h1 class="consola">CONSOLA</h1>
+            <select size="3" class="select">
+  				<optgroup label="Choose One">
+    			<option>Option 1</option>
+   				<option>Option 2</option>
+  				<option>Option 3</option>
+   				</optgroup>
+			</select> 
+          
 	  </div>
-	</div>
+      
+      <a href="#" id="contenedor-boton">Escoger</a>
+     <div class="div-comp"> 
+      <h1 class="debes-comp">debes compartir la publicacion para participar</h1>
+	</div></div>
 	<div id="escoger"> </escoger>
 </div>
 
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
 
 
 
