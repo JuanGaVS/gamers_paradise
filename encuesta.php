@@ -27,15 +27,20 @@ $questions = $quuestionDAL->getQuestions();
   foreach ($questions as $question){?>
   	<div class= "question<?php if( $number > 5 ){ echo "2"; }  ?>"  >
     	<?php echo $number . ")" .  $question->getText(); ?>
+        <br/>
         <div id="choices">
-        <?php foreach ($question->getChoices() as $choice){?>
-        	<?php if( $question->getType_multiple( ) == 1 ){ ?>
+        <?php $choices = $question->getChoices( );
+		$maxIndex = sizeof( $choices );
+        for( $index = 0; $index < $maxIndex; $index++ ){ 
+        	$choice = $choices[$index];
+        	if( $question->getType_multiple( ) == 1 ){ ?>
         	<input class="choice" type="checkbox" value="<?php echo( $choice->getChoice_id() );?>"  id="<?php echo $choice->getChoice_id();?>" name="<?php echo $question->getQuestion_id();?>"/> <?php echo $choice->getText(); ?>
-            
+            <?php if( ( fmod( $maxIndex , 2 ) == 0 && $index == $maxIndex/2 - 1 ) || ( fmod( $maxIndex , 2 ) != 0 && $index == 1 ) ){ echo '<br/>'; }  ?>
         	<?php }/*Fin de if multiple.*/
 			else{?>
             <input class="choice" type="radio"  name="<?php echo( $question->getQuestion_id( ) );?>" value="<?php echo( $choice->getChoice_id() );?>">
         		<?php echo $choice->getText(); ?>
+                <?php if( ( fmod( $maxIndex , 2 ) == 0 && $index == $maxIndex/2 - 1 && $maxIndex > 2 ) || ( fmod( $maxIndex , 2 ) != 0 && $index == 1 ) ){ echo '<br/>'; }  ?>
         	</input>
             <?php }//Fin de else. ?>
         <?php }//Fin de foreach choices. ?>
@@ -46,7 +51,7 @@ $questions = $quuestionDAL->getQuestions();
   </form>
   </div>
   <div id="sidebar">
-    <object type="text/html" data="sidebar.php" width="334px" height="660px"></object>
+    <object type="text/html" data="sidebar.php" width="329px" height="660px"></object>
   </div>
 </div>
 </body>
