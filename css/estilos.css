@@ -28,82 +28,81 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 }
 
 #prelike {
-	margin: auto;
-	width: 810px;
-	height: 900px;
-	background: url(../imagenes/prelike.png);
+margin: auto;
+width: 810px;
+height: 900px;
+background: url(../imagenes/prelike.png);
 }
 
 #click-like{
-	display:block;
-	width:381px;
-	height:140px;
-	background:url(../imagenes/clic-like.png) no-repeat;
-	float:right;
-	
+display:block;
+width:381px;
+height:140px;
+background:url(../imagenes/clic-like.png) no-repeat;
+float:right;
 }
 
 #listo-jugar{
-	position: absolute;
-	top: 365px;
-	height:37px;
-	width:390px;
-	padding-top: 25px;
+position: absolute;
+top: 365px;
+height:37px;
+width:390px;
+padding-top: 25px;
 }
 
 #listo-jugar p{
-	margin: 0 30px 0 30px;
+margin: 0 30px 0 30px;
 }
 
 #listo-jugar h1{
-	margin-top: -10px;
+margin-top: -10px;
 }
 
 #listo-jugar #hr{
-	width: 380px;
-	height:2px;
-	background:url(../imagenes/hr.png) repeat-x;
+width: 380px;
+height:2px;
+background:url(../imagenes/hr.png) repeat-x;
 }
 
 #wrapper{
-	margin: auto;
-	width: 810px;
-	height: 900px;
-	background:url(../imagenes/bg.png) no-repeat;
+margin: auto;
+width: 810px;
+height: 900px;
+background:url(../imagenes/bg.png) no-repeat;
 }
 
 #titulo{
-	width: 405px;
-	height: 50px;
-	display: block;
-	float: right;
-	padding: 80px 95px 80px 0;
+width: 405px;
+height: 50px;
+display: block;
+float: right;
+padding: 80px 95px 80px 0;
 }
 #survey {
-	height: 625px;
-	width: 549px;
-	margin-left: 16px;
-	margin-top: 23px;
-	margin-right: 10px;
-	display: block;
-	float: left;
+height: 625px;
+width: 549px;
+margin-left: 16px;
+margin-top: 23px;
+margin-right: 10px;
+display: block;
+float: left;
 }
 #sidebar {
-	height: 625px;
-	width: 235px;
-	margin-top: 0px;
-	display: block;
-	float: left;
+height: 625px;
+width: 235px;
+margin-top: 0px;
+display: block;
+float: left;
 }
 
 
 
 #instrucciones {
-	height:160px;
-	width:810px;
-	display: block;
-	float: left;
-	background: #FFF;
+height:160px;
+width:810px;
+display: block;
+float: left;
+background: #FFF;
 }
 
 #footer-title{
@@ -127,7 +126,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
     font-size: 36px;
     color: #5f5f5f;
     text-align: center;
-	text-transform:uppercase;
+text-transform:uppercase;
 
 }
 
@@ -152,67 +151,63 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 }
 
 #console-tv{
-	background:url(../imagenes/console-tv.png) no-repeat;
-	width:405px;
-	height:442px;
-	position:relative;
-	z-index:1;
-	top:350px;
-	left:404px;	
+background:url(../imagenes/console-tv.png) no-repeat;
+width:405px;
+height:442px;
+position:relative;
+z-index:1;
+top:350px;
+left:404px;	
 }
 
 #couch-friends{
-	background:url(../imagenes/couch-friends.png) no-repeat;
-	width:342px;
-	height:269px;
-	position:relative;
-	top:135px;
-	z-index:0;
+background:url(../imagenes/couch-friends.png) no-repeat;
+width:342px;
+height:269px;
+position:relative;
+top:135px;
+z-index:0;
 }
 
 #titulo-instrucciones {
-	width: 620px;
-	height: 76px;
-	background: url(../imagenes/titulo-instrucciones.png);
-	
+width: 620px;
+height: 76px;
+background: url(../imagenes/titulo-instrucciones.png);
 }
 
 #texto-instrucciones {
-	padding: 12px 7px;
-	width: 635px;
-	height: 182px;
-	display: block;
+padding: 12px 7px;
+width: 635px;
+height: 182px;
+display: block;
 }
 
 
 #contenedor-boton-iniciar {
-	
-	height: 94px;
-	width: 634px;
-	display: block;
-	
+height: 94px;
+width: 634px;
+display: block;
 }
 
 .boton-iniciar {
-	
-	height: 37px;
-	width:192px;
-	background: url(../imagenes/button.png);
-	margin: auto;
+height: 37px;
+width:192px;
+background: url(../imagenes/button.png);
+margin: auto;
 }
 
 .texto-botones {
-	font-family: Fondamento, "Linux Libertine G", "Lucida Calligraphy";
-	font-size: 30px;
-	color: #000;
-	text-align: center;
+font-family: Fondamento, "Linux Libertine G", "Lucida Calligraphy";
+font-size: 30px;
+color: #000;
+text-align: center;
 }
 
 .imagen-campana-peq{
-	margin: 120px auto 30px auto;
-	background:url(../imagenes/img-campana2.png);
-	width: 293px;
-	height: 323px;
+margin: 120px auto 30px auto;
+background:url(../imagenes/img-campana2.png);
+width: 293px;
+height: 323px;
 }
 
 #footer {
@@ -224,26 +219,23 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
     top: 835px;
 }
 
-/* Encuesta */
+/* Encuesta .=clase #=id */
 .question2{
-	display: none;
+display: none;
 }
 
 .question{
-	margin: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
 }
 
 #choices{
-	display: inline-block;
-	margin: 20px 10px 0px 31px;
+display: inline-block;
+margin: 20px 10px 0px 31px;
 }
 
 .choice{
-	display: inline-block;
-	margin: 0px;
+display: inline-block;
+margin: 0px;
 }
-
-
-
 
 
