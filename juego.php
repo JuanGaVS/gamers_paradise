@@ -14,5 +14,25 @@ $game_id = $_GET['game_id'];
 </head>
 
 <body>
+<div id="wrapper">
+
+	<div id="titulo">
+    	<h1 class="titles">nombre del juego</h1>
+    </div>
+    
+	
+  	<div id="video">
+    <iframe type="text/html" width="250px" height="100px" src="#" frameborder="0"></iframe>	
+	</div>
+  
+  <div id="console-tv"></div>
+  <div id="couch-friends"></div>
+    
+    <div id="footer">
+                <h2 id="footer-title"><a href="#">PRIVACIDAD</a> | <a href="#">REGLAS</a></h2>
+                <p class="information">Lorem ipsum dolor sit anet blablalba</p>
+    </div>
+  </div>
+</div>
 </body>
 </html>
