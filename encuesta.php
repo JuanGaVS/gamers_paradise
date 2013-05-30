@@ -11,7 +11,7 @@ $questions = $quuestionDAL->getQuestions();
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Survey</title>
+<title>CAMBIO DE PRUEBA</title>
 <link href="css/estilos.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -50,6 +50,8 @@ $questions = $quuestionDAL->getQuestions();
   </div>
 </div>
 </body>
-	<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+	<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.cycle.all.js" type="text/javascript"></script>
+	<script src="js/sidebar.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/main.js" ></script>
 </html>
