@@ -64,7 +64,5 @@
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 
 
-
-
 </body>
 </html>
