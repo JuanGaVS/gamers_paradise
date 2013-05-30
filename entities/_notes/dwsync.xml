@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<file name="User.php" server="C:/AppServ/www/gamers_paradise/" local="130140781394612839" remote="130140781390000000" Dst="0" />
+<file name="DBConnection.php" server="C:/AppServ/www/gamers_paradise/" local="130140781394512833" remote="130140781390000000" Dst="0" />
+<file name="Choice.php" server="C:/AppServ/www/gamers_paradise/" local="130140781394372825" remote="130140781390000000" Dst="0" />
+<file name="ChoiceGame.php" server="C:/AppServ/www/gamers_paradise/" local="130140781394412828" remote="130140781390000000" Dst="0" />
+<file name="Console.php" server="C:/AppServ/www/gamers_paradise/" local="130140781394462830" remote="130140781390000000" Dst="0" />
+<file name="Contestant.php" server="C:/AppServ/www/gamers_paradise/" local="130140781394482832" remote="130140781390000000" Dst="0" />
+<file name="Game.php" server="C:/AppServ/www/gamers_paradise/" local="130141009098666766" remote="130141009090000000" Dst="0" />
+<file name="GameConstestant.php" server="C:/AppServ/www/gamers_paradise/" local="130140781394572837" remote="130140781390000000" Dst="0" />
+<file name="Question.php" server="C:/AppServ/www/gamers_paradise/" local="130140781394582837" remote="130140781390000000" Dst="0" />
+=======
+<<<<<<< HEAD
+<file name="User.php" server="C:/AppServ/www/gamers_paradise/" local="130135933795572164" remote="130135933790000000" Dst="0" />
+<file name="DBConnection.php" server="C:/AppServ/www/gamers_paradise/" local="130139938957437530" remote="130139938950000000" Dst="0" />
+<file name="Choice.php" server="C:/AppServ/www/gamers_paradise/" local="130134929898737918" remote="130134929890000000" Dst="0" />
+<file name="ChoiceGame.php" server="C:/AppServ/www/gamers_paradise/" local="130134930405296891" remote="130134930400000000" Dst="0" />
+<file name="Console.php" server="C:/AppServ/www/gamers_paradise/" local="130134923265968545" remote="130134923260000000" Dst="0" />
+<file name="Contestant.php" server="C:/AppServ/www/gamers_paradise/" local="130134929279162480" remote="130134929270000000" Dst="0" />
+<file name="Game.php" server="C:/AppServ/www/gamers_paradise/" local="130140971228887958" remote="130140971220000000" Dst="0" />
+<file name="GameConstestant.php" server="C:/AppServ/www/gamers_paradise/" local="130134930880584076" remote="130134930880000000" Dst="0" />
+<file name="Question.php" server="C:/AppServ/www/gamers_paradise/" local="130139917963276733" remote="130139917960000000" Dst="0" />
+=======
+>>>>>>> 31485a7d077808d82aacf4c167e88065907b476c
 <file name="User.php" server="C:/AppServ/www/gamers_paradise/" local="130136287765138916" remote="130136287760000000" Dst="0" />
 <file name="DBConnection.php" server="C:/AppServ/www/gamers_paradise/" local="130140106041475274" remote="130140106040000000" Dst="0" />
 <file name="Choice.php" server="C:/AppServ/www/gamers_paradise/" local="130135035208113219" remote="130135035200000000" Dst="0" />
@@ -9,6 +34,11 @@
 <file name="Game.php" server="C:/AppServ/www/gamers_paradise/" local="130141012050042093" remote="130141012050000000" Dst="0" />
 <file name="GameConstestant.php" server="C:/AppServ/www/gamers_paradise/" local="130135035208213225" remote="130135035200000000" Dst="0" />
 <file name="Question.php" server="C:/AppServ/www/gamers_paradise/" local="130139926349791659" remote="130139926340000000" Dst="0" />
+<<<<<<< HEAD
+=======
+>>>>>>> 4ab076a51714868b6a9202a7446915efe5c61f49
+>>>>>>> da93ebe5a256e5687d481424a3c4788a95b8d869
+>>>>>>> 31485a7d077808d82aacf4c167e88065907b476c
 <file name="Choice.php" server="C:/AppServ/www/gamersparadise/" local="130135664848702115" remote="130135664840000000" Dst="0" />
 <file name="ChoiceGame.php" server="C:/AppServ/www/gamersparadise/" local="130135664848712156" remote="130135664840000000" Dst="0" />
 <file name="Console.php" server="C:/AppServ/www/gamersparadise/" local="130135664848732170" remote="130135664840000000" Dst="0" />
