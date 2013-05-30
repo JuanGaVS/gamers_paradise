@@ -44,7 +44,7 @@ $pictures = $game->getPictures();
   
   <div id="description">
   	<h1 class="titles">DESCRIPCIÓN</h1>
-    <p><?php echo $game->getDescription();?></p>
+    <p class="paragraphs-12"><?php echo $game->getDescription();?></p>
   </div>
   <div id="game-pictures">
   <?php for($index=0; $index<3; $index++){?>

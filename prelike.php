@@ -11,6 +11,7 @@
     <div id="prelike">
     	
         <div id="click-like"></div>
+        
         <div id="listo-jugar">
         	<h1 class="titles">¿LISTO PARA JUGAR?</h1>
             <div id="hr"></div>
@@ -22,6 +23,5 @@
         </div>
         
     </div>
-
 </body>
 </html>
