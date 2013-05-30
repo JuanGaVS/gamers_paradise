@@ -31,8 +31,10 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 #sugerencias{margin: auto;  width: 481px; height:484px; top:225px; left:-116px; position:relative; display:block;}
 #escoger{}
 .columna{margin: auto; float: left; top:-215px;  width:50%; height:100%; position:relative; display:block; }
-.filas {margin: 0 0 15px 0; float: left; top:0px;  width:185px; height:110px; position:relative; display:block; background:#09C; clear:right;}
-.seleccion{margin: 0 0 15px 0; float: left; position:relative;}
+.filas {margin: 0 0 39px 0; float: left; top:0px;  width:185px; height:110px; position:relative; display:block; background:#09C; clear:right;}
+.seleccion{margin: 117px 0 15px -185px; float: left; position:relative;}
+.label{margin: 114px 0 15px -170px; float: left; position:relative; clear:right; text-align:right; font-family:Tahoma, Geneva, sans-serif; font-size:18px;}
+
 
 #footer {
     display: block;
