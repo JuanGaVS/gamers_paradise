@@ -5,6 +5,7 @@ if (!isset($_SESSION)) { session_start(); }
 }
 require_once('../Connections/localhost.php');
 require_once('../entities/User.php');
+require_once('../dal/UserDAL.php');
 
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -55,7 +56,10 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
 	$user->setEmail($email);
 	$user->setSalt();
 	$user->setPassword($password);
-	$user->userAdd();
+        
+        $uDAL = new UserDAL();
+        
+	$uDAL->userAdd($user);
 	
 	/*
 	$insertSQL = sprintf("INSERT INTO tb_users (username, first_name, last_name, email, password, salt) VALUES (%s, %s, %s, %s, %s, %s)",
