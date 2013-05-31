@@ -39,8 +39,10 @@ $questions = $quuestionDAL->getQuestions();
             <?php if( ( fmod( $maxIndex , 2 ) == 0 && $index == $maxIndex/2 - 1 ) || ( fmod( $maxIndex , 2 ) != 0 && $index == 1 ) ){ echo '<br/>'; }  ?>
         	<?php }/*Fin de if multiple.*/
 			else{?>
-            <input class="choice" type="radio"  name="<?php echo( $question->getQuestion_id( ) );?>" value="<?php echo( $choice->getChoice_id() );?>">
-        		<?php echo $choice->getText(); ?>
+            <input class="choice" type="radio" id="<?php echo( $choice->getChoice_id() );?>"  name="<?php echo( $question->getQuestion_id( ) );?>" value="<?php echo( $choice->getChoice_id() );?>">
+            <label for="<?php echo( $choice->getChoice_id() );?>">
+            	<?php echo $choice->getText(); ?>
+            </label>
                 <?php if( ( fmod( $maxIndex , 2 ) == 0 && $index == $maxIndex/2 - 1 && $maxIndex > 2 ) || ( fmod( $maxIndex , 2 ) != 0 && $index == 1 ) ){ echo '<br/>'; }  ?>
         	</input>
             <?php }//Fin de else. ?>
