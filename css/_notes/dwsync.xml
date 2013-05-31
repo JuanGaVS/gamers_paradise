@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
+<<<<<<< HEAD
 <file name="estilos.css" server="C:/AppServ/www/gamers_paradise/" local="130144500852606755" remote="130144500850000000" Dst="0" />
 <file name="exito.css" server="C:/AppServ/www/gamers_paradise/" local="130126317689624105" remote="130126317680000000" Dst="0" />
 <file name="instrucciones.css" server="C:/AppServ/www/gamers_paradise/" local="130126317689654107" remote="130126317680000000" Dst="0" />
 <file name="reset.css" server="C:/AppServ/www/gamers_paradise/" local="130126317689674108" remote="130126317680000000" Dst="0" />
+=======
+<file name="estilos.css" server="C:/AppServ/www/gamers_paradise/" local="130144524444321131" remote="130144524440000000" Dst="0" />
+<file name="exito.css" server="C:/AppServ/www/gamers_paradise/" local="130123427070126488" remote="130123427070000000" Dst="0" />
+<file name="instrucciones.css" server="C:/AppServ/www/gamers_paradise/" local="130123427070146489" remote="130123427070000000" Dst="0" />
+<file name="reset.css" server="C:/AppServ/www/gamers_paradise/" local="130123427070166490" remote="130123427070000000" Dst="0" />
+>>>>>>> c37ceb037442947c2809e9c74d99882270717889
 <file name="estilos.css" server="C:/AppServ/www/gamersparadise/" local="130135664848552045" remote="130135664840000000" Dst="0" />
 <file name="exito.css" server="C:/AppServ/www/gamersparadise/" local="130135664848582076" remote="130135664840000000" Dst="0" />
 <file name="instrucciones.css" server="C:/AppServ/www/gamersparadise/" local="130135664848612094" remote="130135664840000000" Dst="0" />
 <file name="reset.css" server="C:/AppServ/www/gamersparadise/" local="130135664848632107" remote="130135664840000000" Dst="0" />
+<<<<<<< HEAD
 <file name="sidebar.css" server="C:/AppServ/www/gamers_paradise/" local="130140943201897686" remote="130140943200000000" Dst="0" />
 <file name="juego.css" server="C:/AppServ/www/gamers_paradise/" local="130143633722457868" remote="130143633720000000" Dst="0" />
 <file name="jquery.fancybox.css" server="C:/AppServ/www/gamers_paradise/" local="130143633722407865" remote="130143633720000000" Dst="0" />
 <file name="exitos.css" server="C:/AppServ/www/gamers_paradise/" local="130143735689550052" remote="130143735680000000" Dst="0" />
+=======
+<file name="sidebar.css" server="C:/AppServ/www/gamers_paradise/" local="130140934391815374" remote="130140934390000000" Dst="0" />
+<file name="juego.css" server="C:/AppServ/www/gamers_paradise/" local="130143630274344416" remote="130143630270000000" Dst="0" />
+<file name="jquery.fancybox.css" server="C:/AppServ/www/gamers_paradise/" local="130143630274204408" remote="130143630270000000" Dst="0" />
+<file name="exitos.css" server="C:/AppServ/www/gamers_paradise/" local="130143792585689500" remote="130143792580000000" Dst="0" />
+>>>>>>> c37ceb037442947c2809e9c74d99882270717889
 </dwsync>
