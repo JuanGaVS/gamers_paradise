@@ -256,6 +256,41 @@ height: 323px;
 	background-image:url(http://csscheckbox.com/checkboxes/depressed-lite-small.png);
 }
 
+.contenedor-boton-encuesta{
+	font-family: Verlag Black, Arial, Sans Serif;
+	height: 25px;
+	width: 150px;
+	display: inline-block;
+	background: #ae1219;
+	border-radius: 32px;
+	position: relative;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	-webkit-box-shadow: 0px 9px 0px #84261a;
+	-moz-box-shadow: 0px 9px 0px #84261a;
+	box-shadow: 0px 9px 0px #84261a;
+	font-size: 26px;
+	padding-top: 5px;
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+	padding-bottom: 40px;
+	margin-top: 0px;
+}
+
+.contenedor-boton-encuesta-enviar{
+	left: 50px;
+}
+
+.contenedor-boton-encuesta:active{
+-webkit-box-shadow: 0px 2px 0px #84261a;
+    -moz-box-shadow: 0px 2px 0px #84261a;
+    box-shadow: 0px 2px 0px #84261a;
+    position: relative;
+	top: 7px;
+}
+
 /********************************************************************************/
 
 #sugerencias {

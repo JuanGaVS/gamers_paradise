@@ -26,7 +26,7 @@ $questions = $quuestionDAL->getQuestions();
   <?php 
   $number = 1;
   foreach ($questions as $question){?>
-  	<div class= "question<?php if( $number > 5 ){ echo "2"; }  ?>"  >
+  	<div class= "question<?php if( $number > 5 ){ echo "2"; }  ?>">
     	<?php echo $number . ")" .  $question->getText(); ?>
         <br/>
         <div id="choices">
@@ -42,7 +42,7 @@ $questions = $quuestionDAL->getQuestions();
             <?php if( ( fmod( $maxIndex , 2 ) == 0 && $index == $maxIndex/2 - 1 ) || ( fmod( $maxIndex , 2 ) != 0 && $index == 1 ) ){ echo '<br/>'; }  ?>
         	<?php }/*Fin de if multiple.*/
 			else{?>
-            <input class="choice" type="radio" id="<?php echo( $choice->getChoice_id() );?>_"  name="<?php echo( $question->getQuestion_id( ) );?>" value="<?php echo( $choice->getChoice_id() );?>">
+            <input class="choice" type="radio" id="<?php echo( $choice->getChoice_id() );?>_"  name="<?php echo( $question->getQuestion_id( ) );?>" value="<?php echo( $choice->getChoice_id() );?>" required="required">
             <label for="<?php echo( $choice->getChoice_id() );?>_">
             	<?php echo $choice->getText(); ?>
             </label>
@@ -53,7 +53,8 @@ $questions = $quuestionDAL->getQuestions();
         </div>
     </div>
   <?php $number += 1; }//Fin de foreach question. ?>
-  <input type="button" class="buttonNext" name="button" id="button" value="Siguiente"/>
+  <input type="button" class="buttonNext contenedor-boton-encuesta" name="button" value="Siguiente"/>
+  <input type="button" class="contenedor-boton-encuesta contenedor-boton-encuesta-enviar" name="button2" value="Enviar"/>
   </form>
   </div>
   <div id="sidebar">
@@ -68,11 +69,11 @@ $questions = $quuestionDAL->getQuestions();
     </div>
   
 </div>
-<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script src="js/jquery.cycle.all.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.4"></script>
-<script src="js/fancybox.js" type="text/javascript"></script>
-<script src="js/sidebar.js" type="text/javascript"></script>
+	<script src="js/fancybox.js" type="text/javascript"></script>
+	<script src="js/sidebar.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/main.js" ></script>
 </body>
 	
