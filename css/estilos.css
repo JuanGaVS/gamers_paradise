@@ -242,7 +242,12 @@ height: 323px;
 
 #choices{
 	display: inline-block;
-	margin: 10px 0px 10px 0px;
+	margin: 0px 0px 20px 0px;
+}
+
+.question2 #choices{
+	display: inline-block;
+	margin: 0px 0px 10px 0px;
 }
 
 .choice{
