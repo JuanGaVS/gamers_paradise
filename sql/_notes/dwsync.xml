@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
+<<<<<<< HEAD
+<file name="gamers_paradise.sql" server="C:/AppServ/www/gamers_paradise/" local="130126324970140328" remote="130126324970000000" Dst="0" />
+<file name="gamers_paradise.sql" server="C:/AppServ/www/gamersparadise/" local="130135664850273176" remote="130135664850000000" Dst="0" />
+<file name="gamersparadise-juanca.sql.gz" server="C:/AppServ/www/gamers_paradise/" local="130138914309512916" remote="130138914300000000" Dst="0" />
+<file name="gamersparadise-juanca.sql" server="C:/AppServ/www/gamers_paradise/" local="130139922894094004" remote="130139922890000000" Dst="0" />
+=======
 <file name="gamers_paradise.sql" server="C:/AppServ/www/gamers_paradise/" local="130125582482920601" remote="130125582480000000" Dst="0" />
 <file name="gamers_paradise.sql" server="C:/AppServ/www/gamersparadise/" local="130135664850273176" remote="130135664850000000" Dst="0" />
 <file name="gamersparadise-juanca.sql.gz" server="C:/AppServ/www/gamers_paradise/" local="130139250517142450" remote="130139250510000000" Dst="0" />
 <file name="gamersparadise-juanca.sql" server="C:/AppServ/www/gamers_paradise/" local="130139902451789527" remote="130139902450000000" Dst="0" />
+>>>>>>> 0e9a6a74f7a8d4463278f60de4336dece707f672
 </dwsync>
