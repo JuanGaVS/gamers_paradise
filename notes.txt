@@ -1,3 +1,15 @@
+
+1 mario
+2 splinter cell
+3 call of juarez
+4 batman 
+5 diablo3
+6 assasins creed
+7 ride to hell
+8 resident evil
+9 heroes of might
+10 super street fighter
+
 1)
 rpg -> diablo 3, heroes 6, assasins creed 4 
 1 persona -> splinter cell, call of juarez
@@ -14,19 +26,19 @@ estrategia -> heroes 6,
 peleas -> super street fighter
 plataforma -> super mario bros wii
 
-3)
+3) 7
 0-1 -> splinter cell, call of juarez, batman, ride to hell, assasins creed, mario
 1-5 -> splinter cell, call of juarez, batman, ride to hell, assasins creed, mario, resident evil
 5-10 -> street fighter, heroes, resident evil, diablo3, batman, super mario, 
 tdv -> todos
 
-4)
+4) 11
 Salir aventura-> assasins creed, batman, call of juarez, ride to the hell, resident evil, splinter cell
 casa descansando -> super mario, super street fighter, 
 partida ajedrez -> heroes 6, diablo3, mario
 cualquiera -> todas
 
-5)
+5)15
 
 heroe -> mario, batman, diablo3, resident evil, street fighter, heroes
 villano -> call of juarez, assasins creed, ride to hell, heroes, street fighter
@@ -34,17 +46,17 @@ general -> splinter cell, heroes,
 personaje secundario -> mario, diablo3, ride to the hell, super street fighter
 
 
-6) 
+6) 19
 
 solo -> assasins creed, resident evil, batman, call of juarez, heroes, diablo3
 amigos -> heroes, mario, splinter cell, diablo3, ride to the hell, street fighter
 online -> heroes, diablo3, street fighter,
 
-7)
+7)22
 
-salvar mundo -> super mario, batman, diablo3, resident evil, heroes, 
+
 provocar guerra -> assasins creed, heroes, ride to the hell, call of juarez, splinter cell, street fighter
-
+salvar mundo -> super mario, batman, diablo3, resident evil, heroes
 
 8)
 
