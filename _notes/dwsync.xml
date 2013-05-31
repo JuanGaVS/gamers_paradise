@@ -30,5 +30,22 @@
 <file name="observaciones del brete multimedios.txt" server="C:/AppServ/www/gamers_paradise/" local="130143735689730063" remote="130143735680000000" Dst="0" />
 <file name="notes.txt" server="C:/AppServ/www/gamers_paradise/" local="130144510346769790" remote="130144510340000000" Dst="0" />
 <file name="Nuevo documento de texto.txt" server="C:/AppServ/www/gamers_paradise/" local="130144497708456920" remote="130144497700000000" Dst="0" />
+<<<<<<< HEAD
 <file name="index.php" server="C:/AppServ/www/gamers_paradise/" local="130144522364127144" remote="130144522360000000" Dst="0" />
+=======
+=======
+<file name="2405_v1.zip" server="C:/AppServ/www/gamers_paradise/" local="130138915549251117" remote="130138915540000000" Dst="0" />
+<file name="encuesta.php" server="C:/AppServ/www/gamers_paradise/" local="130144554954715508" remote="130144554950000000" Dst="0" />
+<file name="consoles.json" server="C:/AppServ/www/gamers_paradise/" local="130139922868702552" remote="130139922860000000" Dst="0" />
+<file name="sidebar.php" server="C:/AppServ/www/gamers_paradise/" local="130144488005927577" remote="130144488000000000" Dst="0" />
+<file name="calls.php" server="C:/AppServ/www/gamers_paradise/" local="130140842641103850" remote="130140842640000000" Dst="0" />
+<file name="juego.php" server="C:/AppServ/www/gamers_paradise/" local="130143792585979517" remote="130143792580000000" Dst="0" />
+<file name="2705_v1.zip" server="C:/AppServ/www/gamers_paradise/" local="130141717573841166" remote="130141717570000000" Dst="0" />
+<file name="exitos.php" server="C:/AppServ/www/gamers_paradise/" local="130143792585849509" remote="130143792580000000" Dst="0" />
+<file name="privacy.html" server="C:/AppServ/www/gamers_paradise/" local="130143792586029520" remote="130143792580000000" Dst="0" />
+<file name="tos.html" server="C:/AppServ/www/gamers_paradise/" local="130143792586049521" remote="130143792580000000" Dst="0" />
+<file name="observaciones del brete multimedios.txt" server="C:/AppServ/www/gamers_paradise/" local="130143792585999518" remote="130143792580000000" Dst="0" />
+<file name="notes.txt" server="C:/AppServ/www/gamers_paradise/" local="130144488005737567" remote="130144488000000000" Dst="0" />
+>>>>>>> c37ceb037442947c2809e9c74d99882270717889
+>>>>>>> 4654db7af91d2e53c2946be34fa09acdf16492d4
 </dwsync>
