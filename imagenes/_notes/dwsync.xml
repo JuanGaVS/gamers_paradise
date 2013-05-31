@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<<<<<<< HEAD
 <file name="bg.png" server="C:/AppServ/www/gamers_paradise/" local="130126324966930145" remote="130126324960000000" Dst="0" />
 <file name="prelike.png" server="C:/AppServ/www/gamers_paradise/" local="130126324967120155" remote="130126324960000000" Dst="0" />
 <file name="clic-like.png" server="C:/AppServ/www/gamers_paradise/" local="130126324966970147" remote="130126324960000000" Dst="0" />
 <file name="hr.png" server="C:/AppServ/www/gamers_paradise/" local="130126324967030150" remote="130126324960000000" Dst="0" />
 <file name="console-tv.png" server="C:/AppServ/www/gamers_paradise/" local="130126426015631933" remote="130126426010000000" Dst="0" />
 <file name="couch-friends.png" server="C:/AppServ/www/gamers_paradise/" local="130126426016011955" remote="130126426010000000" Dst="0" />
-=======
-<file name="bg.png" server="C:/AppServ/www/gamers_paradise/" local="130126284942765519" remote="130126284940000000" Dst="0" />
-<file name="prelike.png" server="C:/AppServ/www/gamers_paradise/" local="130126288395742192" remote="130126288390000000" Dst="0" />
-<file name="clic-like.png" server="C:/AppServ/www/gamers_paradise/" local="130126289610522499" remote="130126289610000000" Dst="0" />
-<file name="hr.png" server="C:/AppServ/www/gamers_paradise/" local="130126303626414162" remote="130126303620000000" Dst="0" />
-<file name="console-tv.png" server="C:/AppServ/www/gamers_paradise/" local="130126335654426060" remote="130126335650000000" Dst="0" />
-<file name="couch-friends.png" server="C:/AppServ/www/gamers_paradise/" local="130126341838149749" remote="130126341830000000" Dst="0" />
->>>>>>> 5ddc6c8810f27d5cf4d6d2da9435d20ff2ee2606
 <file name="bg.png" server="C:/AppServ/www/gamersparadise/" local="130135664849242509" remote="130135664840000000" Dst="0" />
 <file name="clic-like.png" server="C:/AppServ/www/gamersparadise/" local="130135664849272535" remote="130135664840000000" Dst="0" />
 <file name="console-tv.png" server="C:/AppServ/www/gamersparadise/" local="130135664849292540" remote="130135664840000000" Dst="0" />
 <file name="couch-friends.png" server="C:/AppServ/www/gamersparadise/" local="130135664849312525" remote="130135664840000000" Dst="0" />
 <file name="hr.png" server="C:/AppServ/www/gamersparadise/" local="130135664849332538" remote="130135664840000000" Dst="0" />
 <file name="prelike.png" server="C:/AppServ/www/gamersparadise/" local="130135664849502650" remote="130135664840000000" Dst="0" />
-<<<<<<< HEAD
 <file name="not-available.gif" server="C:/AppServ/www/gamers_paradise/" local="130140891308591155" remote="130140891300000000" Dst="0" />
 <file name="pagination.png" server="C:/AppServ/www/gamers_paradise/" local="130140892286307077" remote="130140892280000000" Dst="0" />
 <file name="bg_game.png" server="C:/AppServ/www/gamers_paradise/" local="130143630274484424" remote="130143630270000000" Dst="0" />
@@ -29,21 +19,4 @@
 <file name="formelements-select.png" server="C:/AppServ/www/gamers_paradise/" local="130144436408486991" remote="130144436400000000" Dst="0" />
 <file name="formelements.png" server="C:/AppServ/www/gamers_paradise/" local="130144436408526993" remote="130144436400000000" Dst="0" />
 <file name="style.css" server="C:/AppServ/www/gamers_paradise/" local="130144436408616998" remote="130144436400000000" Dst="0" />
-=======
-<file name="not-available.gif" server="C:/AppServ/www/gamers_paradise/" local="130102052340000000" remote="130102052340000000" Dst="0" />
-<file name="pagination.png" server="C:/AppServ/www/gamers_paradise/" local="130101969750000000" remote="130101969750000000" Dst="0" />
-<file name="bg_game.png" server="C:/AppServ/www/gamers_paradise/" local="130143610900946275" remote="130143610900000000" Dst="0" />
-<file name="demo.html" server="C:/AppServ/www/gamers_paradise/" local="129957491400000000" remote="129957491400000000" Dst="0" />
-<file name="formelements-select.png" server="C:/AppServ/www/gamers_paradise/" local="129943738620000000" remote="129943738620000000" Dst="0" />
-<file name="formelements.png" server="C:/AppServ/www/gamers_paradise/" local="129943687020000000" remote="129943687020000000" Dst="0" />
-<file name="style.css" server="C:/AppServ/www/gamers_paradise/" local="129949704900000000" remote="129949704900000000" Dst="0" />
-<file name="clic-like.png" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130126289610522499" remote="130144570800000000" Dst="0" />
-<file name="hr.png" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130126303626414162" remote="130144570800000000" Dst="0" />
-<file name="console-tv.png" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130126335654426060" remote="130144571400000000" Dst="0" />
-<file name="bg.png" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130126284942765519" remote="130144571400000000" Dst="0" />
-<file name="prelike.png" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130126288395742192" remote="130144571400000000" Dst="0" />
-<file name="formelements.png" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="129943687020000000" remote="130144571400000000" Dst="0" />
-<file name="couch-friends.png" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130126341838149749" remote="130144571400000000" Dst="0" />
-<file name="formelements-select.png" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="129943738620000000" remote="130144571400000000" Dst="0" />
->>>>>>> 5ddc6c8810f27d5cf4d6d2da9435d20ff2ee2606
 </dwsync>

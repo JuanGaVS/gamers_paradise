@@ -280,6 +280,7 @@ height: 323px;
 }
 
 .contenedor-boton-encuesta-enviar{
+	display: none;
 	left: 50px;
 }
 

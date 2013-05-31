@@ -1,20 +1,35 @@
 var choices = [];
 
+function isSurveyFill( ){
+	if( choices.length >= 11 ){
+		return true;
+	}//Fin de if.
+	return false;
+}//Fin de is isSurveyFill.
+
 function addChoices( choice ){
 	choices.push( choice );
-}
+}//Fin de function addChoices.
 
 function scanChoices( choice ){
-	alert( "Entro a scan" );
+	//alert( "Entro a scan" );
 	var finded = -1;
 	for( var index = 0; index < choices.length; index++ ){
-		alert( "Entro al for" );
+		//alert( "Entro al for" );
 		if( choices[index].idQuestion == choice.idQuestion ){
-			finded = index;
+			if( choices[index].idQuestion == 1 ){
+				if( choices[index].idSelectedChoise == choice.idSelectedChoise ){
+					finded = index;
+				}//Fin de if.
+			}//Fin de if.
+			else{
+				finded = index;
+			}//Fin de else.
 		}//Fin de if.
 	}//Fin de for.
-	alert( "brinco el for" );
-	return index;
+	//alert( "Valor de finded = " + finded );
+	//alert( "brinco el for" );
+	return finded;
 }//Fin de function scanChoices.
 
 function changeQuestions( ){
@@ -40,19 +55,34 @@ function changeQuestions( ){
 }//Fin de function changeQuestions
 
 $( '.choice' ).on( 'click', function( ){
-	//alert( $( this ).attr( 'name' ) + "___" + $( this ).val( ) );
-	if( scanChoices( { idQuestion: $( this ).attr( 'name' ), idSelectedChoise: $( this ).val( ) } ) != -1 ){
-		alert( "No existia en el arreglo" );
-		alert( $( this ).attr( 'name' ) );
-		addChoices( { idQuestion: $( this ).attr( name ), idSelectedChoise: $( this ).val( ) } );
+	//alert( "Id_Question" + $( this ).attr( 'name' ) + ":: IdChoise" + $( this ).val( ) );
+	var inputChoice = { idQuestion: $( this ).attr( 'name' ), idSelectedChoise: $( this ).val( ) };
+	var isInArray = scanChoices( inputChoice );
+	if( isInArray != -1 ){
+		if( inputChoice.idQuestion == 1 ){
+			//alert( "Era el checkbox y se esta desmarcando asi q elimino" );
+			choices.splice( isInArray, 1 );
+		}//Fin de if.
+		else{
+			//alert( "Ya existia en el arreglo, se reemplaza" );
+			choices[ isInArray ] = inputChoice;
+		}//Fin de else.
 	}//Fin de if.
 	else{
-		alert( "Ya existia en el arreglo" );
+		//alert( "No existia en el arreglo, se procede a guardar" );
+		addChoices( inputChoice );
 	}
+	if( isSurveyFill( ) ){
+		//alert( "La encuesta esta completa" );
+		$( '.buttonSent' ).show( );
+	}//Fin de if.
+	else{
+		$( '.buttonSent' ).hide( );
+	}//Fin d else.
 });
 
 $( '.buttonSent' ).on( 'click', function( ){
-	alert( "Deberia de enviar" );
+	//alert( "Deberia de enviar" );
 });
 
 $( '.buttonNext' ).on( 'click', function( ){

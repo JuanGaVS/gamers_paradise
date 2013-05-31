@@ -1,7 +1,7 @@
 <?php
-require_once('dal/ChoiceDAL.php');
+//require_once('dal/ChoiceDAL.php');
 
-$choiceDAL = new ChoiceDAL();
+//$choiceDAL = new ChoiceDAL();
 
 
 
