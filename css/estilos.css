@@ -148,6 +148,11 @@ text-transform:uppercase;
     font-size: 12px;
     color: #3f3f3c;
 }
+.paragraphs-15 {
+    font-family: Verlag Book, Arial, Sans Serif;
+    font-size: 12px;
+    color: #3f3f3c;
+}
 
 .information{
     font-family: Arial, Helvetica, sans-serif;
@@ -337,4 +342,37 @@ div.styled select {
     border:none; 
     box-shadow:none; 
     padding:0.3em 0.5em; /* padding should be added to the select, not the div */
+}
+
+#contenedor-boton{
+font-family: Verlag Black, Arial, Sans Serif;
+height: 39px;
+width: 210px;
+display: block;
+background: #ae1219;
+border-radius: 32px;
+position: relative;
+left: 160px;
+-webkit-transition: all 0.1s;
+-moz-transition: all 0.1s;
+transition: all 0.1s;
+-webkit-box-shadow: 0px 9px 0px #84261a;
+-moz-box-shadow: 0px 9px 0px #84261a;
+box-shadow: 0px 9px 0px #84261a;
+font-size: 26px;
+padding-top: 5px;
+color: #FFF;
+text-decoration: none;
+text-align: center;
+padding-bottom: 5px;
+margin-top: 130px;
+}
+
+#contenedor-boton:active{
+
+-webkit-box-shadow: 0px 2px 0px #84261a;
+    -moz-box-shadow: 0px 2px 0px #84261a;
+    box-shadow: 0px 2px 0px #84261a;
+    position: relative;
+top: 7px;
 }

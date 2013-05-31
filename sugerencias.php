@@ -1,68 +1,108 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
-<head>
-	<title>GamerParadise</title>
-	<link href="css/sugerencias.css" rel="stylesheet" type="text/css" media="screen">
-    
-</head>
+<?php
+require_once('dal/QuestionDAL.php');
 
-<body>
-<div id="wrapper">
-	<div id="titulacion">
-		<div id="text" >
-			<h1> SUGERENCIAS PARA VOS</h1>
-			<h2> HAZ CLICK PARA VER UN REVIEW DEL JUEGO</h2>
-		</div>
-</div>
-	
-	<div id="mas-populares" >
-    	<h1>MAS POPULARES</h1>
-    </div>
-    
-    <div id="sugerencias">
-    
-		<div class="columna" >
-			<div class= "filas"></div>
-            
-			<input class="seleccion" type="radio" id="radio1" name="seleccion" value="1"><label class="label">Nombre Juego</label></input>
-            
-   
-           <div class= "filas"></div>
-			<input class="seleccion" type="radio" id="radio1" name="seleccion" value="2"><label class="label">Nombre Juego</label></input>
-			
-            <div class= "filas"></div>
-            <input class="seleccion" type="radio" id="radio1" name="seleccion" value="3"><label class="label">Nombre Juego</label></input>
-	  </div>
-      <div class="columna" >
-			<div class= "filas"></div>
-            
-			<input class="seleccion" type="radio" id="radio1" name="seleccion" value="4"><label class="label">Nombre Juego</label></input>
-            
-   
-           <div class= "filas"></div>
-			<input class="seleccion" type="radio" id="radio1" name="seleccion" value="5"><label class="label">Nombre Juego</label></input>
-			
-            <h1 class="consola">CONSOLA</h1>
-            <select size="3" class="select">
-  				<optgroup label="Choose One">
-    			<option>Option 1</option>
-   				<option>Option 2</option>
-  				<option>Option 3</option>
-   				</optgroup>
-			</select> 
-          
-	  </div>
-      
-      <a href="#" id="contenedor-boton">Escoger</a>
-     <div class="div-comp"> 
-      <h1 class="debes-comp">debes compartir la publicacion para participar</h1>
-	</div></div>
-	<div id="escoger"> </escoger>
-</div>
+$quuestionDAL = new QuestionDAL();
+$questions = $quuestionDAL->getQuestions();
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Sugerencias</title>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+    </head>
 
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <body>
+        <div id="wrapper">
+            <div id="titulo" class="titulo-sugerencias">
+                <h1 class="titles">SUGERENCIAS PARA VOS</h1>
+                <h2 class="titles-18">HAZ CLICK EN UN JUEGO PARA VER UN REVIEW</h2>
+            </div>
+            <div id="sugerencias">
 
+                <div class="sugerencia">
 
-</body>
+                    <img src="#" alt="Imagen" width="185px" height="110px"/>
+                    <input type="radio" name="games" value="j1" id="j1"/>
+                    <label for="j1" class="paragraphs" style="text-transform:uppercase">
+                       <a href="#">nombre</a>
+                    </label>
+
+                </div>
+
+                <div class="sugerencia">
+
+                    <img src="#" alt="Imagen" width="185px" height="110px"/>
+                    <input type="radio" name="games" value="j1" id="j2"/>
+                    <label for="j2" class="paragraphs" style="text-transform:uppercase">
+                       <a href="#">nombre</a>
+                    </label>
+
+                </div>
+                
+                <div class="sugerencia">
+
+                    <img src="#" alt="Imagen" width="185px" height="110px"/>
+                    <input type="radio" name="games" value="j1" id="j3"/>
+                    <label for="j3" class="paragraphs" style="text-transform:uppercase">
+                       <a href="#">nombre</a>
+                    </label>
+
+                </div>
+                
+                <div class="sugerencia">
+
+                    <img src="#" alt="Imagen" width="185px" height="110px"/>
+                    <input type="radio" name="games" value="j1" id="j4"/>
+                    <label for="j4" class="paragraphs" style="text-transform:uppercase">
+                       <a href="#">nombre</a>
+                    </label>
+
+                </div>
+                
+                <div class="sugerencia">
+
+                    <img src="#" alt="Imagen" width="185px" height="110px"/>
+                    <input type="radio" name="games" value="j1" id="j5"/>
+                    <label for="j5" class="paragraphs" style="text-transform:uppercase">
+                       <a href="#">nombre</a>
+                    </label>
+
+                </div>
+
+                <div id="choose-console" class="styled">
+                    
+                    <select id="consoles-select" name="console">
+                        <option value="1">Consola1</option>
+                        <option value="2">Consola2</option>
+                        <option value="3">Consola3</option>
+                        <option value="4">Consola4</option>
+                        <option value="5">Consola5</option>
+                    </select>
+                </div>
+                
+                <a id="contenedor-boton" href="#">ESCOGER</a>
+                <p class="paragraphs-15">DEBES COMPARTIR LA PUBLICACIÓN PARA PARTICIPAR</p>
+
+            </div>
+            <div id="sidebar">
+                <object type="text/html" data="sidebar.php" width="329px" height="660px"></object>
+            </div>
+
+            <div id="footer">
+                <h2 id="footer-title"><a class="fancybox iframe" rel="group" href="privacy.html">PRIVACIDAD</a> | <a class="fancybox iframe" rel="group" href="tos.html">REGLAS</a></h2>
+                <p class="information">Al utilizar esta aplicación aceptas las reglas de la misma. Recuerda que no hay un premio real.</p>
+            </div>
+
+        </div>
+
+        </div>
+    </body>
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.cycle.all.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.4"></script>
+    <script src="js/fancybox.js" type="text/javascript"></script>
+    <script src="js/sidebar.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/main.js" ></script>
 </html>
