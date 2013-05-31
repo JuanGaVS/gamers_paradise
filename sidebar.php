@@ -13,6 +13,7 @@ $games = $gDAL->getGames();
         <link href="css/estilos.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="css/sidebar.css" rel="stylesheet" type="text/css" />
     </head>
+    <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
 
     <body>
         <div id="sidebar" class="sidebar">
@@ -34,7 +35,7 @@ $games = $gDAL->getGames();
 <?php
 for ($actualIndex = 0; $actualIndex < 3; $actualIndex++) {
     ?>
-    <a href="juego.php?game_id=<?php echo $games[$actualIndex]->getGame_id(); ?>" target="_parent">
+    <a href="juego.php?game_id=<?php echo $games[$actualIndex]->getGame_id(); ?>" target="_blank">
     
                     <div class="game-sidebar">
 
@@ -66,7 +67,7 @@ for ($actualIndex = 0; $actualIndex < 3; $actualIndex++) {
 <?php
 for ($actualIndex = 3; $actualIndex < 6; $actualIndex++) {
     ?>
-    <a href="juego.php?game_id=<?php echo $games[$actualIndex]->getGame_id(); ?>" target="_parent">
+    <a href="juego.php?game_id=<?php echo $games[$actualIndex]->getGame_id(); ?>" target="_blank">
                     <div class="game-sidebar">
 
                         <div class="game-picture">
@@ -104,7 +105,7 @@ for ($actualIndex = 3; $actualIndex < 6; $actualIndex++) {
 <?php
 for ($actualIndex = 6; $actualIndex < 9; $actualIndex++) {
     ?>
-    <a href="juego.php?game_id=<?php echo $games[$actualIndex]->getGame_id(); ?>" target="_parent">
+    <a href="juego.php?game_id=<?php echo $games[$actualIndex]->getGame_id(); ?>" target="_blank">
                     <div class="game-sidebar">
 
                         <div class="game-picture">
@@ -135,6 +136,8 @@ for ($actualIndex = 6; $actualIndex < 9; $actualIndex++) {
 
         <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
         <script src="js/jquery.cycle.all.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.4"></script>
+<script src="js/fancybox.js" type="text/javascript"></script>
         <script src="js/sidebar.js" type="text/javascript"></script>
 
     </body>
