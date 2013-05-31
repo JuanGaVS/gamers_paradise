@@ -1,45 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<<<<<<< HEAD
-<file name="login.php" server="C:/AppServ/www/gamers_paradise/" local="130135905493426221" remote="130135905490000000" Dst="0" />
-<file name="admin.php" server="C:/AppServ/www/gamers_paradise/" local="130126324964760021" remote="130126324960000000" Dst="0" />
-<file name="logout.php" server="C:/AppServ/www/gamers_paradise/" local="130135035207913207" remote="130135035200000000" Dst="0" />
-<file name="admin-intro.php" server="C:/AppServ/www/gamers_paradise/" local="130135035206513127" remote="130135035200000000" Dst="0" />
-<file name="consoles.php" server="C:/AppServ/www/gamers_paradise/" local="130139922867962510" remote="130139922860000000" Dst="0" />
-<file name="contestants.php" server="C:/AppServ/www/gamers_paradise/" local="130135905492656177" remote="130135905490000000" Dst="0" />
-<file name="games.php" server="C:/AppServ/www/gamers_paradise/" local="130139922868402535" remote="130139922860000000" Dst="0" />
-<file name="survey.php" server="C:/AppServ/www/gamers_paradise/" local="130135035207953210" remote="130135035200000000" Dst="0" />
-<file name="users.php" server="C:/AppServ/www/gamers_paradise/" local="130135035207993212" remote="130135035200000000" Dst="0" />
-<file name="add_user.php" server="C:/AppServ/www/gamers_paradise/" local="130135035206483126" remote="130135035200000000" Dst="0" />
-<file name="edit_user.php" server="C:/AppServ/www/gamers_paradise/" local="130135035206743141" remote="130135035200000000" Dst="0" />
-<file name="delete_user.php" server="C:/AppServ/www/gamers_paradise/" local="130135035206683137" remote="130135035200000000" Dst="0" />
-<file name="filter_contestant.php" server="C:/AppServ/www/gamers_paradise/" local="130135035206763142" remote="130135035200000000" Dst="0" />
-<file name="add_console.php" server="C:/AppServ/www/gamers_paradise/" local="130135035206433123" remote="130135035200000000" Dst="0" />
-<file name="delete_console.php" server="C:/AppServ/www/gamers_paradise/" local="130135035206673137" remote="130135035200000000" Dst="0" />
-<file name="edit_console.php" server="C:/AppServ/www/gamers_paradise/" local="130135035206703138" remote="130135035200000000" Dst="0" />
-<file name="filtered_contestant.php" server="C:/AppServ/www/gamers_paradise/" local="130135035207513185" remote="130135035200000000" Dst="0" />
-<file name="usuarios.php" server="C:/AppServ/www/gamers_paradise/" local="130140974317840653" remote="130140974310000000" Dst="0" />
-=======
-<<<<<<< HEAD
-<file name="login.php" server="C:/AppServ/www/gamers_paradise/" local="130140781394012805" remote="130140781390000000" Dst="0" />
-<file name="admin.php" server="C:/AppServ/www/gamers_paradise/" local="130126317689004069" remote="130126317680000000" Dst="0" />
-<file name="logout.php" server="C:/AppServ/www/gamers_paradise/" local="130140781394052807" remote="130140781390000000" Dst="0" />
-<file name="admin-intro.php" server="C:/AppServ/www/gamers_paradise/" local="130140781393532777" remote="130140781390000000" Dst="0" />
-<file name="usuarios.php" server="C:/AppServ/www/gamers_paradise/" local="130126429009307280" remote="130126429000000000" Dst="0" />
-<file name="consoles.php" server="C:/AppServ/www/gamers_paradise/" local="130140781393592781" remote="130140781390000000" Dst="0" />
-<file name="contestants.php" server="C:/AppServ/www/gamers_paradise/" local="130140781393622782" remote="130140781390000000" Dst="0" />
-<file name="games.php" server="C:/AppServ/www/gamers_paradise/" local="130140781393952801" remote="130140781390000000" Dst="0" />
-<file name="survey.php" server="C:/AppServ/www/gamers_paradise/" local="130140781394072808" remote="130140781390000000" Dst="0" />
-<file name="users.php" server="C:/AppServ/www/gamers_paradise/" local="130140781394102810" remote="130140781390000000" Dst="0" />
-<file name="add_user.php" server="C:/AppServ/www/gamers_paradise/" local="130140781393502776" remote="130140781390000000" Dst="0" />
-<file name="edit_user.php" server="C:/AppServ/www/gamers_paradise/" local="130140781393772791" remote="130140781390000000" Dst="0" />
-<file name="delete_user.php" server="C:/AppServ/www/gamers_paradise/" local="130140781393712788" remote="130140781390000000" Dst="0" />
-<file name="filter_contestant.php" server="C:/AppServ/www/gamers_paradise/" local="130140781393802793" remote="130140781390000000" Dst="0" />
-<file name="add_console.php" server="C:/AppServ/www/gamers_paradise/" local="130140781393472774" remote="130140781390000000" Dst="0" />
-<file name="delete_console.php" server="C:/AppServ/www/gamers_paradise/" local="130140781393682786" remote="130140781390000000" Dst="0" />
-<file name="edit_console.php" server="C:/AppServ/www/gamers_paradise/" local="130140781393742789" remote="130140781390000000" Dst="0" />
-<file name="filtered_contestant.php" server="C:/AppServ/www/gamers_paradise/" local="130140781393842795" remote="130140781390000000" Dst="0" />
-=======
 <file name="login.php" server="C:/AppServ/www/gamers_paradise/" local="130135820912775638" remote="130135820910000000" Dst="0" />
 <file name="admin.php" server="C:/AppServ/www/gamers_paradise/" local="130126039080000000" remote="130126039080000000" Dst="0" />
 <file name="logout.php" server="C:/AppServ/www/gamers_paradise/" local="130131550322008968" remote="130131550320000000" Dst="0" />
@@ -58,8 +18,6 @@
 <file name="edit_console.php" server="C:/AppServ/www/gamers_paradise/" local="130132412678542860" remote="130132412670000000" Dst="0" />
 <file name="filtered_contestant.php" server="C:/AppServ/www/gamers_paradise/" local="130132402060000000" remote="130132402060000000" Dst="0" />
 <file name="usuarios.php" server="C:/AppServ/www/gamers_paradise/" local="130140966812805373" remote="130140966810000000" Dst="0" />
->>>>>>> dd9a45f0f2f47b2149a1db7dd5ddf0fb9e3ffd7e
->>>>>>> 4fc95b135732744255e452aa9097df73e08683eb
 <file name="add_console.php" server="C:/AppServ/www/gamersparadise/" local="130135664847451280" remote="130135664840000000" Dst="0" />
 <file name="add_user.php" server="C:/AppServ/www/gamersparadise/" local="130135664847461318" remote="130135664840000000" Dst="0" />
 <file name="admin-intro.php" server="C:/AppServ/www/gamersparadise/" local="130135664847471327" remote="130135664840000000" Dst="0" />
@@ -77,22 +35,8 @@
 <file name="logout.php" server="C:/AppServ/www/gamersparadise/" local="130135664848451954" remote="130135664840000000" Dst="0" />
 <file name="survey.php" server="C:/AppServ/www/gamersparadise/" local="130135664848471988" remote="130135664840000000" Dst="0" />
 <file name="users.php" server="C:/AppServ/www/gamersparadise/" local="130135664848481972" remote="130135664840000000" Dst="0" />
-<<<<<<< HEAD
-<file name="consoles-json.php" server="C:/AppServ/www/gamers_paradise/" local="130139922867872505" remote="130139922860000000" Dst="0" />
-<file name="game-detail.php" server="C:/AppServ/www/gamers_paradise/" local="130139922868172522" remote="130139922860000000" Dst="0" />
-<file name="game-edit.php" server="C:/AppServ/www/gamers_paradise/" local="130139922868242526" remote="130139922860000000" Dst="0" />
-<file name="games-json.php" server="C:/AppServ/www/gamers_paradise/" local="130139922868302529" remote="130139922860000000" Dst="0" />
-=======
-<<<<<<< HEAD
-<file name="consoles-json.php" server="C:/AppServ/www/gamers_paradise/" local="130140781393562779" remote="130140781390000000" Dst="0" />
-<file name="game-detail.php" server="C:/AppServ/www/gamers_paradise/" local="130140781393862796" remote="130140781390000000" Dst="0" />
-<file name="game-edit.php" server="C:/AppServ/www/gamers_paradise/" local="130140781393892798" remote="130140781390000000" Dst="0" />
-<file name="games-json.php" server="C:/AppServ/www/gamers_paradise/" local="130140781393912799" remote="130140781390000000" Dst="0" />
-=======
 <file name="consoles-json.php" server="C:/AppServ/www/gamers_paradise/" local="130139812532546440" remote="130139812530000000" Dst="0" />
 <file name="game-detail.php" server="C:/AppServ/www/gamers_paradise/" local="130139901532236931" remote="130139901530000000" Dst="0" />
 <file name="game-edit.php" server="C:/AppServ/www/gamers_paradise/" local="130139897563749947" remote="130139897560000000" Dst="0" />
 <file name="games-json.php" server="C:/AppServ/www/gamers_paradise/" local="130139901234759917" remote="130139901230000000" Dst="0" />
->>>>>>> dd9a45f0f2f47b2149a1db7dd5ddf0fb9e3ffd7e
->>>>>>> 4fc95b135732744255e452aa9097df73e08683eb
 </dwsync>
