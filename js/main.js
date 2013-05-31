@@ -40,7 +40,7 @@ function changeQuestions( ){
 }//Fin de function changeQuestions
 
 $( '.choice' ).on( 'click', function( ){
-	alert( $( this ).attr( 'name' ) + "___" + $( this ).val( ) );
+	//alert( $( this ).attr( 'name' ) + "___" + $( this ).val( ) );
 	if( scanChoices( { idQuestion: $( this ).attr( 'name' ), idSelectedChoise: $( this ).val( ) } ) != -1 ){
 		alert( "No existia en el arreglo" );
 		alert( $( this ).attr( 'name' ) );
