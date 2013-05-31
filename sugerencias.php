@@ -83,7 +83,7 @@ $questions = $quuestionDAL->getQuestions();
                 </div>
                 
                 <a id="contenedor-boton" href="#">ESCOGER</a>
-                <p class="paragraphs-15">DEBES COMPARTIR LA PUBLICACIÓN PARA PARTICIPAR</p>
+                <p class="paragraphs-15" id="share-obligation">DEBES COMPARTIR LA PUBLICACIÓN PARA PARTICIPAR</p>
 
             </div>
             <div id="sidebar">
