@@ -1,3 +1,22 @@
+var choices = [];
+
+function addChoices( choice ){
+	choices.push( choice );
+}
+
+function scanChoices( choice ){
+	alert( "Entro a scan" );
+	var finded = -1;
+	for( var index = 0; index < choices.length; index++ ){
+		alert( "Entro al for" );
+		if( choices[index].idQuestion == choice.idQuestion ){
+			finded = index;
+		}//Fin de if.
+	}//Fin de for.
+	alert( "brinco el for" );
+	return index;
+}//Fin de function scanChoices.
+
 function changeQuestions( ){
 	request = $.ajax({
         type: "POST",
@@ -19,6 +38,22 @@ function changeQuestions( ){
         }//Fin de sucess.
     })//Fin de request. 
 }//Fin de function changeQuestions
+
+$( '.choice' ).on( 'click', function( ){
+	alert( $( this ).attr( 'name' ) + "___" + $( this ).val( ) );
+	if( scanChoices( { idQuestion: $( this ).attr( 'name' ), idSelectedChoise: $( this ).val( ) } ) != -1 ){
+		alert( "No existia en el arreglo" );
+		alert( $( this ).attr( 'name' ) );
+		addChoices( { idQuestion: $( this ).attr( name ), idSelectedChoise: $( this ).val( ) } );
+	}//Fin de if.
+	else{
+		alert( "Ya existia en el arreglo" );
+	}
+});
+
+$( '.buttonSent' ).on( 'click', function( ){
+	alert( "Deberia de enviar" );
+});
 
 $( '.buttonNext' ).on( 'click', function( ){
 	//alert( $('.question').css("display") );
