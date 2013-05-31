@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
+<<<<<<< HEAD
 <file name="bg.png" server="C:/AppServ/www/gamers_paradise/" local="130126284942765519" remote="130126284940000000" Dst="0" />
 <file name="prelike.png" server="C:/AppServ/www/gamers_paradise/" local="130126288395742192" remote="130126288390000000" Dst="0" />
 <file name="clic-like.png" server="C:/AppServ/www/gamers_paradise/" local="130126289610522499" remote="130126289610000000" Dst="0" />
 <file name="hr.png" server="C:/AppServ/www/gamers_paradise/" local="130126303626414162" remote="130126303620000000" Dst="0" />
 <file name="console-tv.png" server="C:/AppServ/www/gamers_paradise/" local="130126335654426060" remote="130126335650000000" Dst="0" />
 <file name="couch-friends.png" server="C:/AppServ/www/gamers_paradise/" local="130126341838149749" remote="130126341830000000" Dst="0" />
+=======
+<file name="bg.png" server="C:/AppServ/www/gamers_paradise/" local="130126317689864119" remote="130126317680000000" Dst="0" />
+<file name="prelike.png" server="C:/AppServ/www/gamers_paradise/" local="130126317690044129" remote="130126317690000000" Dst="0" />
+<file name="clic-like.png" server="C:/AppServ/www/gamers_paradise/" local="130126317689894120" remote="130126317680000000" Dst="0" />
+<file name="hr.png" server="C:/AppServ/www/gamers_paradise/" local="130126317689914122" remote="130126317680000000" Dst="0" />
+<file name="console-tv.png" server="C:/AppServ/www/gamers_paradise/" local="130140781396232932" remote="130140781390000000" Dst="0" />
+<file name="couch-friends.png" server="C:/AppServ/www/gamers_paradise/" local="130140781396252933" remote="130140781390000000" Dst="0" />
+>>>>>>> 1c44fae9acd9a906866a1263b252dc22f54c3abb
 <file name="bg.png" server="C:/AppServ/www/gamersparadise/" local="130135664849242509" remote="130135664840000000" Dst="0" />
 <file name="clic-like.png" server="C:/AppServ/www/gamersparadise/" local="130135664849272535" remote="130135664840000000" Dst="0" />
 <file name="console-tv.png" server="C:/AppServ/www/gamersparadise/" local="130135664849292540" remote="130135664840000000" Dst="0" />
 <file name="couch-friends.png" server="C:/AppServ/www/gamersparadise/" local="130135664849312525" remote="130135664840000000" Dst="0" />
 <file name="hr.png" server="C:/AppServ/www/gamersparadise/" local="130135664849332538" remote="130135664840000000" Dst="0" />
 <file name="prelike.png" server="C:/AppServ/www/gamersparadise/" local="130135664849502650" remote="130135664840000000" Dst="0" />
+<<<<<<< HEAD
 <file name="not-available.gif" server="C:/AppServ/www/gamers_paradise/" local="130102052340000000" remote="130102052340000000" Dst="0" />
 <file name="pagination.png" server="C:/AppServ/www/gamers_paradise/" local="130101969750000000" remote="130101969750000000" Dst="0" />
 <file name="bg_game.png" server="C:/AppServ/www/gamers_paradise/" local="130143610900946275" remote="130143610900000000" Dst="0" />
@@ -19,4 +29,13 @@
 <file name="formelements-select.png" server="C:/AppServ/www/gamers_paradise/" local="129943738620000000" remote="129943738620000000" Dst="0" />
 <file name="formelements.png" server="C:/AppServ/www/gamers_paradise/" local="129943687020000000" remote="129943687020000000" Dst="0" />
 <file name="style.css" server="C:/AppServ/www/gamers_paradise/" local="129949704900000000" remote="129949704900000000" Dst="0" />
+=======
+<file name="not-available.gif" server="C:/AppServ/www/gamers_paradise/" local="130140826919226698" remote="130140826910000000" Dst="0" />
+<file name="pagination.png" server="C:/AppServ/www/gamers_paradise/" local="130140914994354307" remote="130140914990000000" Dst="0" />
+<file name="bg_game.png" server="C:/AppServ/www/gamers_paradise/" local="130143633722517872" remote="130143633720000000" Dst="0" />
+<file name="demo.html" server="C:/AppServ/www/gamers_paradise/" local="130144500852756764" remote="130144500850000000" Dst="0" />
+<file name="formelements-select.png" server="C:/AppServ/www/gamers_paradise/" local="130144500852786765" remote="130144500850000000" Dst="0" />
+<file name="formelements.png" server="C:/AppServ/www/gamers_paradise/" local="130144500852796766" remote="130144500850000000" Dst="0" />
+<file name="style.css" server="C:/AppServ/www/gamers_paradise/" local="130144500852826768" remote="130144500850000000" Dst="0" />
+>>>>>>> 1c44fae9acd9a906866a1263b252dc22f54c3abb
 </dwsync>

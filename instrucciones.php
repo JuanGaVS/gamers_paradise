@@ -1,3 +1,36 @@
+<?php
+$loginUrl = ""; 
+$permisos = 'id, first_name, middle_name, gender, last_name, locale, age_range, birthday';
+//aquí agregamos o eliminamos los permisos.
+require 'facebook.php';
+$app_id = "556218747762833";
+$app_secret = "eec279827ce7706afada43d769d1bcb3";
+$facebook = new Facebook(array(
+'appId' => $app_id,
+'secret' => $app_secret,
+'cookie' => true,
+'req_perms' => $permisos
+));
+  
+
+$fbuser = $facebook->getUser();
+if ($fbuser) {
+  try {
+    $user_profile = $facebook->api('/me');
+  } catch (FacebookApiException $e) {
+    //error_log($e);
+    $fbuser = null;
+  }
+}
+if ($fbuser) {
+	$logoutUrl = $facebook->getLogoutUrl();
+} else {
+ 	$loginUrl = $facebook->getLoginUrl(array('scope'=>$permisitos,'display'=>'popup'));
+	//Este link es el que pedirá los permisos. Así el usuario aceptará o cancelará los permisos.
+}
+
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -26,7 +59,7 @@
   <div id="console-tv"></div>
   <div id="couch-friends"></div>
     
-    <a id="contenedor-boton" href="#">INICIAR</a>
+    <a id="contenedor-boton" href="<?php echo $loginUrl; ?>">INICIAR</a>
     
     <div id="footer">
                 <h2 id="footer-title"><a class="fancybox iframe" rel="group" href="privacy.html">PRIVACIDAD</a> | <a class="fancybox iframe" rel="group" href="tos.html">REGLAS</a></h2>
@@ -38,4 +71,6 @@
 <script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.4"></script>
 <script src="js/fancybox.js" type="text/javascript"></script>
 </body>
+
+
 </html>
