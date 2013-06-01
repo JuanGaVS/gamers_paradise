@@ -27,14 +27,14 @@ class Contestant {
     function __construct() {
         $this->age_ran_max = 0;
         $this->age_range_min = 0;
-        $this->birthday = "";
-        $this->contestant_id="";
-        $this->date_added="";
-        $this->first_name="";
-        $this->gender;
-        $this->last_name;
-        $this->locale;
-        $this->middle_name;
+        $this->birthday = "1";
+        $this->contestant_id="1";
+        $this->date_added="1";
+        $this->first_name="1";
+        $this->gender="1";
+        $this->last_name="1";
+        $this->locale="1";
+        $this->middle_name="1";
     }
     
     public function getContestant_id() {
