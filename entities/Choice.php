@@ -36,9 +36,6 @@ class Choice {
     public function setText($text) {
         $this->text = $text;
     }
-
-
-
     
 }
 

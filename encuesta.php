@@ -22,9 +22,10 @@ $questions = $quuestionDAL->getQuestions();
     <h1 class="titles">GAMERS PARADISE</h1>
   </div>
   <div id="survey">
-  <form id="survey">
+  <form id="survey" method="post" action="sugerencias.php">
   <?php 
   $number = 1;
+  $questions_choices_array = array();
   foreach ($questions as $question){?>
   	<div class= "question<?php if( $number > 5 ){ echo "2"; }  ?>">
     	<?php echo $number . ")" .  $question->getText(); ?>
@@ -54,7 +55,7 @@ $questions = $quuestionDAL->getQuestions();
     </div>
   <?php $number += 1; }//Fin de foreach question. ?>
   <input type="button" class="buttonNext contenedor-boton-encuesta" name="button" value="Siguiente"/>
-  <input type="button" class="contenedor-boton-encuesta contenedor-boton-encuesta-enviar" name="button2" value="Enviar"/>
+  <input type="submit" class="buttonSent contenedor-boton-encuesta contenedor-boton-encuesta-enviar" name="button2" value="Enviar" />
   </form>
   </div>
   <div id="sidebar">

@@ -9,7 +9,7 @@
  * Description of ChoiceDAL
  *
  * @author Kevin
- */
+ *
 require_once '../entities/Choice.php';
 require_once '../entities/DBConnection.php';
 require_once './GameDAL.php';
@@ -80,3 +80,4 @@ class ChoiceDAL {
 }
 
 ?>
+*/
