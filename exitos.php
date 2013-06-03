@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+<script src="js/facebook.js" type="text/javascript"></script>	
 <div id="wrapper">
 
 	<div id="titulo">
@@ -18,7 +18,8 @@
     
 	
   	<div id="instrucciones">
-    	<p class="paragraphs-12">Gracias por haber llegado hasta aquí. Ya has quedado participando en la rifa de tu juego favorito en tu consola favorita. ¡¡¡FELICIDADES!!!</p>
+    	<p class="paragraphs">Nos complace tenerte participando en nuestro concurso, los resultados de tu participación estarán el 25 de julio de 2013.</p>
+        <p class="paragraphs">Síguenos visitando y disfrutando de nuestra información sobre de tus juegos favoritos, del ayer, hoy y el mañana, porque  el futuro de tus juegos los tienes cada vez más cerca con Gamers Paradise "tú opción, sin comparación".</p>
     	<br/>
   </div>
   

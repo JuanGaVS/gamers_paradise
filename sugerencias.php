@@ -16,6 +16,7 @@
     </head>
 
     <body>
+    <script src="js/facebook.js" type="text/javascript"></script>	
         <div id="wrapper">
             <div id="titulo" class="titulo-sugerencias">
                 <h1 class="titles">SUGERENCIAS PARA VOS</h1>

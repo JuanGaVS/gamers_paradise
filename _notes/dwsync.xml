@@ -38,4 +38,6 @@
 <file name="channel.php" server="C:/AppServ/www/gamers_paradise/" local="130144613536881900" remote="130144613530000000" Dst="0" />
 <file name="crossdomain.xml" server="C:/AppServ/www/gamers_paradise/" local="130144613536931903" remote="130144613530000000" Dst="0" />
 <file name="facebook.php" server="C:/AppServ/www/gamers_paradise/" local="130144613537281923" remote="130144613530000000" Dst="0" />
+<file name="prelike.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130147045428874775" remote="130147009200000000" Dst="0" />
+<file name="exitos.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130147050044588779" remote="130147014000000000" Dst="0" />
 </dwsync>
