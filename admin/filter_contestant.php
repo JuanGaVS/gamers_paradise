@@ -44,19 +44,7 @@ $row_rs_locale = mysql_fetch_assoc($rs_locale);
 $totalRows_rs_locale = mysql_num_rows($rs_locale);
 
 mysql_select_db($database_localhost, $localhost);
-$query_rs_minage = "SELECT distinct age_range_min FROM tb_contestant";
-$rs_minage = mysql_query($query_rs_minage, $localhost) or die(mysql_error());
-$row_rs_minage = mysql_fetch_assoc($rs_minage);
-$totalRows_rs_minage = mysql_num_rows($rs_minage);
-
-mysql_select_db($database_localhost, $localhost);
-$query_rs_maxage = "SELECT distinct age_range_max FROM tb_contestant";
-$rs_maxage = mysql_query($query_rs_maxage, $localhost) or die(mysql_error());
-$row_rs_maxage = mysql_fetch_assoc($rs_maxage);
-$totalRows_rs_maxage = mysql_num_rows($rs_maxage);
-
-mysql_select_db($database_localhost, $localhost);
-$query_rs_Contestants = "SELECT contestant_id, first_name, middle_name, last_name, gender, locale, age_range_min, age_range_max, birthday, date_added FROM tb_contestant ORDER BY contestant_id ASC";
+$query_rs_Contestants = "SELECT contestant_id, first_name, last_name, gender, locale, birthday, date_added FROM tb_contestant ORDER BY contestant_id ASC";
 $rs_Contestants = mysql_query($query_rs_Contestants, $localhost) or die(mysql_error());
 $row_rs_Contestants = mysql_fetch_assoc($rs_Contestants);
 $totalRows_rs_Contestants = mysql_num_rows($rs_Contestants);
@@ -116,43 +104,6 @@ do {
       </select></td>
     </tr>
     <tr>
-      <th scope="row">Edad Mínima</th>
-      <td><label for="select2"></label>
-        <select name="select_minage" id="select2">
-          <option value="0" <?php if (!(strcmp(0, $row_rs_minage['age_range_min']))) {echo "selected=\"selected\"";} ?>>No Seleccionado</option>
-          <?php
-do {  
-?>
-          <option value="<?php echo $row_rs_minage['age_range_min']?>"<?php if (!(strcmp($row_rs_minage['age_range_min'], $row_rs_minage['age_range_min']))) {echo "selected=\"selected\"";} ?>><?php echo $row_rs_minage['age_range_min']?></option>
-          <?php
-} while ($row_rs_minage = mysql_fetch_assoc($rs_minage));
-  $rows = mysql_num_rows($rs_minage);
-  if($rows > 0) {
-      mysql_data_seek($rs_minage, 0);
-	  $row_rs_minage = mysql_fetch_assoc($rs_minage);
-  }
-?>
-      </select></td>
-    </tr>
-    <tr>
-      <th scope="row">Edad Máxima</th>
-      <td><select name="select_minage2" id="select_minage">
-        <option value="0" <?php if (!(strcmp(0, $row_rs_maxage['age_range_max']))) {echo "selected=\"selected\"";} ?>>No Seleccionado</option>
-        <?php
-do {  
-?>
-        <option value="<?php echo $row_rs_maxage['age_range_max']?>"<?php if (!(strcmp($row_rs_maxage['age_range_max'], $row_rs_maxage['age_range_max']))) {echo "selected=\"selected\"";} ?>><?php echo $row_rs_maxage['age_range_max']?></option>
-        <?php
-} while ($row_rs_maxage = mysql_fetch_assoc($rs_maxage));
-  $rows = mysql_num_rows($rs_maxage);
-  if($rows > 0) {
-      mysql_data_seek($rs_maxage, 0);
-	  $row_rs_maxage = mysql_fetch_assoc($rs_maxage);
-  }
-?>
-      </select></td>
-    </tr>
-    <tr>
       <th scope="row">Fecha Like desde</th>
       <td><label for="data_added_to"></label>
       <input type="date" name="data_added_since" id="data_added_since" /></td>
@@ -171,13 +122,10 @@ do {
 <table border="1">
   <tr>
     <td>ID Concursante</td>
-    <td>Primer Nombre</td>
-    <td>Segundo Nombre</td>
+    <td>ombre</td>
     <td>Apellidos</td>
     <td>Género</td>
     <td>Locale</td>
-    <td>Edad desde</td>
-    <td>Edad hasta</td>
     <td>Cumpleaños</td>
     <td>Fecha Like</td>
   </tr>
@@ -185,12 +133,9 @@ do {
   <tr>
     <td><?php echo $row_rs_Contestants['contestant_id']; ?></td>
     <td><?php echo $row_rs_Contestants['first_name']; ?></td>
-    <td><?php echo $row_rs_Contestants['middle_name']; ?></td>
     <td><?php echo $row_rs_Contestants['last_name']; ?></td>
     <td><?php echo $row_rs_Contestants['gender']; ?></td>
     <td><?php echo $row_rs_Contestants['locale']; ?></td>
-    <td><?php echo $row_rs_Contestants['age_range_min']; ?></td>
-    <td><?php echo $row_rs_Contestants['age_range_max']; ?></td>
     <td><?php echo $row_rs_Contestants['birthday']; ?></td>
     <td><?php echo $row_rs_Contestants['date_added']; ?></td>
   </tr>
@@ -203,10 +148,6 @@ do {
 mysql_free_result($rs_gender);
 
 mysql_free_result($rs_locale);
-
-mysql_free_result($rs_minage);
-
-mysql_free_result($rs_maxage);
 
 mysql_free_result($rs_Contestants);
 ?>

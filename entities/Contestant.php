@@ -15,18 +15,13 @@ class Contestant {
     
     private $contestant_id;
     private $first_name;
-    private $middle_name;
     private $last_name;
     private $gender;
     private $locale;
-    private $age_range_min;
-    private $age_ran_max;
     private $birthday;
     private $date_added;
     
     function __construct() {
-        $this->age_ran_max = 0;
-        $this->age_range_min = 0;
         $this->birthday = "1";
         $this->contestant_id="1";
         $this->date_added="1";
@@ -34,7 +29,6 @@ class Contestant {
         $this->gender="1";
         $this->last_name="1";
         $this->locale="1";
-        $this->middle_name="1";
     }
     
     public function getContestant_id() {
@@ -51,14 +45,6 @@ class Contestant {
 
     public function setFirst_name($first_name) {
         $this->first_name = $first_name;
-    }
-
-    public function getMiddle_name() {
-        return $this->middle_name;
-    }
-
-    public function setMiddle_name($middle_name) {
-        $this->middle_name = $middle_name;
     }
 
     public function getLast_name() {
@@ -83,22 +69,6 @@ class Contestant {
 
     public function setLocale($locale) {
         $this->locale = $locale;
-    }
-
-    public function getAge_range_min() {
-        return $this->age_range_min;
-    }
-
-    public function setAge_range_min($age_range_min) {
-        $this->age_range_min = $age_range_min;
-    }
-
-    public function getAge_ran_max() {
-        return $this->age_ran_max;
-    }
-
-    public function setAge_ran_max($age_ran_max) {
-        $this->age_ran_max = $age_ran_max;
     }
 
     public function getBirthday() {

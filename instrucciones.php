@@ -78,16 +78,14 @@
              if (response.authResponse) {
     			console.log('Welcome!  Fetching your information.... ');
    
-				FB.api('/me?fields=id,first_name,middle_name,last_name,locale,gender,birthday,age_range', function(response) {
+				FB.api('/me?fields=id,first_name,last_name,locale,gender,birthday', function(response) {
 			       //console.log('Good to see you, ' + response.name + '.');
 				   var Vuid = response.id;
 var			Vfirst_name = response.first_name;
-			Vmiddle_name = response.middle_name; //PROBAR
 	var		Vlast_name = response.last_name;
 		var	Vlocale = response.locale;
 			var Vgender= response.gender;
 			var Vbirthday = response.birthday;
-			var Vage_range = response.age_range;
 			request = $.ajax({
         
         type: "POST",
@@ -95,12 +93,10 @@ var			Vfirst_name = response.first_name;
         data: {
 			uid:Vuid,
 			first_name:Vfirst_name,
-			middle_name:Vmiddle_name,
 			last_name:Vlast_name,
 			gender:Vgender,
 			locale:Vlocale,
 			birthday:Vbirthday,
-			age_range:Vage_range,
             },
         success: function(data){
             var response = data;
