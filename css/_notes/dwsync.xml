@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="estilos.css" server="C:/AppServ/www/gamers_paradise/" local="130144643537007809" remote="130144643530000000" Dst="0" />
+<file name="estilos.css" server="C:/AppServ/www/gamers_paradise/" local="130147008918329822" remote="130147008910000000" Dst="0" />
 <file name="exito.css" server="C:/AppServ/www/gamers_paradise/" local="130123427070126488" remote="130123427070000000" Dst="0" />
 <file name="instrucciones.css" server="C:/AppServ/www/gamers_paradise/" local="130123427070146489" remote="130123427070000000" Dst="0" />
 <file name="reset.css" server="C:/AppServ/www/gamers_paradise/" local="130123427070166490" remote="130123427070000000" Dst="0" />
@@ -8,18 +8,11 @@
 <file name="exito.css" server="C:/AppServ/www/gamersparadise/" local="130135664848582076" remote="130135664840000000" Dst="0" />
 <file name="instrucciones.css" server="C:/AppServ/www/gamersparadise/" local="130135664848612094" remote="130135664840000000" Dst="0" />
 <file name="reset.css" server="C:/AppServ/www/gamersparadise/" local="130135664848632107" remote="130135664840000000" Dst="0" />
-<<<<<<< HEAD
-<file name="sidebar.css" server="C:/AppServ/www/gamers_paradise/" local="130140923099925139" remote="130140923090000000" Dst="0" />
-<file name="juego.css" server="C:/AppServ/www/gamers_paradise/" local="130143619699889545" remote="130143619690000000" Dst="0" />
-<file name="jquery.fancybox.css" server="C:/AppServ/www/gamers_paradise/" local="130028118430000000" remote="130028118430000000" Dst="0" />
-<file name="exitos.css" server="C:/AppServ/www/gamers_paradise/" local="130143709659444938" remote="130143709650000000" Dst="0" />
-<file name="estilos.css" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130145283181813179" remote="130145247000000000" Dst="0" />
-<file name="exitos.css" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130143709659444938" remote="130144571400000000" Dst="0" />
-<file name="instrucciones.css" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130126034360000000" remote="130145261400000000" Dst="0" />
-=======
 <file name="sidebar.css" server="C:/AppServ/www/gamers_paradise/" local="130140934391815374" remote="130140934390000000" Dst="0" />
 <file name="juego.css" server="C:/AppServ/www/gamers_paradise/" local="130143630274344416" remote="130143630270000000" Dst="0" />
 <file name="jquery.fancybox.css" server="C:/AppServ/www/gamers_paradise/" local="130143630274204408" remote="130143630270000000" Dst="0" />
 <file name="exitos.css" server="C:/AppServ/www/gamers_paradise/" local="130143792585689500" remote="130143792580000000" Dst="0" />
->>>>>>> 14eb5ec6fe5d22c1b4020cf81b53488dc6cef859
+<file name="estilos.css" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130145283181813179" remote="130145247000000000" Dst="0" />
+<file name="exitos.css" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130143709659444938" remote="130144571400000000" Dst="0" />
+<file name="instrucciones.css" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130126034360000000" remote="130145261400000000" Dst="0" />
 </dwsync>

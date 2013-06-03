@@ -16,13 +16,16 @@
     </head>
 
     <body>
+    	<script src="js/facebook.js" type="text/javascript"></script> 
         <div id="wrapper">
             <div id="titulo" class="titulo-sugerencias">
                 <h1 class="titles">SUGERENCIAS PARA VOS</h1>
                 <h2 class="titles-18">HAZ CLICK EN UN JUEGO PARA VER UN REVIEW</h2>
             </div>
             <div id="sugerencias">
-
+				<span class='ejemplo' >
+                	
+                <span/>
                 <div class="sugerencia">
 
                     <img src="#" alt="Imagen" width="185px" height="110px"/>

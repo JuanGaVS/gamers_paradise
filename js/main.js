@@ -32,27 +32,27 @@ function scanChoices( choice ){
 	return finded;
 }//Fin de function scanChoices.
 
-function changeQuestions( ){
-	request = $.ajax({
+function sendSurvey( ){
+	alert( "Entro SendSurvey" );
+	request = $.ajax( {
         type: "POST",
         url: "calls.php",
         data: { 
-			method: 'changeQuestions', 
-			/*
-            name:document.getElementById( 'name' ).value,
-            pin:document.getElementById( 'pin' ).value,
-            phone:document.getElementById( 'phone' ).value,
-            email:document.getElementById( 'email' ).value
-		*/
+			method: 'sendSurvey', 
+			answers: choices
         }//Fin de data.
         ,
         success: function( data ){
+			alert( "Entro success" );
             var response = data;
-            //alert( 'respuesta: ' + data );
-            $( 'span.resultado' ).html( response.toString( ) );
+            alert( 'respuesta: ' + data );
+            $( 'span.ejemplo' ).html( response.toString( ) );
         }//Fin de sucess.
     })//Fin de request. 
-}//Fin de function changeQuestions
+	.fail( function( jqxhr, msg ){
+		alert( "Entro fail: " + msg );
+		} )
+}//Fin de function sendSurvey.
 
 $( '.choice' ).on( 'click', function( ){
 	//alert( "Id_Question" + $( this ).attr( 'name' ) + ":: IdChoise" + $( this ).val( ) );
@@ -74,14 +74,15 @@ $( '.choice' ).on( 'click', function( ){
 	}
 	if( isSurveyFill( ) ){
 		//alert( "La encuesta esta completa" );
-		$( '.buttonSent' ).show( );
+		$( '.buttonSend' ).show( );
 	}//Fin de if.
 	else{
-		$( '.buttonSent' ).hide( );
+		$( '.buttonSend' ).hide( );
 	}//Fin d else.
 });
 
-$( '.buttonSent' ).on( 'click', function( ){
+$( '.buttonSend' ).on( 'click', function( ){
+	sendSurvey( );
 	//alert( "Deberia de enviar" );
 });
 
@@ -97,21 +98,7 @@ $( '.buttonNext' ).on( 'click', function( ){
 		$( '.question' ).show( );
 		$( this ).val( 'Siguiente' );
 	}//Fin de else.
-	/*$( this ).addClass( 'buttonBack' );
-	$( this ).removeClass( 'buttonNext' );
-	$( this ).off( 'click' );*/
-    changeQuestions( );
 });
-
-/*$( '.buttonBack' ).on( 'click', function( ){
-	alert( "'.buttonBack'" );
-	$( '.question2' ).hide( );
-	$( '.question' ).show( );
-	$( this ).val( 'Siguiente' );
-	$( this ).addClass( 'buttonNext' );
-	$( this ).removeClass( 'buttonBack' );
-    changeQuestions( );
-});*/
 
 //DOM is ready
 $(document).ready(function() {

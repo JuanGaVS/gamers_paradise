@@ -11,12 +11,13 @@ $questions = $quuestionDAL->getQuestions();
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CAMBIO DE PRUEBA</title>
+<title>Survey</title>
 <link href="css/estilos.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
 </head>
 
 <body>
+<script src="js/facebook.js" type="text/javascript"></script> 
 <div id="wrapper">
   <div id="titulo">
     <h1 class="titles">GAMERS PARADISE</h1>
@@ -55,7 +56,7 @@ $questions = $quuestionDAL->getQuestions();
     </div>
   <?php $number += 1; }//Fin de foreach question. ?>
   <input type="button" class="buttonNext contenedor-boton-encuesta" name="button" value="Siguiente"/>
-  <input type="submit" class="buttonSent contenedor-boton-encuesta contenedor-boton-encuesta-enviar" name="button2" value="Enviar" />
+  <input type="submit" class="buttonSend contenedor-boton-encuesta contenedor-boton-encuesta-enviar" name="button2" value="Enviar" />
   </form>
   </div>
   <div id="sidebar">
