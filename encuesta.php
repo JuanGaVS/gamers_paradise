@@ -11,7 +11,7 @@ $questions = $quuestionDAL->getQuestions();
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CAMBIO DE PRUEBA</title>
+<title>Survey</title>
 <link href="css/estilos.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
 </head>
@@ -22,7 +22,8 @@ $questions = $quuestionDAL->getQuestions();
     <h1 class="titles">GAMERS PARADISE</h1>
   </div>
   <div id="survey">
-  <form id="survey" method="post" action="sugerencias.php">
+  <p>(Prueba)El mayor es: <span class='mayor' ></span></p>
+  <form id="survey" method="POST" action="">
   <?php 
   $number = 1;
   $questions_choices_array = array();

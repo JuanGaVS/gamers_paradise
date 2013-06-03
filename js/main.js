@@ -1,7 +1,15 @@
 var choices = [];
 
 function isSurveyFill( ){
-	if( choices.length >= 11 ){
+	var selectedCheckbox = 0;
+	
+	for( var index = 0; index < choices.length; index++ ){
+		if( choices[index].idQuestion == 1 ){
+			selectedCheckbox = selectedCheckbox + 1;
+		}//Fin de if
+	}//Fin de for.
+	
+	if( choices.length == ( 10 + selectedCheckbox ) && choices.length >= 11 ){
 		return true;
 	}//Fin de if.
 	return false;
@@ -32,26 +40,44 @@ function scanChoices( choice ){
 	return finded;
 }//Fin de function scanChoices.
 
-function sendSurvey( ){
-	alert( "Entro SendSurvey" );
-	request = $.ajax( {
+function mayor( ) {
+	alert( "Entro mayor" );
+    request = $.ajax({
         type: "POST",
         url: "calls.php",
-        data: { 
-			method: 'sendSurvey', 
-			answers: choices
+        data: { method:'mayor', 
+            numero1:1
         }//Fin de data.
         ,
         success: function( data ){
-			alert( "Entro success" );
             var response = data;
-            alert( 'respuesta: ' + data );
-            $( 'span.ejemplo' ).html( response.toString( ) );
+            //alert( 'respuesta: ' + data );
+            $( 'span.mayor' ).html( response.toString( ) );
         }//Fin de sucess.
     })//Fin de request. 
 	.fail( function( jqxhr, msg ){
 		alert( "Entro fail: " + msg );
-		} )
+	} )//Fin de fail.
+}//Fin de function mayor.
+
+function sendSurvey( ){
+	alert( "Entro SendSurvey" );
+	request = $.ajax({
+        type: "POST",
+        url: "calls.php",
+        data: { method: 'sendSurvey', 
+            answers: 'choices'
+        }//Fin de data.
+        ,
+        success: function( data ){
+            var response = data;
+            //alert( 'respuesta: ' + data );
+            $( 'span.mayor' ).html( response.toString( ) );
+        }//Fin de sucess.
+    })//Fin de request. 
+	.fail( function( jqxhr, msg ){
+		alert( "Entro fail: " + msg );
+	} )//Fin de fail.
 }//Fin de function sendSurvey.
 
 $( '.choice' ).on( 'click', function( ){
@@ -82,7 +108,8 @@ $( '.choice' ).on( 'click', function( ){
 });
 
 $( '.buttonSend' ).on( 'click', function( ){
-	sendSurvey( );
+	alert( "Antes Send Survey" );
+	mayor( );
 	//alert( "Deberia de enviar" );
 });
 
