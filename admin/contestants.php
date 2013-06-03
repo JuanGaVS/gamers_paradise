@@ -32,7 +32,7 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
 }
 
 mysql_select_db($database_localhost, $localhost);
-$query_rs_Contestants = "SELECT contestant_id, first_name, middle_name, last_name, gender, locale, age_range_min, age_range_max, birthday, date_added FROM tb_contestant ORDER BY contestant_id ASC";
+$query_rs_Contestants = "SELECT contestant_id, first_name, last_name, gender, locale, birthday, date_added FROM tb_contestant ORDER BY contestant_id ASC";
 $rs_Contestants = mysql_query($query_rs_Contestants, $localhost) or die(mysql_error());
 $row_rs_Contestants = mysql_fetch_assoc($rs_Contestants);
 $totalRows_rs_Contestants = mysql_num_rows($rs_Contestants);
@@ -67,13 +67,10 @@ and open the template in the editor.
           <table border="1">
             <tr>
               <td>ID Concursante</td>
-              <td>Primer Nombre</td>
-              <td>Segundo Nombre</td>
+              <td>ombre</td>
               <td>Apellidos</td>
               <td>Género</td>
               <td>Locale</td>
-              <td>Edad desde</td>
-              <td>Edad hasta</td>
               <td>Cumpleaños</td>
               <td>Fecha Like</td>
             </tr>
@@ -81,12 +78,9 @@ and open the template in the editor.
               <tr>
                 <td><?php echo $row_rs_Contestants['contestant_id']; ?></td>
                 <td><?php echo $row_rs_Contestants['first_name']; ?></td>
-                <td><?php echo $row_rs_Contestants['middle_name']; ?></td>
                 <td><?php echo $row_rs_Contestants['last_name']; ?></td>
                 <td><?php echo $row_rs_Contestants['gender']; ?></td>
                 <td><?php echo $row_rs_Contestants['locale']; ?></td>
-                <td><?php echo $row_rs_Contestants['age_range_min']; ?></td>
-                <td><?php echo $row_rs_Contestants['age_range_max']; ?></td>
                 <td><?php echo $row_rs_Contestants['birthday']; ?></td>
                 <td><?php echo $row_rs_Contestants['date_added']; ?></td>
               </tr>
