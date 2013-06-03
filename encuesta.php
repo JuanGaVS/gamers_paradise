@@ -11,13 +11,12 @@ $questions = $quuestionDAL->getQuestions();
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Survey</title>
+<title>CAMBIO DE PRUEBA</title>
 <link href="css/estilos.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
 </head>
 
 <body>
-<script src="js/facebook.js" type="text/javascript"></script> 
 <div id="wrapper">
   <div id="titulo">
     <h1 class="titles">GAMERS PARADISE</h1>
