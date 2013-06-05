@@ -19,7 +19,7 @@
  */
 require_once $_SERVER['DOCUMENT_ROOT'] . '/gamers_paradise/' . 'entities/Console.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/gamers_paradise/' . 'entities/DBConnection.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/gamers_paradise/' . 'entities/GameDAL.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/gamers_paradise/' . 'dal/GameDAL.php';
 
 
 /**
@@ -90,7 +90,7 @@ class ConsoleDAL {
 		try {
             $statement = $this->conn->prepare("SELECT tb_console.console_id, tb_console.name 
 			FROM tb_console, tb_game, tb_game_console 
-			WHERE tb_console.console_id = tb_game_console.console_id && tb_game.game_id = tb_game_console.game_id && tb_game.game_id = ?");
+			WHERE tb_console.console_id = tb_game_console.console_id and tb_game.game_id = tb_game_console.game_id and tb_game.game_id = ?");
 			$statement->bindParam( 1, $game_id );
             $statement->execute( );
             $reults = $statement->fetchAll();

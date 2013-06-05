@@ -26,7 +26,7 @@
   <div id="console-tv"></div>
   <div id="couch-friends"></div>
     
-    <a id="contenedor-boton-exitos" href="https://www.facebook.com/pages/Gamers-Paradise/297090210428630">IR A LA PÁGINA</a>
+    <a id="contenedor-boton-exitos" href="https://www.facebook.com/pages/Gamers-Paradise/297090210428630" target="_top">IR A LA PÁGINA</a>
     
     <div id="footer">
                 <h2 id="footer-title"><a class="fancybox iframe" rel="group" href="privacy.html">PRIVACIDAD</a> | <a class="fancybox iframe" rel="group" href="tos.html">REGLAS</a></h2>
