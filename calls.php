@@ -1,6 +1,5 @@
 <?php
 
-<<<<<<< HEAD
 switch ($_POST['method']) {
     case 'mayor':
         mayor($_POST['numero1']);
@@ -32,7 +31,7 @@ function sendSurvey() {
 }
 
 //Fin de function mayor.
-=======
+
 require_once('entities/GameUserDAL.php');
 
 $gameUserDAL = new GameUserDAL();
@@ -45,5 +44,4 @@ $gameUserDAL = new GameUserDAL();
     }//Fin de switch.
 	
 	
->>>>>>> 65c3e986676fb941f574b57421812b6b44093f4e
 ?>

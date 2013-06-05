@@ -196,13 +196,12 @@ function orderArray($array) {
                         <option value="5">Consola5</option>
                     </select>
                 </div>
-<<<<<<< HEAD
+
                 
                 <a id="contenedor-boton" onclick="post2();return false;" href="#">ESCOGER</a>
-=======
+
 
                 <a id="contenedor-boton" href="#">ESCOGER</a>
->>>>>>> 8aa91319ce467124f55263ca2eea48f9685f8157
                 <p class="paragraphs-15" id="share-obligation">DEBES COMPARTIR LA PUBLICACIÓN PARA PARTICIPAR</p>
 
             </div>
