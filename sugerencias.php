@@ -53,11 +53,19 @@ foreach ($datos["choices"] as $choice) {
     
 }
 
- function orderArray($array){
-        
-        
-        
-    }
+function orderArray($array){
+	$maxSize = sizeof($gamesValues);
+	$gameValueJoker = new GameValue( );
+    for ($index = 0; $index < $maxSize; $index++) {
+		for ($index2 = 0; $index2 < $maxSize; $index2++) {
+			if( $array[$index]->getPoints( ) < $array[$index2]->getPoints( ) ){
+				$gameValueJoker = $array[$index2];
+				$array[$index2] = $array[$index];
+				$array[$index] = $gameValueJoker;
+			}//Fin de if.
+		}//Fin de for.
+	}//Fin de for.
+}//Fin de function orderArray.
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
