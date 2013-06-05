@@ -91,6 +91,9 @@ function orderArray($array) {
     <body>
         <script>
             function reloadConsoles() {
+                
+                console.log('reload consoles');
+                
                 var gameSelected;
                 var radios = document.getElementsByName('games');
 
@@ -110,17 +113,21 @@ function orderArray($array) {
                         gid: gameSelected
                     },
                     success: function(data) {
+                        
+                        //console.log('118 reloadConsoles');
+                        
+                        var response = data.toString();
+                
                         $('#consoles-select').empty();
-                        var parsedJSON = eval('('+data+')');
-                        for (choice in parsedJSON) {
-                            var option = document.createElement("option");
-                            option.setAttribute("value", choice.choice_id);
-                            option.innerHtml(choice.text);
+                        var parsedJSON = $.parseJSON(response);
+                  
+                        for(var i=0; i<parsedJSON.length;i++){
 
-                            
+                            $("#consoles-select").append('<option value='+parsedJSON[i].console_id+'>'+parsedJSON[i].name+'</option>');
 
-                            $('#consoles-select').appendChild(option);
+                          
                         }
+                      
                     }
 
                 });

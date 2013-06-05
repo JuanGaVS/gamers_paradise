@@ -20,7 +20,7 @@ $games = $gDAL->getGames();
            
             <div id="slideshow">
             
-            <a href="#" target="_blank">
+            <a href="http://www.rockstargames.com/" target="_blank">
                 <div class="banner" id="banner-section1">
 
                 </div>
@@ -51,7 +51,7 @@ for ($actualIndex = 0; $actualIndex < 3; $actualIndex++) {
 
             </div>
             
-            <a href="#" target="_blank">
+            <a href="http://www.rockstargames.com/" target="_blank">
                 <div class="banner" id="banner-section2">
 
                 </div>
@@ -84,7 +84,7 @@ for ($actualIndex = 3; $actualIndex < 6; $actualIndex++) {
 
             </div>
             
-            <a href="#" target="_blank">
+            <a href="http://www.rockstargames.com/" target="_blank">
                 <div class="banner" id="banner-section3">
 
                 </div>

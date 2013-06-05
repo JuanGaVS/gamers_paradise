@@ -22,7 +22,6 @@ $questions = $quuestionDAL->getQuestions();
   <div id="titulo">
     <h1 class="titles">GAMERS PARADISE</h1>
   </div>
-  <p>(Prueba)El mayor es: <span class='mayor' ></span></p>
   <div id="survey">
   <form id="survey" method="POST" action="sugerencias.php">
   <?php 

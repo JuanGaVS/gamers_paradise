@@ -22,7 +22,12 @@ function saveContestantGame() {
 function reloadConsoles() {
     $consoleDAL = new ConsoleDAL();
 
+    
+    
     $data = $consoleDAL->getConsolesForGame($_POST['gid']);
+    
+    //echo '<script>line 24 calls </script>';
+    
     echo $data;
 }
 

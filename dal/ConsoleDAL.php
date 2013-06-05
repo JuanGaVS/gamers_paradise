@@ -94,7 +94,7 @@ class ConsoleDAL {
 			$statement->bindParam( 1, $game_id );
             $statement->execute( );
             $reults = $statement->fetchAll();
-            
+            /*
             foreach( $reults as $gRow ){
 				$console = new Console( );
 				$console->setConsole_id( $gRow['console_id'] );
@@ -102,8 +102,8 @@ class ConsoleDAL {
 				
 				$consoles [] = $console;
             }//Fin de foreach.
-            
-            return json_encode( $consoles );
+            echo json_encode( $consoles );*/
+            echo json_encode($reults);
             
         }//Fin de try.
 		catch (PDOException $e) {
