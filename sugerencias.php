@@ -61,9 +61,15 @@ foreach ($datos["choices"] as $choice) {
     }
 }
 
+<<<<<<< HEAD
+function orderArray($array){
+	$maxSize = sizeof($array);
+	$gameValueJoker = new GameValue( );
+=======
 function orderArray($array) {
     $maxSize = sizeof($array);
     $gameValueJoker = new GameValue( );
+>>>>>>> 7161b5c922257f619e2f3081af515d32675a63de
     for ($index = 0; $index < $maxSize; $index++) {
         for ($index2 = 0; $index2 < $maxSize; $index2++) {
             if ($array[$index]->getPoints() < $array[$index2]->getPoints()) {

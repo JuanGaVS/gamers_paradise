@@ -19,7 +19,7 @@
  */
 require_once $_SERVER['DOCUMENT_ROOT'] . '/gamers_paradise/' . 'entities/Console.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/gamers_paradise/' . 'entities/DBConnection.php';
-
+require_once $_SERVER['DOCUMENT_ROOT'] . '/gamers_paradise/' . 'entities/GameDAL.php';
 
 
 /**
@@ -39,9 +39,6 @@ class ConsoleDAL {
     }
 
     public function consoleAdd(Console $console) {
-
-
-
         try {
             $statement = $this->conn->prepare("INSERT INTO tb_console (console_id, name) values (?, ?)");
             $statement->bindParam(1, $console->getConsole_id());
@@ -50,8 +47,6 @@ class ConsoleDAL {
         } catch (PDOException $e) {
             echo $e->getMessage();
         }
-
-       
     }
     
     public function getConsole($console_id){
@@ -75,7 +70,6 @@ class ConsoleDAL {
     }
     
     public function consoleUpdate(Console $console) {
-
         $console_id = $console->getConsole_id();
 
 
@@ -91,9 +85,34 @@ class ConsoleDAL {
         
     }
     
+	public function getConsolesForGame( $game_id ){
+		$consoles = array( );
+		try {
+            $statement = $this->conn->prepare("SELECT tb_console.console_id, tb_console.name 
+			FROM tb_console, tb_game, tb_game_console 
+			WHERE tb_console.console_id = tb_game_console.console_id && tb_game.game_id = tb_game_console.game_id && tb_game.game_id = ?");
+			$statement->bindParam( 1, $game_id );
+            $statement->execute( );
+            $reults = $statement->fetchAll();
+            
+            foreach( $reults as $gRow ){
+				$console = new Console( );
+				$console->setConsole_id( $gRow['console_id'] );
+				$console->setName( $gRow['name'] );
+				
+				$consoles [] = $console;
+            }//Fin de foreach.
+            
+            return json_encode( $consoles );
+            
+        }//Fin de try.
+		catch (PDOException $e) {
+            return null;
+            echo $e->getMessage();
+        }//Fin de catch.
+	}//Fin de getConsoloesForGame.
+	
     public function consoleDelete($console_id) {
-
-        
         try {
                 
                 $statement = $this->conn->prepare("DELETE tb_console where console_id = ?");
