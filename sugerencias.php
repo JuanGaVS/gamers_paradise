@@ -3,11 +3,12 @@
 
 //$choiceDAL = new ChoiceDAL();
 $respuestas = $_POST['answers'];
-//print_r($respuestas);
-
-foreach($respuestas as $respuesta){
-echo 	$respuesta;
-}
+print_r($respuestas);
+echo 'listttooo <br/>';
+$maxIndex = sizeof( $respuestas );
+        for( $index = 0; $index < $maxIndex; $index++ ){ 
+			echo $respuestas[$index]['idSelectedChoise'];
+		}
 
 
 ?>
