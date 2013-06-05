@@ -41,15 +41,16 @@ function scanChoices( choice ){
 }//Fin de function scanChoices.
 
 function mayor( ) {
+	
 	alert( "Entro mayor" );
     request = $.ajax({
         type: "POST",
         url: "calls.php",
-        data: { method:'mayor', 
+        data: { 
+			method:'mayor',
             numero1:1
-        }//Fin de data.
-        ,
-        success: function( data ){
+        },
+        success: function(data){
             var response = data;
             //alert( 'respuesta: ' + data );
             $( 'span.mayor' ).html( response.toString( ) );
