@@ -1,14 +1,35 @@
 <?php
-//require_once('dal/ChoiceDAL.php');
+require_once('dal/ChoiceDAL.php');
 
-//$choiceDAL = new ChoiceDAL();
+$choiceDAL = new ChoiceDAL();
+
+require_once('dal/GameDAL.php');
+
+$gameDAL = new GameDAL();
+
 $respuestas = $_POST['answers'];
-print_r($respuestas);
-echo 'listttooo <br/>';
-$maxIndex = sizeof( $respuestas );
-        for( $index = 0; $index < $maxIndex; $index++ ){ 
-			echo $respuestas[$index]['idSelectedChoise'];
-		}
+
+$gamesIDFromBD = $gameDAL->getGamesID();
+
+$size = sizeof($gamesFromBD);
+
+//$array = new SplFixedArray($size);
+
+
+$datos = json_decode($respuestas, true);
+
+foreach ($datos["choices"] as $choice) {
+
+            $idQuestion = $choice["idQuestion"];
+            $idSelectedChoise = $choice["idSelectedChoise"];
+          
+		  echo('question: '.$idQuestion.'  idSelectedchoice '.$idSelectedChoise.' <br/>');
+		  
+		  $games = $choiceDAL->getGamesFromChoice($idSelectedChoise);
+		  
+		  
+		  
+        }
 
 
 ?>

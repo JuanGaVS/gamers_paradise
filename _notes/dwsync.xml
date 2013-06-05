@@ -21,11 +21,7 @@
 <file name="encuesta.php" server="C:/AppServ/www/gamers_paradise/" local="130147100391237314" remote="130147100390000000" Dst="0" />
 <file name="consoles.json" server="C:/AppServ/www/gamers_paradise/" local="130139922868702552" remote="130139922860000000" Dst="0" />
 <file name="sidebar.php" server="C:/AppServ/www/gamers_paradise/" local="130144488005927577" remote="130144488000000000" Dst="0" />
-<<<<<<< HEAD
-<file name="calls.php" server="C:/AppServ/www/gamers_paradise/" local="130148822501595872" remote="130148822500000000" Dst="0" />
-=======
 <file name="calls.php" server="C:/AppServ/www/gamers_paradise/" local="130147101423186338" remote="130147101420000000" Dst="0" />
->>>>>>> 22d3b85a475eb73d304d909bb947d0ec26dad4a3
 <file name="juego.php" server="C:/AppServ/www/gamers_paradise/" local="130147082840243455" remote="130147082840000000" Dst="0" />
 <file name="2705_v1.zip" server="C:/AppServ/www/gamers_paradise/" local="130141717573841166" remote="130141717570000000" Dst="0" />
 <file name="exitos.php" server="C:/AppServ/www/gamers_paradise/" local="130147082839633420" remote="130147082830000000" Dst="0" />
@@ -45,7 +41,7 @@
 <file name="login.php" server="C:/AppServ/www/gamers_paradise/" local="130147069133039448" remote="130147069130000000" Dst="0" />
 <file name="calls2.php" server="C:/AppServ/www/gamers_paradise/" local="130147082838793372" remote="130147082830000000" Dst="0" />
 <file name="tos.html" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130143714560685273" remote="130148703600000000" Dst="0" />
-<file name="sugerencias.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130148850215533123" remote="130148814000000000" Dst="0" />
+<file name="sugerencias.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130148870374616157" remote="130148834400000000" Dst="0" />
 <file name="sidebar.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130144486169360424" remote="130148772000000000" Dst="0" />
 <file name="README.md" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130124545287272001" remote="130148704200000000" Dst="0" />
 <file name="privacy.html" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130143714421097289" remote="130148704200000000" Dst="0" />
