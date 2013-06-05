@@ -193,7 +193,7 @@ function parseChoicesToJSON( ){
 	
 	for( var index = 0; index < choices.length; index++ ){
 		StringJSON += '{"idQuestion":"' + choices[index].idQuestion +'",';
-		StringJSON += '"idQuestion":"' + choices[index].idSelectedChoise +'"}';
+		StringJSON += '"idSelectedChoise":"' + choices[index].idSelectedChoise +'"}';
 		if( index != choices.length - 1 ){
 			StringJSON += ',';
 		}//Fin de if
