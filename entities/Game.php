@@ -7,8 +7,6 @@
 
 /**
  * Description of Game
- *
- * @author Kevin
  */
 class Game {
 
