@@ -1,37 +1,64 @@
 <?php
 require_once('dal/ChoiceDAL.php');
+require_once('dal/GameDAL.php');
+require_once('entities/GameValue.php');
 
 $choiceDAL = new ChoiceDAL();
 
-require_once('dal/GameDAL.php');
+
 
 $gameDAL = new GameDAL();
 
 $respuestas = $_POST['answers'];
 
-$gamesIDFromBD = $gameDAL->getGamesID();
+$gamesIDFromDB = $gameDAL->getGamesID();
 
-$size = sizeof($gamesFromBD);
+$size = sizeof($gamesIDFromDB);
 
-//$array = new SplFixedArray($size);
+$gamesValues = array();
 
+for ($index = 0; index < $size; $index++) {
+    $gameValue = new GameValue();
+    $gameValue->setGame_id($gamesIDFromDB[$index]);
+
+    $gamesValues[] = $gameValue;
+}
 
 $datos = json_decode($respuestas, true);
 
 foreach ($datos["choices"] as $choice) {
 
-            $idQuestion = $choice["idQuestion"];
-            $idSelectedChoise = $choice["idSelectedChoise"];
-          
-		  echo('question: '.$idQuestion.'  idSelectedchoice '.$idSelectedChoise.' <br/>');
-		  
-		  $games = $choiceDAL->getGamesFromChoice($idSelectedChoise);
-		  
-		  
-		  
+    $idQuestion = $choice["idQuestion"];
+    $idSelectedChoise = $choice["idSelectedChoise"];
+
+    echo('question: ' . $idQuestion . '  idSelectedchoice ' . $idSelectedChoise . ' <br/>');
+
+    $games = $choiceDAL->getGamesFromChoice($idSelectedChoise);
+
+    foreach ($games as $game) {
+        $maxSize = sizeof($gamesValues);
+        for ($index = 0; index < $maxSize; $index++) {
+            $gameValue = $gamesValues[$index];
+            
+            if ($gameValue->getGame_id() == $game){
+                $gameValue->addPoint();
+                break;
+            }
+
+           
         }
-
-
+    }
+    
+    
+    function orderArray($array){
+        
+        
+        
+    }
+    
+    
+    
+}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -43,27 +70,26 @@ foreach ($datos["choices"] as $choice) {
     </head>
 
     <body>
-    	<script src="js/facebook.js" type="text/javascript"></script> 
+        <script src="js/facebook.js" type="text/javascript"></script> 
         <div id="wrapper">
             <div id="titulo" class="titulo-sugerencias">
                 <h1 class="titles">SUGERENCIAS PARA VOS</h1>
                 <h2 class="titles-18">HAZ CLICK EN UN JUEGO PARA VER UN REVIEW</h2>
             </div>
             <div id="sugerencias">
-				<span class='mayor' ><?php 
-				if( $respuestas != null ){
-						echo "CLARO AMO LA COMPAÑERA DE KEVIN";
-					}
-					else{
-						echo "MAME!!";
-					}
-				  ?></span>
+                <span class='mayor' ><?php
+if ($respuestas != null) {
+    echo "CLARO AMO LA COMPAÑERA DE KEVIN";
+} else {
+    echo "MAME!!";
+}
+?></span>
                 <div class="sugerencia">
 
                     <img src="#" alt="Imagen" width="185px" height="110px"/>
                     <input type="radio" name="games" value="j1" id="j1"/>
                     <label for="j1" class="paragraphs" style="text-transform:uppercase">
-                       <a href="#">nombre</a>
+                        <a href="#">nombre</a>
                     </label>
 
                 </div>
@@ -73,43 +99,43 @@ foreach ($datos["choices"] as $choice) {
                     <img src="#" alt="Imagen" width="185px" height="110px"/>
                     <input type="radio" name="games" value="j1" id="j2"/>
                     <label for="j2" class="paragraphs" style="text-transform:uppercase">
-                       <a href="#">nombre</a>
+                        <a href="#">nombre</a>
                     </label>
 
                 </div>
-                
+
                 <div class="sugerencia">
 
                     <img src="#" alt="Imagen" width="185px" height="110px"/>
                     <input type="radio" name="games" value="j1" id="j3"/>
                     <label for="j3" class="paragraphs" style="text-transform:uppercase">
-                       <a href="#">nombre</a>
+                        <a href="#">nombre</a>
                     </label>
 
                 </div>
-                
+
                 <div class="sugerencia">
 
                     <img src="#" alt="Imagen" width="185px" height="110px"/>
                     <input type="radio" name="games" value="j1" id="j4"/>
                     <label for="j4" class="paragraphs" style="text-transform:uppercase">
-                       <a href="#">nombre</a>
+                        <a href="#">nombre</a>
                     </label>
 
                 </div>
-                
+
                 <div class="sugerencia">
 
                     <img src="#" alt="Imagen" width="185px" height="110px"/>
                     <input type="radio" name="games" value="j1" id="j5"/>
                     <label for="j5" class="paragraphs" style="text-transform:uppercase">
-                       <a href="#">nombre</a>
+                        <a href="#">nombre</a>
                     </label>
 
                 </div>
 
                 <div id="choose-console" class="styled">
-                    
+
                     <select id="consoles-select" name="console">
                         <option value="1">Consola1</option>
                         <option value="2">Consola2</option>
@@ -118,7 +144,7 @@ foreach ($datos["choices"] as $choice) {
                         <option value="5">Consola5</option>
                     </select>
                 </div>
-                
+
                 <a id="contenedor-boton" href="#">ESCOGER</a>
                 <p class="paragraphs-15" id="share-obligation">DEBES COMPARTIR LA PUBLICACIÓN PARA PARTICIPAR</p>
 
