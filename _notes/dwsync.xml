@@ -39,9 +39,8 @@
 <file name="crossdomain.xml" server="C:/AppServ/www/gamers_paradise/" local="130144613536931903" remote="130144613530000000" Dst="0" />
 <file name="facebook.php" server="C:/AppServ/www/gamers_paradise/" local="130144613537281923" remote="130144613530000000" Dst="0" />
 <file name="login.php" server="C:/AppServ/www/gamers_paradise/" local="130147069133039448" remote="130147069130000000" Dst="0" />
-<file name="calls2.php" server="C:/AppServ/www/gamers_paradise/" local="130147082838793372" remote="130147082830000000" Dst="0" />
 <file name="tos.html" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130143714560685273" remote="130148703600000000" Dst="0" />
-<file name="sugerencias.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130148896146890247" remote="130148860200000000" Dst="0" />
+<file name="sugerencias.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130148924239067027" remote="130148887800000000" Dst="0" />
 <file name="sidebar.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130144486169360424" remote="130148772000000000" Dst="0" />
 <file name="README.md" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130124545287272001" remote="130148704200000000" Dst="0" />
 <file name="privacy.html" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130143714421097289" remote="130148704200000000" Dst="0" />
@@ -58,6 +57,5 @@
 <file name="crossdomain.xml" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130144596649609533" remote="130148704800000000" Dst="0" />
 <file name="consoles.json" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130139783179387536" remote="130148704800000000" Dst="0" />
 <file name="channel.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130144596649599532" remote="130148704800000000" Dst="0" />
-<file name="calls2.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130147083742406184" remote="130148704800000000" Dst="0" />
 <file name="calls.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130148817327632043" remote="130148781000000000" Dst="0" />
 </dwsync>

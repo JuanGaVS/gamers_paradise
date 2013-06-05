@@ -1,158 +1,98 @@
 var choices = [];
 
-function isSurveyFill( ){
-	var selectedCheckbox = 0;
-	
-	for( var index = 0; index < choices.length; index++ ){
-		if( choices[index].idQuestion == 1 ){
-			selectedCheckbox = selectedCheckbox + 1;
-		}//Fin de if
-	}//Fin de for.
-	
-	if( choices.length == ( 10 + selectedCheckbox ) && choices.length >= 11 ){
-		return true;
-	}//Fin de if.
-	return false;
+function isSurveyFill( ) {
+    var selectedCheckbox = 0;
+
+    for (var index = 0; index < choices.length; index++) {
+        if (choices[index].idQuestion == 1) {
+            selectedCheckbox = selectedCheckbox + 1;
+        }//Fin de if
+    }//Fin de for.
+
+    if (choices.length == (10 + selectedCheckbox) && choices.length >= 11) {
+        return true;
+    }//Fin de if.
+    return false;
 }//Fin de is isSurveyFill.
 
-function addChoices( choice ){
-	choices.push( choice );
+function addChoices(choice) {
+    choices.push(choice);
 }//Fin de function addChoices.
 
-function scanChoices( choice ){
-	//alert( "Entro a scan" );
-	var finded = -1;
-	for( var index = 0; index < choices.length; index++ ){
-		//alert( "Entro al for" );
-		if( choices[index].idQuestion == choice.idQuestion ){
-			if( choices[index].idQuestion == 1 ){
-				if( choices[index].idSelectedChoise == choice.idSelectedChoise ){
-					finded = index;
-				}//Fin de if.
-			}//Fin de if.
-			else{
-				finded = index;
-			}//Fin de else.
-		}//Fin de if.
-	}//Fin de for.
-	//alert( "Valor de finded = " + finded );
-	//alert( "brinco el for" );
-	return finded;
+function scanChoices(choice) {
+    var finded = -1;
+    for (var index = 0; index < choices.length; index++) {
+        if (choices[index].idQuestion == choice.idQuestion) {
+            if (choices[index].idQuestion == 1) {
+                if (choices[index].idSelectedChoise == choice.idSelectedChoise) {
+                    finded = index;
+                }//Fin de if.
+            }//Fin de if.
+            else {
+                finded = index;
+            }//Fin de else.
+        }//Fin de if.
+    }//Fin de for.
+    return finded;
 }//Fin de function scanChoices.
 
-function mayor( ) {
- alert( "Entro mayor" );
-  request = $.ajax({
-  type: "POST",
-  url: "calls.php",
-  data: { 
- 	method:'mayor',
-  numero1:1
-  },
-  success: function(data){
-  var response = data;
-  //alert( 'respuesta: ' + data );
-  $( 'span.mayor' ).html( response.toString( ) );
-  }//Fin de sucess.
-  })//Fin de request. 
- .fail( function( jqxhr, msg ){
- 	alert( "Entro fail: " + msg );
- } )//Fin de fail.
-}//Fin de function mayor.
-
-/*function sendSurvey( ){
-	alert( "Entro SendSurvey" );
-	request = $.ajax({
-        type: "POST",
-        url: "sugerencias.php",
-        data: { method: 'sendSurvey', 
-            answers: choices
-        }//Fin de data.
-        ,
-        success: function( data ){
-            var response = data;
-            //alert( 'respuesta: ' + data );
-            $( 'span.mayor' ).html( response.toString( ) );
-			window.location = "sugerencias.php?answers="+choices;	
-		}//Fin de sucess.
-    })//Fin de request. 
-	.fail( function( jqxhr, msg ){
-		alert( "Entro fail: " + msg );
-	} )//Fin de fail.
-}//Fin de function sendSurvey.
-*/
-
-function sendSurvey(){
-	alert( "Entro SendSurvey 86" );
-	post_to_url('sugerencias.php',parseChoicesToJSON( ),'post');
+function sendSurvey() {
+    post_to_url('sugerencias.php', parseChoicesToJSON( ), 'post');
 }
 
-$( '.choice' ).on( 'click', function( ){
-	//alert( "Id_Question" + $( this ).attr( 'name' ) + ":: IdChoise" + $( this ).val( ) );
-	var inputChoice = { idQuestion: $( this ).attr( 'name' ), idSelectedChoise: $( this ).val( ) };
-	var isInArray = scanChoices( inputChoice );
-	if( isInArray != -1 ){
-		if( inputChoice.idQuestion == 1 ){
-			//alert( "Era el checkbox y se esta desmarcando asi q elimino" );
-			choices.splice( isInArray, 1 );
-		}//Fin de if.
-		else{
-			//alert( "Ya existia en el arreglo, se reemplaza" );
-			choices[ isInArray ] = inputChoice;
-		}//Fin de else.
-	}//Fin de if.
-	else{
-		//alert( "No existia en el arreglo, se procede a guardar" );
-		addChoices( inputChoice );
-	}
-	if( isSurveyFill( ) ){
-		//alert( "La encuesta esta completa" );
-		$( '.buttonSend' ).show( );
-	}//Fin de if.
-	else{
-		$( '.buttonSend' ).hide( );
-	}//Fin d else.
+$('.choice').on('click', function( ) {
+    var inputChoice = {idQuestion: $(this).attr('name'), idSelectedChoise: $(this).val( )};
+    var isInArray = scanChoices(inputChoice);
+    if (isInArray != -1) {
+        if (inputChoice.idQuestion == 1) {
+            choices.splice(isInArray, 1);
+        }//Fin de if.
+        else {
+            choices[ isInArray ] = inputChoice;
+        }//Fin de else.
+    }//Fin de if.
+    else {
+        addChoices(inputChoice);
+    }
+    if (isSurveyFill( )) {
+        $('.buttonSend').show( );
+    }//Fin de if.
+    else {
+        $('.buttonSend').hide( );
+    }//Fin d else.
 });
 
-$( '.buttonSend' ).on( 'click', function( ){
-	alert( "Antes Send Survey" );
-	sendSurvey( );
-	//alert( "Deberia de enviar" );
+$('.buttonSend').on('click', function( ) {
+    sendSurvey( );
 });
 
-$( '.buttonNext' ).on( 'click', function( ){
-	//alert( $('.question').css("display") );
-	if( $('.question').css("display") != 'none' ){
-		$( '.question' ).hide( );
-		$( '.question2' ).show( );
-		$( this ).val( 'Atras' );
-	}
-	else{
-		$( '.question2' ).hide( );
-		$( '.question' ).show( );
-		$( this ).val( 'Siguiente' );
-	}//Fin de else.
+$('.buttonNext').on('click', function( ) {
+    if ($('.question').css("display") != 'none') {
+        $('.question').hide( );
+        $('.question2').show( );
+        $(this).val('Atras');
+    }
+    else {
+        $('.question2').hide( );
+        $('.question').show( );
+        $(this).val('Siguiente');
+    }//Fin de else.
 });
 
 function post_to_url(path, param, method) {
     method = method || "post"; // Set method to post by default if not specified.
 
-    // The rest of this code assumes you are not using a library.
-    // It can be made less wordy if you use one.
     var form = document.createElement("form");
     form.setAttribute("method", method);
     form.setAttribute("action", path);
 
-    //for(var key in params) {
-      //  if(params.hasOwnProperty(key)) {
-            var hiddenField = document.createElement("input");
-            hiddenField.setAttribute("type", "hidden");
-            hiddenField.setAttribute("name", 'answers');
-            hiddenField.setAttribute("value", param);
+    var hiddenField = document.createElement("input");
+    hiddenField.setAttribute("type", "hidden");
+    hiddenField.setAttribute("name", 'answers');
+    hiddenField.setAttribute("value", param);
 
-            form.appendChild(hiddenField);
-        // }
-    //}
+    form.appendChild(hiddenField);
+
 
     document.body.appendChild(form);
     form.submit();
@@ -161,20 +101,115 @@ function post_to_url(path, param, method) {
 
 //DOM is ready
 $(document).ready(function() {
-	//alert( "READY" );
 });
 
 
-function parseChoicesToJSON( ){
-	var StringJSON = '{"choices":[';
-	
-	for( var index = 0; index < choices.length; index++ ){
-		StringJSON += '{"idQuestion":"' + choices[index].idQuestion +'",';
-		StringJSON += '"idSelectedChoise":"' + choices[index].idSelectedChoise +'"}';
-		if( index != choices.length - 1 ){
-			StringJSON += ',';
-		}//Fin de if
-	}//Fin de for.
-	StringJSON += ']}';
-	return StringJSON;
+function parseChoicesToJSON( ) {
+    var StringJSON = '{"choices":[';
+
+    for (var index = 0; index < choices.length; index++) {
+        StringJSON += '{"idQuestion":"' + choices[index].idQuestion + '",';
+        StringJSON += '"idSelectedChoise":"' + choices[index].idSelectedChoise + '"}';
+        if (index != choices.length - 1) {
+            StringJSON += ',';
+        }//Fin de if
+    }//Fin de for.
+    StringJSON += ']}';
+    return StringJSON;
 }//Fin de function parseChoicesToJSON.
+
+
+function login() {
+
+    FB.login(function(response) {
+        if (response.authResponse) {
+            //console.log('Welcome!  Fetching your information.... ');
+
+            FB.api('/me?fields=id,first_name,last_name,locale,gender,birthday', function(response) {
+                //console.log('Good to see you, ' + response.name + '.');
+                var Vuid = response.id;
+                var Vfirst_name = response.first_name;
+                var Vlast_name = response.last_name;
+                var Vlocale = response.locale;
+                var Vgender = response.gender;
+                var Vbirthday = response.birthday;
+                request = $.ajax({
+                    type: "POST",
+                    url: "login.php",
+                    data: {
+                        uid: Vuid,
+                        first_name: Vfirst_name,
+                        last_name: Vlast_name,
+                        gender: Vgender,
+                        locale: Vlocale,
+                        birthday: Vbirthday,
+                    },
+                    success: function(data) {
+                        var response = data;
+                        window.location = "encuesta.php";
+                    }
+
+                });
+
+            });
+
+
+
+            //window.location = 'encuesta.php';
+        }
+    }, {scope: 'user_birthday,user_about_me,user_status'});
+//redirect here
+}
+
+
+function post() {
+
+    FB.ui(
+            {
+                method: 'feed',
+                name: 'Gamers Paradise',
+                link: 'https://www.facebook.com/pages/Gamers-Paradise/297090210428630',
+                picture: 'http://www.flashfusioner.com/gamers_paradise/imagenes/couch-friends.png',
+                caption: 'Responde y gana con Gamers Paradise',
+                description: 'Hola, recientemente he completado la encuesta de Gamers Paradise. Me ha sugerido juegos que me quiero jugar ya!!! ¿Que estas esperando?'
+            },
+    function(response) {
+        if (response && response.post_id) {
+
+
+            FB.api('/me?fields=id', function(response) {
+                //console.log('Good to see you, ' + response.name + '.');
+                var uid = response.id;
+                var gameSelected;
+                
+                var radios = document.getElementsByName('games');
+
+                for (var i = 0, length = radios.length; i < length; i++) {
+                    if (radios[i].checked) {
+                        gameSelected = radios[i].value;
+                    }
+                }
+                
+                
+
+                request = $.ajax({
+                    type: "POST",
+                    url: "calls.php",
+                    data: {
+                        method: 'saveContestantGame',
+                        uid: uid,
+                        game: gameSelected,
+                        console: document.getElementById( 'consoles-select' ).value,
+                    },
+                    success: function(data) {
+                        window.location = "exitos.php";
+                    }
+
+                });
+
+            });
+
+        }
+    }
+    );
+}

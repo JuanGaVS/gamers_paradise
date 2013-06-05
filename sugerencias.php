@@ -28,7 +28,6 @@ foreach ($datos["choices"] as $choice) {
     $idQuestion = $choice["idQuestion"];
     $idSelectedChoise = $choice["idSelectedChoise"];
 
-    echo('question: ' . $idQuestion . '  idSelectedchoice ' . $idSelectedChoise . ' <br/>');
 
     $games = $choiceDAL->getGamesFromChoice($idSelectedChoise);
 
@@ -36,37 +35,47 @@ foreach ($datos["choices"] as $choice) {
         $maxSize = sizeof($gamesValues);
         for ($index = 0; $index < $maxSize; $index++) {
             $gameValue = $gamesValues[$index];
-            
-            if ($gameValue->getGame_id() == $game){
+
+            if ($gameValue->getGame_id() == $game) {
                 $gameValue->addPoint();
                 break;
             }
-
-           
         }
     }
-    
-    
-   
-    
-    
-    
+
+    orderArray($gamesValues);
+
+    $topGames = array();
+
+    for ($index = 0; $index < 5; $index++) {
+        $topGames[] = $gamesValues[$index];
+    }
+
+    $showGames = array();
+
+    foreach ($topGames as $topGame) {
+        $id = $topGame->getGame_id();
+
+        $game = $gameDAL->getGame($id);
+        $showGames[] = $game;
+    }
 }
 
-function orderArray($array){
-	$maxSize = sizeof($gamesValues);
-	$gameValueJoker = new GameValue( );
+function orderArray($array) {
+    $maxSize = sizeof($array);
+    $gameValueJoker = new GameValue( );
     for ($index = 0; $index < $maxSize; $index++) {
-		for ($index2 = 0; $index2 < $maxSize; $index2++) {
-			if( $array[$index]->getPoints( ) < $array[$index2]->getPoints( ) ){
-				$gameValueJoker = $array[$index2];
-				$array[$index2] = $array[$index];
-				$array[$index] = $gameValueJoker;
-			}//Fin de if.
-		}//Fin de for.
-	}//Fin de for.
-}//Fin de function orderArray.
+        for ($index2 = 0; $index2 < $maxSize; $index2++) {
+            if ($array[$index]->getPoints() < $array[$index2]->getPoints()) {
+                $gameValueJoker = $array[$index2];
+                $array[$index2] = $array[$index];
+                $array[$index] = $gameValueJoker;
+            }//Fin de if.
+        }//Fin de for.
+    }//Fin de for.
+}
 
+//Fin de function orderArray.
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -78,6 +87,43 @@ function orderArray($array){
     </head>
 
     <body>
+        <script>
+            function reloadConsoles() {
+                var gameSelected;
+                var radios = document.getElementsByName('games');
+
+                for (var i = 0, length = radios.length;
+                        i < length;
+                        i++) {
+                    if (radios[i].checked) {
+                        gameSelected = radios[i].value;
+                    }
+                }
+
+                request = $.ajax({
+                    type: "POST",
+                    url: "calls.php",
+                    data: {
+                        method: 'reloadConsoles',
+                        gid: gameSelected
+                    },
+                    success: function(data) {
+                        $('#consoles-select').empty();
+                        for (choice in data) {
+                            var option = document.createElement("option");
+                            option.setAttribute("value", choice);
+                            option.innerHtml("hhhh");
+
+                            
+
+                            $('#consoles-select').appendChild(option);
+                        }
+                    }
+
+                });
+
+            }
+        </script>
         <script src="js/facebook.js" type="text/javascript"></script> 
         <div id="wrapper">
             <div id="titulo" class="titulo-sugerencias">
@@ -85,24 +131,22 @@ function orderArray($array){
                 <h2 class="titles-18">HAZ CLICK EN UN JUEGO PARA VER UN REVIEW</h2>
             </div>
             <div id="sugerencias">
-                <span class='mayor' ><?php
-if ($respuestas != null) {
-    echo "CLARO AMO LA COMPAÑERA DE KEVIN";
-} else {
-    echo "MAME!!";
-}
-?></span>
-                <div class="sugerencia">
 
-                    <img src="#" alt="Imagen" width="185px" height="110px"/>
-                    <input type="radio" name="games" value="j1" id="j1"/>
-                    <label for="j1" class="paragraphs" style="text-transform:uppercase">
-                        <a href="#">nombre</a>
-                    </label>
+                <?php foreach ($showGames as $showGame) { ?>
 
-                </div>
+                    <div class="sugerencia">
 
-                <div class="sugerencia">
+                        <img src="<?php echo $showGame->getFirstPicture(); ?>" alt="Imagen" width="185px" height="110px"/>
+                        <input type="radio" name="games" checked="checked" onchange="reloadConsoles();" value="<?php echo $showGame->getGame_id(); ?>" id="<?php echo $showGame->getGame_id(); ?>"/>
+                        <label for="<?php echo $showGame->getGame_id(); ?>" class="paragraphs" style="text-transform:uppercase">
+                            <a class="fancybox iframe" rel="group" href="juego.php?game_id=<?php echo $showGame->getGame_id(); ?>"><?php echo $showGame->getName(); ?></a>
+                        </label>
+
+                    </div>
+
+                <?php } ?>
+
+                <!--div class="sugerencia">
 
                     <img src="#" alt="Imagen" width="185px" height="110px"/>
                     <input type="radio" name="games" value="j1" id="j2"/>
@@ -140,7 +184,7 @@ if ($respuestas != null) {
                         <a href="#">nombre</a>
                     </label>
 
-                </div>
+                </div-->
 
                 <div id="choose-console" class="styled">
 
