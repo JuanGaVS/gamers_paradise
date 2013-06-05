@@ -54,7 +54,7 @@ foreach ($datos["choices"] as $choice) {
 }
 
 function orderArray($array){
-	$maxSize = sizeof($gamesValues);
+	$maxSize = sizeof($array);
 	$gameValueJoker = new GameValue( );
     for ($index = 0; $index < $maxSize; $index++) {
 		for ($index2 = 0; $index2 < $maxSize; $index2++) {
