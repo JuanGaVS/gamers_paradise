@@ -162,7 +162,7 @@ function login() {
 }
 
 
-function post() {
+function postAndChoose() {
 
     FB.ui(
             {
@@ -199,7 +199,7 @@ function post() {
                         method: 'saveContestantGame',
                         uid: uid,
                         game: gameSelected,
-                        console: document.getElementById( 'consoles-select' ).value,
+                        console: document.getElementById('consoles-select').value,
                     },
                     success: function(data) {
                         window.location = "exitos.php";

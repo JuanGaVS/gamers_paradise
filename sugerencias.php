@@ -109,10 +109,11 @@ function orderArray($array) {
                     },
                     success: function(data) {
                         $('#consoles-select').empty();
-                        for (choice in data) {
+                        var parsedJSON = eval('('+data+')');
+                        for (choice in parsedJSON) {
                             var option = document.createElement("option");
-                            option.setAttribute("value", choice);
-                            option.innerHtml("hhhh");
+                            option.setAttribute("value", choice.choice_id);
+                            option.innerHtml(choice.text);
 
                             
 
@@ -146,62 +147,24 @@ function orderArray($array) {
 
                 <?php } ?>
 
-                <!--div class="sugerencia">
-
-                    <img src="#" alt="Imagen" width="185px" height="110px"/>
-                    <input type="radio" name="games" value="j1" id="j2"/>
-                    <label for="j2" class="paragraphs" style="text-transform:uppercase">
-                        <a href="#">nombre</a>
-                    </label>
-
-                </div>
-
-                <div class="sugerencia">
-
-                    <img src="#" alt="Imagen" width="185px" height="110px"/>
-                    <input type="radio" name="games" value="j1" id="j3"/>
-                    <label for="j3" class="paragraphs" style="text-transform:uppercase">
-                        <a href="#">nombre</a>
-                    </label>
-
-                </div>
-
-                <div class="sugerencia">
-
-                    <img src="#" alt="Imagen" width="185px" height="110px"/>
-                    <input type="radio" name="games" value="j1" id="j4"/>
-                    <label for="j4" class="paragraphs" style="text-transform:uppercase">
-                        <a href="#">nombre</a>
-                    </label>
-
-                </div>
-
-                <div class="sugerencia">
-
-                    <img src="#" alt="Imagen" width="185px" height="110px"/>
-                    <input type="radio" name="games" value="j1" id="j5"/>
-                    <label for="j5" class="paragraphs" style="text-transform:uppercase">
-                        <a href="#">nombre</a>
-                    </label>
-
-                </div-->
+                
 
                 <div id="choose-console" class="styled">
 
                     <select id="consoles-select" name="console">
-                        <option value="1">Consola1</option>
+                        <!--option value="1">Consola1</option>
                         <option value="2">Consola2</option>
                         <option value="3">Consola3</option>
                         <option value="4">Consola4</option>
-                        <option value="5">Consola5</option>
+                        <option value="5">Consola5</option-->
                     </select>
                 </div>
 
                 
-                <a id="contenedor-boton" onclick="post2();return false;" href="#">ESCOGER</a>
+                <a id="contenedor-boton" onclick="postAndChoose();return false;" href="#">ESCOGER</a>
 
 
-                <a id="contenedor-boton" href="#">ESCOGER</a>
+                <!--a id="contenedor-boton" href="#">ESCOGER</a-->
                 <p class="paragraphs-15" id="share-obligation">DEBES COMPARTIR LA PUBLICACIÓN PARA PARTICIPAR</p>
 
             </div>

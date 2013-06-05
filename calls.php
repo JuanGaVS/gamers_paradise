@@ -1,15 +1,29 @@
 <?php
 
-require_once('entities/GameContestantDAL.php');
+require_once('dal/GameContestantDAL.php');
+require_once('dal/ConsoleDAL.php');
 
-$gameUserDAL = new GameUserDAL();
-	
-	switch( $_POST[ 'method' ] ){
-		case 'saveContestantGame':
-            $gameUserDAL->saveContestantGame( $_POST[ 'uid' ],$_POST[ 'game' ],$_POST[ 'console' ] );
-    	break;
-		
-    }//Fin de switch.
-	
-	
+
+
+switch ($_POST['method']) {
+    case 'saveContestantGame':
+        saveContestantGame();
+        break;
+    case 'reloadConsoles':
+        reloadConsoles();
+        break;
+}//Fin de switch.
+
+function saveContestantGame() {
+    $gameContestantDAL = new GameContestantDAL();
+    $gameContestantDAL->saveContestantGame($_POST['uid'], $_POST['game'], $_POST['console']);
+}
+
+function reloadConsoles() {
+    $consoleDAL = new ConsoleDAL();
+
+    $data = $consoleDAL->getConsolesForGame($_POST['gid']);
+    echo $data;
+}
+
 ?>

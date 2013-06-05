@@ -51,7 +51,7 @@
 <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.4"></script>
 <script src="js/fancybox.js" type="text/javascript"></script>
-<script src="js/main2.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
 </body>
 
 
