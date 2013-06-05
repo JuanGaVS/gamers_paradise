@@ -12,11 +12,19 @@
  */
 class DBConnection {
 
-    private $db_host = "mysql.flashfusioner.com";
+    private $db_host = "localhost";
+    private $db_name = "gamers_paradise";
+    private $username = "root";
+    private $password = "root";
+    private $connection;
+	
+	/*
+	private $db_host = "mysql.flashfusioner.com";
     private $db_name = "gamer_paradise";
     private $username = "jorgemiranda";
     private $password = "pwd123";
     private $connection;
+	*/
 
     function __construct() {
         try {

@@ -1,11 +1,12 @@
 <?php
+	
 	switch( $_POST[ 'method' ] ){
 		case 'mayor':
             mayor( $_POST[ 'numero1' ] );
-        break;
+    	break;
 		case 'sendSurvey':
-			//$respuestas = $_POST( 'answers' );
-			sendSurvey( );
+			$respuestas = $_POST( 'answers' );
+			//sendSurvey( );
 		break;
     }//Fin de switch.
 	

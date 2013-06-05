@@ -22,9 +22,9 @@ $questions = $quuestionDAL->getQuestions();
   <div id="titulo">
     <h1 class="titles">GAMERS PARADISE</h1>
   </div>
-  <div id="survey">
   <p>(Prueba)El mayor es: <span class='mayor' ></span></p>
-  <form id="survey" method="POST" action="">
+  <div id="survey">
+  <form id="survey" method="POST" action="sugerencias.php">
   <?php 
   $number = 1;
   $questions_choices_array = array();

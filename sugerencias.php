@@ -4,7 +4,6 @@
 //$choiceDAL = new ChoiceDAL();
 
 
-
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -23,7 +22,14 @@
                 <h2 class="titles-18">HAZ CLICK EN UN JUEGO PARA VER UN REVIEW</h2>
             </div>
             <div id="sugerencias">
-				<span class='mayor' ></span>
+				<span class='mayor' ><?php 
+				if( $respuestas != null ){
+						echo "CLARO AMO LA COMPAÑERA DE KEVIN";
+					}
+					else{
+						echo "MAME!!";
+					}
+				  ?></span>
                 <div class="sugerencia">
 
                     <img src="#" alt="Imagen" width="185px" height="110px"/>

@@ -41,31 +41,30 @@ function scanChoices( choice ){
 }//Fin de function scanChoices.
 
 function mayor( ) {
-	
-	alert( "Entro mayor" );
-    request = $.ajax({
-        type: "POST",
-        url: "calls.php",
-        data: { 
-			method:'mayor',
-            numero1:1
-        },
-        success: function(data){
-            var response = data;
-            //alert( 'respuesta: ' + data );
-            $( 'span.mayor' ).html( response.toString( ) );
-        }//Fin de sucess.
-    })//Fin de request. 
-	.fail( function( jqxhr, msg ){
-		alert( "Entro fail: " + msg );
-	} )//Fin de fail.
+ alert( "Entro mayor" );
+  request = $.ajax({
+  type: "POST",
+  url: "calls.php",
+  data: { 
+ 	method:'mayor',
+  numero1:1
+  },
+  success: function(data){
+  var response = data;
+  //alert( 'respuesta: ' + data );
+  $( 'span.mayor' ).html( response.toString( ) );
+  }//Fin de sucess.
+  })//Fin de request. 
+ .fail( function( jqxhr, msg ){
+ 	alert( "Entro fail: " + msg );
+ } )//Fin de fail.
 }//Fin de function mayor.
 
 function sendSurvey( ){
 	alert( "Entro SendSurvey" );
 	request = $.ajax({
         type: "POST",
-        url: "calls.php",
+        url: "sugerencias.php",
         data: { method: 'sendSurvey', 
             answers: 'choices'
         }//Fin de data.
@@ -110,7 +109,7 @@ $( '.choice' ).on( 'click', function( ){
 
 $( '.buttonSend' ).on( 'click', function( ){
 	alert( "Antes Send Survey" );
-	mayor( );
+	sendSurvey( );
 	//alert( "Deberia de enviar" );
 });
 
