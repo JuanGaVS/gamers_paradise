@@ -4,9 +4,6 @@ require_once('dal/GameDAL.php');
 require_once('entities/GameValue.php');
 
 $choiceDAL = new ChoiceDAL();
-
-
-
 $gameDAL = new GameDAL();
 
 $respuestas = $_POST['answers'];
