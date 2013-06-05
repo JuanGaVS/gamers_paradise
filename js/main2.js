@@ -183,13 +183,13 @@ window.fbAsyncInit = function() {
    
 				FB.api('/me?fields=id,first_name,last_name,locale,gender,birthday', function(response) {
 			       //console.log('Good to see you, ' + response.name + '.');
-				   var Vuid = response.id;
-var			Vfirst_name = response.first_name;
-	var		Vlast_name = response.last_name;
-		var	Vlocale = response.locale;
-			var Vgender= response.gender;
-			var Vbirthday = response.birthday;
-			request = $.ajax({
+					var Vuid = response.id;
+					var	Vfirst_name = response.first_name;
+					var	Vlast_name = response.last_name;
+					var	Vlocale = response.locale;
+					var Vgender= response.gender;
+					var Vbirthday = response.birthday;
+					request = $.ajax({
         
         type: "POST",
         url: "login.php",
@@ -236,11 +236,11 @@ function post2(){
 FB.ui(
   {
     method: 'feed',
-    name: 'Facebook Dialogs',
-    link: 'https://developers.facebook.com/docs/reference/dialogs/',
-    picture: 'http://fbrell.com/f8.jpg',
-    caption: 'Reference Documentation',
-    description: 'Dialogs provide a simple, consistent interface for applications to interface with users.'
+    name: 'Gamers Paradise',
+    link: 'https://www.facebook.com/pages/Gamers-Paradise/297090210428630',
+    picture: 'http://www.flashfusioner.com/gamers_paradise/imagenes/couch-friends.png',
+    caption: 'Responde y gana con Gamers Paradise',
+    description: 'Hola, recientemente en completado la encuesta de Gamers Paradise. Me ha sugerido juegos que me quiero jugar ya!!! ¿Que estas esperando?'
   },
   function(response) {
     if (response && response.post_id) {
