@@ -84,8 +84,8 @@ function mayor( ) {
 
 function sendSurvey(){
 	alert( "Entro SendSurvey 86" );
-	post_to_url('sugerencias.php',choices,'post');
-	}
+	post_to_url('sugerencias.php',parseChoicesToJSON( ),'post');
+}
 
 $( '.choice' ).on( 'click', function( ){
 	//alert( "Id_Question" + $( this ).attr( 'name' ) + ":: IdChoise" + $( this ).val( ) );
@@ -187,3 +187,17 @@ function post_to_url(path, params, method) {
   document.body.appendChild(form);
   form.submit();
 }
+
+function parseChoicesToJSON( ){
+	var StringJSON = '{"choices":[';
+	
+	for( var index = 0; index < choices.length; index++ ){
+		StringJSON += '{"idQuestion":"' + choices[index].idQuestion +'",';
+		StringJSON += '"idQuestion":"' + choices[index].idSelectedChoise +'"}';
+		if( index != choices.length - 1 ){
+			StringJSON += ',';
+		}//Fin de if
+	}//Fin de for.
+	StringJSON += ']}';
+	return StringJSON;
+}//Fin de function parseChoicesToJSON.
