@@ -14,7 +14,7 @@ $size = sizeof($gamesIDFromDB);
 
 $gamesValues = array();
 
-for ($index = 0; index < $size; $index++) {
+for ($index = 0; $index < $size; $index++) {
     $gameValue = new GameValue();
     $gameValue->setGame_id($gamesIDFromDB[$index]);
 
@@ -34,7 +34,7 @@ foreach ($datos["choices"] as $choice) {
 
     foreach ($games as $game) {
         $maxSize = sizeof($gamesValues);
-        for ($index = 0; index < $maxSize; $index++) {
+        for ($index = 0; $index < $maxSize; $index++) {
             $gameValue = $gamesValues[$index];
             
             if ($gameValue->getGame_id() == $game){
@@ -47,15 +47,18 @@ foreach ($datos["choices"] as $choice) {
     }
     
     
-    function orderArray($array){
-        
-        
-        
-    }
+   
     
     
     
 }
+
+ function orderArray($array){
+        
+        
+        
+    }
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
