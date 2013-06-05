@@ -44,7 +44,7 @@ function mayor( ) {
 	alert( "Entro mayor" );
     request = $.ajax({
         type: "POST",
-        url: "calls.php",
+        url: "sugerencias.php",
         data: { method:'mayor', 
             numero1:1
         }//Fin de data.
