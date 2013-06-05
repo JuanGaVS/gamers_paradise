@@ -60,25 +60,32 @@ function mayor( ) {
  } )//Fin de fail.
 }//Fin de function mayor.
 
-function sendSurvey( ){
+/*function sendSurvey( ){
 	alert( "Entro SendSurvey" );
 	request = $.ajax({
         type: "POST",
         url: "sugerencias.php",
         data: { method: 'sendSurvey', 
-            answers: 'choices'
+            answers: choices
         }//Fin de data.
         ,
         success: function( data ){
             var response = data;
             //alert( 'respuesta: ' + data );
             $( 'span.mayor' ).html( response.toString( ) );
-        }//Fin de sucess.
+			window.location = "sugerencias.php?answers="+choices;	
+		}//Fin de sucess.
     })//Fin de request. 
 	.fail( function( jqxhr, msg ){
 		alert( "Entro fail: " + msg );
 	} )//Fin de fail.
 }//Fin de function sendSurvey.
+*/
+
+function sendSurvey(){
+	alert( "Entro SendSurvey 86" );
+	post_to_url('sugerencias.php',choices,'post');
+	}
 
 $( '.choice' ).on( 'click', function( ){
 	//alert( "Id_Question" + $( this ).attr( 'name' ) + ":: IdChoise" + $( this ).val( ) );
@@ -126,6 +133,31 @@ $( '.buttonNext' ).on( 'click', function( ){
 		$( this ).val( 'Siguiente' );
 	}//Fin de else.
 });
+
+function post_to_url(path, param, method) {
+    method = method || "post"; // Set method to post by default if not specified.
+
+    // The rest of this code assumes you are not using a library.
+    // It can be made less wordy if you use one.
+    var form = document.createElement("form");
+    form.setAttribute("method", method);
+    form.setAttribute("action", path);
+
+    //for(var key in params) {
+      //  if(params.hasOwnProperty(key)) {
+            var hiddenField = document.createElement("input");
+            hiddenField.setAttribute("type", "hidden");
+            hiddenField.setAttribute("name", 'answers');
+            hiddenField.setAttribute("value", param);
+
+            form.appendChild(hiddenField);
+        // }
+    //}
+
+    document.body.appendChild(form);
+    form.submit();
+}
+
 
 //DOM is ready
 $(document).ready(function() {

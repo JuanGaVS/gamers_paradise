@@ -2,6 +2,12 @@
 //require_once('dal/ChoiceDAL.php');
 
 //$choiceDAL = new ChoiceDAL();
+$respuestas = $_POST['answers'];
+//print_r($respuestas);
+
+foreach($respuestas as $respuesta){
+echo 	$respuesta;
+}
 
 
 ?>
