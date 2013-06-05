@@ -297,7 +297,7 @@ class GameDAL {
         $games = array();
         
         try {
-            $statement = $this->conn->prepare("select game_id, name, trailer_url, description from tb_game");
+            $statement = $this->conn->prepare("select game_id from tb_game");
             $statement->execute();
             $reults = $statement->fetchAll();
             
