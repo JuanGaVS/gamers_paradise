@@ -31,11 +31,11 @@
     
 	
   	<div id="instrucciones">
-    		<p class="paragraphs-18">Te trae con la participación  en esta app, la oportunidad de llevarte a tu casa, el juego que has deseado tener en tu consola.</p><br/>
-        	<p class="paragraphs-18">Simplemente, sigue la aplicación contestando las preguntas que aparecerán, sin dejar ninguna vacía.</p><br/>
-        	<p class="paragraphs-18">Al final podrás encontrar los juegos con mayor coincidencia a tus respuestas, y elije entre ellos para participar en el concurso.</p><br/>
-            <p class="paragraphs-18">De ser el favorecido, tu juego escogido será tu anhelado premio.</p><br/>
-         	<p class="paragraphs-18">Para ingresar haz clic en el botón INICIAR</p><br/>
+    		<p class="paragraphs-15">Te trae con la participación  en esta app, la oportunidad de llevarte a tu casa, el juego que has deseado tener en tu consola.</p>
+        	<p class="paragraphs-15">Simplemente, sigue la aplicación contestando las preguntas que aparecerán, sin dejar ninguna vacía.</p>
+        	<p class="paragraphs-15">Al final podrás encontrar los juegos con mayor coincidencia a tus respuestas, y elije entre ellos para participar en el concurso.</p>
+            <p class="paragraphs-15">De ser el favorecido, tu juego escogido será tu anhelado premio.</p>
+         	<p class="paragraphs-15">Para ingresar haz clic en el botón INICIAR</p>
 	</div>
   <span id="prueba"></span>
 	<div id="console-tv"></div>

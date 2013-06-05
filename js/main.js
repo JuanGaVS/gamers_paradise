@@ -41,15 +41,21 @@ function scanChoices( choice ){
 }//Fin de function scanChoices.
 
 function mayor( ) {
+	
 	alert( "Entro mayor" );
     request = $.ajax({
         type: "POST",
+<<<<<<< HEAD
         url: "sugerencias.php",
         data: { method:'mayor', 
+=======
+        url: "calls.php",
+        data: { 
+			method:'mayor',
+>>>>>>> c380c231a42f0a4a4fabfee17cd856fa94374571
             numero1:1
-        }//Fin de data.
-        ,
-        success: function( data ){
+        },
+        success: function(data){
             var response = data;
             //alert( 'respuesta: ' + data );
             $( 'span.mayor' ).html( response.toString( ) );
