@@ -85,7 +85,7 @@
                     </select>
                 </div>
                 
-                <a id="contenedor-boton" href="#">ESCOGER</a>
+                <a id="contenedor-boton" onclick="post2();return false;" href="#">ESCOGER</a>
                 <p class="paragraphs-15" id="share-obligation">DEBES COMPARTIR LA PUBLICACIÓN PARA PARTICIPAR</p>
 
             </div>
@@ -108,4 +108,5 @@
     <script src="js/fancybox.js" type="text/javascript"></script>
     <script src="js/sidebar.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/main.js" ></script>
+    <script src="js/main2.js" type="text/javascript"></script>
 </html>
