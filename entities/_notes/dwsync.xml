@@ -20,11 +20,17 @@
 <file name="User.php" server="C:/AppServ/www/gamersparadise/" local="130135664848802186" remote="130135664840000000" Dst="0" />
 <file name="Contestant.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130147034229344199" remote="130148713800000000" Dst="0" />
 <file name="Console.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130134923265968545" remote="130145290800000000" Dst="0" />
+<<<<<<< HEAD
 <file name="DBConnection.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130148768291216446" remote="130148769000000000" Dst="0" />
 <file name="Choice.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130147006990426185" remote="130148769000000000" Dst="0" />
+=======
+<file name="DBConnection.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130148809676304412" remote="130148773200000000" Dst="0" />
+<file name="Choice.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130145349553619429" remote="130148771400000000" Dst="0" />
+>>>>>>> 8aa91319ce467124f55263ca2eea48f9685f8157
 <file name="Game.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130140971228887958" remote="130148704800000000" Dst="0" />
 <file name="ChoiceGame.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130134930405296891" remote="130148709600000000" Dst="0" />
 <file name="GameConstestant.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130134930880584076" remote="130148709600000000" Dst="0" />
 <file name="Question.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130139917963276733" remote="130148709600000000" Dst="0" />
 <file name="User.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130135933795572164" remote="130148709600000000" Dst="0" />
+<file name="GameValue.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130148882624646819" remote="130148846400000000" Dst="0" />
 </dwsync>

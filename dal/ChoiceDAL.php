@@ -10,9 +10,11 @@
  *
  * @author Kevin
  *
-require_once '../entities/Choice.php';
-require_once '../entities/DBConnection.php';
-require_once './GameDAL.php';
+ * 
+ */
+require_once $_SERVER['DOCUMENT_ROOT'] . '/gamers_paradise/' . 'entities/Choice.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/gamers_paradise/' . 'entities/DBConnection.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/gamers_paradise/' . 'dal/GameDAL.php';
 
 class ChoiceDAL {
 
@@ -20,12 +22,13 @@ class ChoiceDAL {
 
     private $choice;
     private $games_id;
-    
     private $conn;
 
     function __construct() {
         $this->games_id = array();
-        $this->conn = new DBConnection();
+
+        $c = new DBConnection();
+        $this->conn = $c->getConnection();
     }
 
     public function getChoice() {
@@ -45,33 +48,30 @@ class ChoiceDAL {
     }
 
     public function getGamesFromChoice($choice) {
-        $cid = $choice->getChoice_id();
+        //$cid = $choice->getChoice_id();
 
         $games = array();
-        
+
         try {
             $statement = $this->conn->prepare("select game_id from tb_choice_game where choice_id = ?");
-            $statement->bindParam(1, $cid);
+            $statement->bindParam(1, $choice);
             $statement->execute();
-            
+
             $result = $statement->fetchAll();
 
             foreach ($result as $row) {
                 $gID = $row['game_id'];
-                
-                
+
+
                 $gameDAL = new GameDAL();
-                
+
                 $game = $gameDAL->getGame($gID);
                 $games[] = $game;
-                
-                
             }
-            
-            
-            
+
+
+
             return $games;
-            
         } catch (PDOException $e) {
             echo $e->getMessage();
         }
@@ -80,4 +80,3 @@ class ChoiceDAL {
 }
 
 ?>
-*/

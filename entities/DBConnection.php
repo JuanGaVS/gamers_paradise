@@ -17,6 +17,14 @@ class DBConnection {
     private $username = "jorgemiranda";
     private $password = "pwd123";
     private $connection;
+	
+	/*
+	private $db_host = "mysql.flashfusioner.com";
+    private $db_name = "gamer_paradise";
+    private $username = "jorgemiranda";
+    private $password = "pwd123";
+    private $connection;
+	*/
 
     function __construct() {
         try {

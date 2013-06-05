@@ -293,6 +293,32 @@ class GameDAL {
         
     }
     
+    public function getGamesID(){
+        $games = array();
+        
+        try {
+            $statement = $this->conn->prepare("select game_id, name, trailer_url, description from tb_game");
+            $statement->execute();
+            $reults = $statement->fetchAll();
+            
+            foreach ($reults as $gRow) {
+                $game_id = $gRow['game_id'];
+            
+            
+            $games [] = $game_id;
+          
+            }
+            
+            return $games;
+            
+        } catch (PDOException $e) {
+            return null;
+            echo $e->getMessage();
+        }
+        
+        
+    }
+    
       public function getGames(){
         
         
