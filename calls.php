@@ -26,7 +26,6 @@ function reloadConsoles() {
     
     $data = $consoleDAL->getConsolesForGame($_POST['gid']);
     
-    //echo '<script>line 24 calls </script>';
     
     echo $data;
 }
