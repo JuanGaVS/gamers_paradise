@@ -202,7 +202,8 @@ alert("js3");
                     type: "POST",
                     url: "calls.php",
                     data: {
-                        method: 'saveContestantGame',
+            
+			            method: 'saveContestantGame',
                         uid: uid,
                         game: gameSelected,
                         console: consoleChoosed
