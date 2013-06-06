@@ -50,7 +50,7 @@ $pictures = $game->getPictures();
   <div id="game-pictures">
   <?php for($index=0; $index<3; $index++){?>
   	<div class="game-picture">
-    	<a class="fancybox" rel="group" href="<?php echo $pictures[$index]; ?>"><img src="<?php echo $pictures[$index]; ?>" width="185px" height="110px"/></a>
+    	<a class="fancybox" rel="group" href="<?php echo $pictures[$index]; ?>"><img src="<?php echo $pictures[$index]; ?>" width="180px" height="110px"/></a>
     </div>
     <?php }?>
   </div>

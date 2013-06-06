@@ -12,7 +12,7 @@ $(document).ready(function() {
 		});
 		
 		$('.iframe').fancybox({
-			'width'         : '100%',
+			'width'         : '110%',
     'height'        : '100%',
     'autoScale'     : true,
     'transitionIn'  : 'none',

@@ -51,7 +51,7 @@
                         <li><a href="admin.php?page=contestants">Concursantes</a></li>
                         <li><a href="admin.php?page=games">Juegos</a></li>
                         <li><a href="admin.php?page=consoles">Consolas</a></li>
-                        <li><a href="admin.php?page=survey">Cuestionario</a></li>
+                        <!--li><a href="admin.php?page=survey">Cuestionario</a></li-->
                         <li><a href="logout.php">Cerrar Sesión</a></li>
                     </ul>
                 </div>

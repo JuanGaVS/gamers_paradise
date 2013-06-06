@@ -73,7 +73,7 @@ and open the template in the editor.
         <?php } while ($row_rs_Consoles = mysql_fetch_assoc($rs_Consoles)); ?>
     </table>
     <p><a href="add_console.php">Agregar Consola</a></p>
-    <p><a href="consoles-json.php">Borrar todo y cargar JSON</a></p>
+    <p><a href="#">Borrar todo y cargar JSON</a></p>
     </body>
 </html>
 <?php
