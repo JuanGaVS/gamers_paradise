@@ -16,12 +16,35 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/gamers_paradise/' . 'entities/DBConne
 
 class GameUserDAL {
 
-
     private $conn;
 
     function __construct() {
         $connection = new DBConnection();
         $this->conn = $connection->getConnection();
+    }
+
+    public function addContestantGame($uid, $game, $console) {
+        try {
+            $statement = $this->conn->prepare("INSERT INTO tb_game_contestant (contestant_id, game_id, console_id) values (?, ?, ?)");
+            $statement->bindParam(1, $uid);
+            $statement->bindParam(2, $game);
+            $statement->bindParam(3, $console);
+            $statement->execute();
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+        }
+    }
+
+    public function updateContestantGame($uid, $game, $console) {
+        try {
+            $statement = $this->conn->prepare("UPDATE tb_game_contestant SET game_id = ?, console_id = ? where contestant_id = ?");
+            $statement->bindParam(1, $game);
+            $statement->bindParam(2, $console);
+            $statement->bindParam(3, $uid);
+            $statement->execute();
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+        }
     }
 
     public function saveContestantGame($uid, $game, $console) {
@@ -33,20 +56,16 @@ class GameUserDAL {
 
             $result = $statement->fetch();
 
-            $contestant_id = $result['contestant_id'];
+            //$contestant_id = $result['contestant_id'];
 
-            if ($contestant_id == $uid) {
-                $statement = $this->conn->prepare("UPDATE tb_game_contestant SET game_id = ?, console_id = ? where contestant_id = ?");
-                $statement->bindParam(1, $game);
-                $statement->bindParam(2, $console);
-                $statement->bindParam(3, $uid);
-                $statement->execute();
+
+
+
+            //if ($contestant_id == $uid) {
+            if (!empty($result)) {
+                $this->updateContestantGame($uid, $game, $console);
             } else {
-                $statement = $this->conn->prepare("INSERT INTO tb_game_contestant (contestant_id, game_id, console_id) values (?, ?, ?)");
-                $statement->bindParam(1, $uid);
-                $statement->bindParam(2, $game);
-                $statement->bindParam(3, $console);
-                $statement->execute();
+                $this->addContestantGame($uid, $game, $console);
             }
         } catch (PDOException $e) {
             echo $e->getMessage();

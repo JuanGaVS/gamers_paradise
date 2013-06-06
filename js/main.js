@@ -190,7 +190,13 @@ function postAndChoose() {
                     }
                 }
                 
-                console.log(gameSelected);
+                console.log('uid   '+uid);
+                
+                console.log('game   '+gameSelected);
+
+                var consoleChoosed = document.getElementById('consoles-select').value;
+
+                console.log('console    '+consoleChoosed);
 
                 request = $.ajax({
                     type: "POST",
@@ -199,7 +205,7 @@ function postAndChoose() {
                         method: 'saveContestantGame',
                         uid: uid,
                         game: gameSelected,
-                        console: document.getElementById('consoles-select').value
+                        console: consoleChoosed
                     },
                     success: function(data) {
                         console.log('success');
