@@ -34,7 +34,7 @@
 
 .banner{
 	height: 545px;
-	width: 235px;
+	width: 180px;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -62,7 +62,7 @@
 
 .games-sidebar{
 	height: 545px;
-	width: 235px;
+	width: 190px;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -73,14 +73,14 @@
 	position: relative;
 	margin: 20px 23px 0 23px;
 	height: 140px;
-	width: 185px;
+	width: 140px;
 	float: left;
 }
 
 #sidebar-bottom{
 	padding-top:12px;
 	height: 103px;
-	width: 235px;
+	width: 185px;
 	text-align: center;
 	left: 0px;
 	top: 545px;
@@ -90,11 +90,11 @@
 }
 
 #sidebar-prevnext{
-	
 	height: 35px;
-	width: 235px;
-	left: 82px;
+	width: 185px;
+	/*	left: 82px;*/
 	position: relative;
+	left: 50px;
 	
 	
 }
@@ -129,6 +129,3 @@
 #games-section3{
 	display: none;
 }
-
-
-
