@@ -156,9 +156,9 @@ function orderArray($array) {
             </div>
 
             <div id="footer">
-                <h2 id="footer-title"><a class="fancybox iframe" rel="group" href="privacy.html">PRIVACIDAD</a> | <a class="fancybox iframe" rel="group" href="tos.html">REGLAS</a></h2>
+                <h2 id="footer-title"><a class="fancybox iframe" rel="group" href="tos.html">REGLAS</a></h2>
                 <p class="information">Al utilizar esta aplicación aceptas las reglas de la misma. Recuerda que no hay un premio real.</p>
-            </div>
+    	</div>
 
         </div>
 
