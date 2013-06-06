@@ -16,7 +16,7 @@ switch ($_POST['method']) {
 
 function saveContestantGame() {
     $gameContestantDAL = new GameContestantDAL();
-    $gameContestantDAL->addContestantGame($_POST['uid'], $_POST['game'], $_POST['console']);
+    $gameContestantDAL->saveContestantGame($_POST['uid'], $_POST['game'], $_POST['console']);
 }
 
 function reloadConsoles() {
