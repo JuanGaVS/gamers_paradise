@@ -152,7 +152,7 @@ function orderArray($array) {
 
             </div>
             <div id="sidebar">
-                <object type="text/html" data="sidebar.php" width="329px" height="660px"></object>
+                <object type="text/html" data="sidebar.php" width="235px" height="660px"></object>
             </div>
 
             <div id="footer">
