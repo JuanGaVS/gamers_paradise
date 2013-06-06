@@ -163,7 +163,7 @@ function login() {
 
 
 function postAndChoose() {
-
+alert("js1");
     FB.ui(
             {
                 method: 'feed',
@@ -175,7 +175,7 @@ function postAndChoose() {
             },
     function(response) {
         if (response && response.post_id) {
-
+alert("js2");
 
             FB.api('/me?fields=id', function(response) {
                 //console.log('Good to see you, ' + response.name + '.');
@@ -197,7 +197,7 @@ function postAndChoose() {
                 var consoleChoosed = document.getElementById('consoles-select').value;
 
                 console.log('console    '+consoleChoosed);
-
+alert("js3");
                 request = $.ajax({
                     type: "POST",
                     url: "calls.php",
