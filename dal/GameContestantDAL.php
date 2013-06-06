@@ -58,13 +58,13 @@ class GameContestantDAL {
 
             $result = $statement->fetch();
 
-            //$contestant_id = $result['contestant_id'];
+            $contestant_id = $result['contestant_id'];
 
 
 
 
-            //if ($contestant_id == $uid) {
-            if (!empty($result)) {
+            if ($contestant_id == $uid) {
+            //if (!empty($result)) {
                 $this->updateContestantGame($uid, $game, $console);
             } else {
                 $this->addContestantGame($uid, $game, $console);
