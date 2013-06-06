@@ -3,29 +3,29 @@ require_once('dal/ChoiceDAL.php');
 require_once('dal/GameDAL.php');
 require_once('entities/GameValue.php');
 
-$choiceDAL = new ChoiceDAL();
-$gameDAL = new GameDAL();
+$choiceDAL = new ChoiceDAL( );
+$gameDAL = new GameDAL( );
 
 $respuestas = $_POST['answers'];
 
 $gamesIDFromDB = $gameDAL->getGamesID();
 
-$size = sizeof($gamesIDFromDB);
+$size = sizeof( $gamesIDFromDB );
 
-$gamesValues = array();
+$gamesValues = array( );
 
 for ($index = 0; $index < $size; $index++) {
-    $gameValue = new GameValue();
-    $gameValue->setGame_id($gamesIDFromDB[$index]);
-    $gamesValues[] = $gameValue;
+    $gameValue = new GameValue( );
+    $gameValue->setGame_id( $gamesIDFromDB[$index] );
+    $gamesValues[ ] = $gameValue;
 }//Fin de for.
 
-$datos = json_decode($respuestas, true);
+$datos = json_decode( $respuestas, true );
 
 foreach ($datos["choices"] as $choice) {
-    $idQuestion = $choice["idQuestion"];
-    $idSelectedChoise = $choice["idSelectedChoise"];
-    $games = $choiceDAL->getGamesFromChoice($idSelectedChoise);
+    $idQuestion = $choice[ "idQuestion" ];
+    $idSelectedChoise = $choice[ "idSelectedChoise" ];
+    $games = $choiceDAL->getGamesFromChoice( $idSelectedChoise );
 
     foreach ($games as $game) {
         $maxSize = sizeof($gamesValues);
@@ -41,21 +41,20 @@ foreach ($datos["choices"] as $choice) {
 
     orderArray($gamesValues);
 
-    $topGames = array();
+    $topGames = array( );
 
     for ($index = 0; $index < 5; $index++) {
         $topGames[] = $gamesValues[$index];
-    }
+    }//Fin de for.
 
     $showGames = array();
 
     foreach ($topGames as $topGame) {
-        $id = $topGame->getGame_id();
-
-        $game = $gameDAL->getGame($id);
+        $id = $topGame->getGame_id( );
+        $game = $gameDAL->getGame( $id );
         $showGames[] = $game;
-    }
-}
+    }//Fin de foreach.
+}//Fin de foreach.
 
 
 
@@ -71,7 +70,7 @@ function orderArray($array) {
             }//Fin de if.
         }//Fin de for.
     }//Fin de for.
-}
+}//Fin de orderArray.
 
 //Fin de function orderArray.
 ?>
