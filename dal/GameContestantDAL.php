@@ -14,7 +14,7 @@
  */
 require_once $_SERVER['DOCUMENT_ROOT'] . '/gamers_paradise/' . 'entities/DBConnection.php';
 
-class GameUserDAL {
+class GameContestantDAL {
 
     private $conn;
 
