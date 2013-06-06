@@ -61,7 +61,7 @@ and open the template in the editor.
         ?>
         </p>
         <?php if ($totalRows_rs_Contestants > 0) { // Show if recordset not empty ?>
-  <p><a href="filter_contestant.php">Filtrar</a></p>
+  <p><a href="#">Filtrar</a></p>
   <?php } // Show if recordset not empty ?>
         <?php if ($totalRows_rs_Contestants > 0) { // Show if recordset not empty ?>
           <table border="1">

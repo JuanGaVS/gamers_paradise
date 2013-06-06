@@ -163,7 +163,7 @@ function login() {
 
 
 function postAndChoose() {
-alert("js1");
+
     FB.ui(
             {
                 method: 'feed',
@@ -175,7 +175,7 @@ alert("js1");
             },
     function(response) {
         if (response && response.post_id) {
-alert("js2");
+
 
             FB.api('/me?fields=id', function(response) {
                 //console.log('Good to see you, ' + response.name + '.');
@@ -197,12 +197,13 @@ alert("js2");
                 var consoleChoosed = document.getElementById('consoles-select').value;
 
                 console.log('console    '+consoleChoosed);
-alert("js3");
+
                 request = $.ajax({
                     type: "POST",
                     url: "calls.php",
                     data: {
-                        method: 'saveContestantGame',
+            
+			            method: 'saveContestantGame',
                         uid: uid,
                         game: gameSelected,
                         console: consoleChoosed

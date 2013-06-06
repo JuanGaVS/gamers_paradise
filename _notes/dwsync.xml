@@ -1,87 +1,56 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="gamers-paradise.komodoproject" server="C:/AppServ/www/gamers_paradise/" local="130123427070526511" remote="130123427070000000" Dst="0" />
-<file name="gamers_paradise.ste" server="C:/AppServ/www/gamers_paradise/" local="130126324966760135" remote="130126324960000000" Dst="0" />
-<file name="README.md" server="C:/AppServ/www/gamers_paradise/" local="130123427070006481" remote="130123427070000000" Dst="0" />
-<file name=".gitignore" server="C:/AppServ/www/gamers_paradise/" local="130140974316950602" remote="130140974310000000" Dst="0" />
-<file name="prelike.php" server="C:/AppServ/www/gamers_paradise/" local="130149703778046015" remote="130149703770000000" Dst="0" />
-<file name="instrucciones.php" server="C:/AppServ/www/gamers_paradise/" local="130149703777585989" remote="130149703770000000" Dst="0" />
-<file name="1305_v1.zip" server="C:/AppServ/www/gamers_paradise/" local="130129622847188950" remote="130129622840000000" Dst="0" />
-<file name="games.json" server="C:/AppServ/www/gamers_paradise/" local="130144497820038912" remote="130144497820000000" Dst="0" />
-<<<<<<< HEAD
-<file name="sugerencias.php" server="C:/AppServ/www/gamers_paradise/" local="130149692482429943" remote="130149692480000000" Dst="0" />
-=======
-<file name="sugerencias.php" server="C:/AppServ/www/gamers_paradise/" local="130149644855622208" remote="130149644850000000" Dst="0" />
->>>>>>> 0ff467635ec8d391ad27f09ee8fba1f7f9fe82b8
+<file name="gamers_paradise.ste" server="C:/AppServ/www/gamers_paradise/" local="130126317689804115" remote="130126317680000000" Dst="0" />
+<file name="README.md" server="C:/AppServ/www/gamers_paradise/" local="130126317688854061" remote="130126317680000000" Dst="0" />
+<file name=".gitignore" server="C:/AppServ/www/gamers_paradise/" local="130140967887359614" remote="130140967880000000" Dst="0" />
+<file name="prelike.php" server="C:/AppServ/www/gamers_paradise/" local="130147081305246750" remote="130147081300000000" Dst="0" />
+<file name="instrucciones.php" server="C:/AppServ/www/gamers_paradise/" local="130147082839723425" remote="130147082830000000" Dst="0" />
+<file name="games.json" server="C:/AppServ/www/gamers_paradise/" local="130144500852726762" remote="130144500850000000" Dst="0" />
+<file name="sugerencias.php" server="C:/AppServ/www/gamers_paradise/" local="130147092295364257" remote="130147092290000000" Dst="0" />
 <file name=".gitignore" server="C:/AppServ/www/gamersparadise/" local="130135664846550707" remote="130135664840000000" Dst="0" />
-<file name="1305_v1.zip" server="C:/AppServ/www/gamersparadise/" local="130135664846900964" remote="130135664840000000" Dst="0" />
-<file name="gamers-paradise.komodoproject" server="C:/AppServ/www/gamersparadise/" local="130135664848872263" remote="130135664840000000" Dst="0" />
 <file name="gamers_paradise.ste" server="C:/AppServ/www/gamersparadise/" local="130135664848882268" remote="130135664840000000" Dst="0" />
 <file name="games.json" server="C:/AppServ/www/gamersparadise/" local="130135664848912290" remote="130135664840000000" Dst="0" />
 <file name="instrucciones.php" server="C:/AppServ/www/gamersparadise/" local="130135664849562703" remote="130135664840000000" Dst="0" />
 <file name="prelike.php" server="C:/AppServ/www/gamersparadise/" local="130135664849672774" remote="130135664840000000" Dst="0" />
 <file name="README.md" server="C:/AppServ/www/gamersparadise/" local="130135664847011015" remote="130135664840000000" Dst="0" />
-<file name="2405_v1.zip" server="C:/AppServ/www/gamers_paradise/" local="130138915549251117" remote="130138915540000000" Dst="0" />
-<<<<<<< HEAD
 <file name="encuesta.php" server="C:/AppServ/www/gamers_paradise/" local="130147100391237314" remote="130147100390000000" Dst="0" />
-<file name="consoles.json" server="C:/AppServ/www/gamers_paradise/" local="130139922868702552" remote="130139922860000000" Dst="0" />
-<file name="sidebar.php" server="C:/AppServ/www/gamers_paradise/" local="130149686554740899" remote="130149686550000000" Dst="0" />
-=======
-<file name="encuesta.php" server="C:/AppServ/www/gamers_paradise/" local="130149662060746285" remote="130149662060000000" Dst="0" />
-<file name="consoles.json" server="C:/AppServ/www/gamers_paradise/" local="130139922868702552" remote="130139922860000000" Dst="0" />
-<file name="sidebar.php" server="C:/AppServ/www/gamers_paradise/" local="130149659767945144" remote="130149659760000000" Dst="0" />
->>>>>>> 0ff467635ec8d391ad27f09ee8fba1f7f9fe82b8
+<file name="consoles.json" server="C:/AppServ/www/gamers_paradise/" local="130140781394132812" remote="130140781390000000" Dst="0" />
+<file name="sidebar.php" server="C:/AppServ/www/gamers_paradise/" local="130144488005927577" remote="130144488000000000" Dst="0" />
 <file name="calls.php" server="C:/AppServ/www/gamers_paradise/" local="130147101423186338" remote="130147101420000000" Dst="0" />
-<file name="juego.php" server="C:/AppServ/www/gamers_paradise/" local="130149703777926008" remote="130149703770000000" Dst="0" />
-<file name="2705_v1.zip" server="C:/AppServ/www/gamers_paradise/" local="130141717573841166" remote="130141717570000000" Dst="0" />
-<file name="exitos.php" server="C:/AppServ/www/gamers_paradise/" local="130149703777425980" remote="130149703770000000" Dst="0" />
-<file name="privacy.html" server="C:/AppServ/www/gamers_paradise/" local="130143792586029520" remote="130143792580000000" Dst="0" />
-<file name="tos.html" server="C:/AppServ/www/gamers_paradise/" local="130149703778396035" remote="130149703770000000" Dst="0" />
-<file name="observaciones del brete multimedios.txt" server="C:/AppServ/www/gamers_paradise/" local="130148769779880363" remote="130148769770000000" Dst="0" />
-<file name="notes.txt" server="C:/AppServ/www/gamers_paradise/" local="130147008919049863" remote="130147008910000000" Dst="0" />
-<file name="index.php" server="C:/AppServ/www/gamers_paradise/" local="130144557538782330" remote="130144557530000000" Dst="0" />
+<file name="juego.php" server="C:/AppServ/www/gamers_paradise/" local="130147081305206748" remote="130147081300000000" Dst="0" />
+<file name="exitos.php" server="C:/AppServ/www/gamers_paradise/" local="130147082839633420" remote="130147082830000000" Dst="0" />
+<file name="privacy.html" server="C:/AppServ/www/gamers_paradise/" local="130143735689790066" remote="130143735680000000" Dst="0" />
+<file name="tos.html" server="C:/AppServ/www/gamers_paradise/" local="130143735689950075" remote="130143735680000000" Dst="0" />
+<file name="index.php" server="C:/AppServ/www/gamers_paradise/" local="130144522364127144" remote="130144522360000000" Dst="0" />
 <file name="facebook.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130144596649609533" remote="130144570800000000" Dst="0" />
 <file name="instrucciones.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130148945887145227" remote="130148910000000000" Dst="0" />
 <file name="base_facebook.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130144596649589532" remote="130144570800000000" Dst="0" />
 <file name="login.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130147032846625112" remote="130148713800000000" Dst="0" />
-<file name="base_facebook.php" server="C:/AppServ/www/gamers_paradise/" local="130144613536831897" remote="130144613530000000" Dst="0" />
-<file name="channel.php" server="C:/AppServ/www/gamers_paradise/" local="130144613536881900" remote="130144613530000000" Dst="0" />
-<file name="crossdomain.xml" server="C:/AppServ/www/gamers_paradise/" local="130144613536931903" remote="130144613530000000" Dst="0" />
-<file name="facebook.php" server="C:/AppServ/www/gamers_paradise/" local="130144613537281923" remote="130144613530000000" Dst="0" />
-<file name="login.php" server="C:/AppServ/www/gamers_paradise/" local="130147069133039448" remote="130147069130000000" Dst="0" />
-<<<<<<< HEAD
+<file name="base_facebook.php" server="C:/AppServ/www/gamers_paradise/" local="130140966700000000" remote="130140966700000000" Dst="0" />
+<file name="channel.php" server="C:/AppServ/www/gamers_paradise/" local="130140966700000000" remote="130140966700000000" Dst="0" />
+<file name="crossdomain.xml" server="C:/AppServ/www/gamers_paradise/" local="130140966700000000" remote="130140966700000000" Dst="0" />
+<file name="facebook.php" server="C:/AppServ/www/gamers_paradise/" local="130140966680000000" remote="130140966680000000" Dst="0" />
+<file name="login.php" server="C:/AppServ/www/gamers_paradise/" local="130147042819325481" remote="130147042810000000" Dst="0" />
 <file name="tos.html" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130143714560685273" remote="130148703600000000" Dst="0" />
-<file name="sugerencias.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130149692482429943" remote="130149661800000000" Dst="0" />
-<file name="sidebar.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130149686554740899" remote="130149661800000000" Dst="0" />
-=======
-<file name="tos.html" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130149696799543231" remote="130149660600000000" Dst="0" />
-<file name="sugerencias.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130149705495800628" remote="130149669000000000" Dst="0" />
-<file name="sidebar.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130149659767945144" remote="130149663600000000" Dst="0" />
->>>>>>> 0ff467635ec8d391ad27f09ee8fba1f7f9fe82b8
+<file name="sugerencias.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130149639605481917" remote="130149603600000000" Dst="0" />
+<file name="sidebar.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130148961225662540" remote="130148925600000000" Dst="0" />
 <file name="README.md" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130124545287272001" remote="130148704200000000" Dst="0" />
+<<<<<<< HEAD
+<file name="prelike.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130149698887252641" remote="130149663600000000" Dst="0" />
+<file name="notes.txt" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130144611104476304" remote="130148704200000000" Dst="0" />
+<file name="juego.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130149738247353910" remote="130149703200000000" Dst="0" />
+=======
 <file name="privacy.html" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130143714421097289" remote="130148704200000000" Dst="0" />
 <file name="prelike.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130147045428874775" remote="130148704200000000" Dst="0" />
-<file name="observaciones del brete multimedios.txt" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130147072849143125" remote="130148704200000000" Dst="0" />
-<file name="notes.txt" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130144611104476304" remote="130148704200000000" Dst="0" />
 <file name="juego.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130147046532837918" remote="130148704200000000" Dst="0" />
+>>>>>>> a461bdcb762c4d3afeee68c68c0e48ef460980f4
 <file name="index.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130144558775303246" remote="130148704800000000" Dst="0" />
 <file name="games.json" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130144509790461474" remote="130148704800000000" Dst="0" />
 <file name="gamers_paradise.ste" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130124635820430201" remote="130148704800000000" Dst="0" />
-<file name="gamers-paradise.komodoproject" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130124545287512014" remote="130148704800000000" Dst="0" />
-<<<<<<< HEAD
 <file name="exitos.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130148959345605007" remote="130148923200000000" Dst="0" />
-<file name="encuesta.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130148962698626788" remote="130148926200000000" Dst="0" />
+<file name="encuesta.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130149616686501027" remote="130149580800000000" Dst="0" />
 <file name="crossdomain.xml" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130144596649609533" remote="130148704800000000" Dst="0" />
 <file name="consoles.json" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130139783179387536" remote="130148704800000000" Dst="0" />
 <file name="channel.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130144596649599532" remote="130148704800000000" Dst="0" />
-<file name="calls.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130148977353915023" remote="130148941800000000" Dst="0" />
-=======
-<file name="exitos.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130149699308996763" remote="130149663600000000" Dst="0" />
-<file name="encuesta.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130149699380380846" remote="130149663600000000" Dst="0" />
-<file name="crossdomain.xml" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130144596649609533" remote="130148704800000000" Dst="0" />
-<file name="consoles.json" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130139783179387536" remote="130148704800000000" Dst="0" />
-<file name="channel.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130144596649599532" remote="130148704800000000" Dst="0" />
-<file name="calls.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130149723855400737" remote="130149687600000000" Dst="0" />
-<file name="pb.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130149722492382777" remote="130149686400000000" Dst="0" />
->>>>>>> 0ff467635ec8d391ad27f09ee8fba1f7f9fe82b8
+<file name="calls.php" server="ftp.flashfusioner.com/FLASHFUSIONER.COM/public/gamers_paradise/" local="130149642300376057" remote="130149606000000000" Dst="0" />
 </dwsync>

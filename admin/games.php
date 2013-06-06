@@ -97,8 +97,8 @@ if (!isset($_SESSION['user'])) {
                 </tr>
 <?php } while ($row_rs_juegos = mysql_fetch_assoc($rs_juegos)); ?>
         </table>
-        <p><a href="add_game.php">Agregar Juego</a></p>
-        <p><a href="games-json.php">Borrar todo y cargar JSON</a></p>
+        <p><a href="#">Agregar Juego</a></p>
+        <p><a href="#">Borrar todo y cargar JSON</a></p>
     </body>
 </html>
 <?php
