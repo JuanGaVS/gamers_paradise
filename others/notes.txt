@@ -1,0 +1,42 @@
+
+1 mario
+2 splinter cell
+3 call of juarez
+4 batman 
+5 diablo3
+6 assasins creed
+7 ride to hell
+8 resident evil
+9 heroes of might
+10 super street fighter
+
+
+7)22
+
+
+provocar guerra -> assasins creed, heroes, ride to the hell, call of juarez, splinter cell, street fighter
+salvar mundo -> super mario, batman, diablo3, resident evil, heroes
+
+8) 24
+
+0 - 1 -> super street fighter, mario, ride to the hell
+1 - 5 -> batman, assasins creed, resident evil, call of juarez, splinter cell
+5 - 10 -> heroes, diablo3
+me pagan x jugar -> todas
+
+9) 28
+
+antes 2000-> mario, diablo3, resident evil, heroes, super street fighter  1 5 8 9 10
+despues -> 2 3 4 6 7
+
+10) 30
+
+amo historias -> diablo3, resident evil, heroes, assasins creed, call of juarez, batman
+32 no me gusta leer -> mario, street fighter, ride to the hell, splinter cell
+me vale -> todas
+
+11)34
+
+pago por todo -> call of juarez, diablo3, batman, heroes, street fighter 3 5 4 9	10
+no pago x nada -> demas 1 2 6 7 8
+unicamente si lo vale -> call of juarez, diablo3, batman, heroes, street fighter
