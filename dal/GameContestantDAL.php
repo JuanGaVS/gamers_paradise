@@ -24,6 +24,7 @@ class GameUserDAL {
     }
 
     public function addContestantGame($uid, $game, $console) {
+		echo "Add";
         try {
             $statement = $this->conn->prepare("INSERT INTO tb_game_contestant (contestant_id, game_id, console_id) values (?, ?, ?)");
             $statement->bindParam(1, $uid);
@@ -36,6 +37,7 @@ class GameUserDAL {
     }
 
     public function updateContestantGame($uid, $game, $console) {
+		echo "Update";
         try {
             $statement = $this->conn->prepare("UPDATE tb_game_contestant SET game_id = ?, console_id = ? where contestant_id = ?");
             $statement->bindParam(1, $game);

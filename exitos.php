@@ -28,10 +28,10 @@
     
     <a id="contenedor-boton-exitos" href="https://www.facebook.com/pages/Gamers-Paradise/297090210428630" target="_top">IR A LA PÁGINA</a>
     
-    <div id="footer">
-                <h2 id="footer-title"><a class="fancybox iframe" rel="group" href="privacy.html">PRIVACIDAD</a> | <a class="fancybox iframe" rel="group" href="tos.html">REGLAS</a></h2>
+   <div id="footer">
+                <h2 id="footer-title"><a class="fancybox iframe" rel="group" href="tos.html">REGLAS</a></h2>
                 <p class="information">Al utilizar esta aplicación aceptas las reglas de la misma. Recuerda que no hay un premio real.</p>
-        </div>
+    	</div>
     
 </div>
 

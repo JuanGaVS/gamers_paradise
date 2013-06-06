@@ -21,9 +21,9 @@
             <p class="paragraphs">Participa llenando las preguntas de nuestra encuesta. Tú y tus amigos podrían ser quienes estén en el sofá la próxima vez. No dejes pasar esta oportunidad.</p>
         </div>
         <div id="footer">
-                <h2 id="footer-title"><a class="fancybox iframe" rel="group" href="privacy.html">PRIVACIDAD</a> | <a class="fancybox iframe" rel="group" href="tos.html">REGLAS</a></h2>
+                <h2 id="footer-title"><a class="fancybox iframe" rel="group" href="tos.html">REGLAS</a></h2>
                 <p class="information">Al utilizar esta aplicación aceptas las reglas de la misma. Recuerda que no hay un premio real.</p>
-        </div>
+    	</div>
         
     </div>
     
