@@ -59,7 +59,7 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
         
         $uDAL = new UserDAL();
         
-	$uDAL->userAdd($user);
+		$uDAL->userAdd($user);
 	
 	/*
 	$insertSQL = sprintf("INSERT INTO tb_users (username, first_name, last_name, email, password, salt) VALUES (%s, %s, %s, %s, %s, %s)",

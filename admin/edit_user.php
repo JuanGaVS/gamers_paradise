@@ -5,6 +5,7 @@ if (!isset($_SESSION)) { session_start(); }
     }
 require_once('../Connections/localhost.php');
 require_once('../entities/User.php'); 
+require_once('../dal/UserDAL.php'); 
 
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -57,12 +58,14 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
    $user->setEmail($email);
    $user->setSalt();
    
+   $uDAL = new UserDAL();
+   
    if(isset($password)){
 	   $user->setPassword($password);
-	   $user->userUpdate();
+	   $uDAL->userUpdate($user);
 	}
 	else{
-		$user->userUpdateWithoutPassword();
+		$uDAL->userUpdateWithoutPassword($user);
 	}
 	/*
   $updateSQL = sprintf("UPDATE tb_users SET first_name=%s, last_name=%s, email=%s, password=%s WHERE username=%s",
