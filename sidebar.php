@@ -41,7 +41,7 @@ for ($actualIndex = 0; $actualIndex < 3; $actualIndex++) {
 
 
                         <div class="game-picture">
-                            <img src="<?php echo $games[$actualIndex]->getFirstPicture(); ?>" height="110px" width="185px" alt="Imagen Juego"/>
+                            <img src="<?php echo $games[$actualIndex]->getFirstPicture(); ?>" height="110px" width="145px" alt="Imagen Juego"/>
                         </div>
                         <div class="game-title"><?php echo $games[$actualIndex]->getName(); ?></div>
                     </div>
@@ -71,7 +71,7 @@ for ($actualIndex = 3; $actualIndex < 6; $actualIndex++) {
                     <div class="game-sidebar">
 
                         <div class="game-picture">
-                            <img src="<?php echo $games[$actualIndex]->getFirstPicture(); ?>" height="110px" width="185px" alt="Imagen Juego"/>
+                            <img src="<?php echo $games[$actualIndex]->getFirstPicture(); ?>" height="110px" width="145px" alt="Imagen Juego"/>
                         </div>
                         <div class="game-title"><?php echo $games[$actualIndex]->getName(); ?></div>
                     </div>
@@ -109,7 +109,7 @@ for ($actualIndex = 6; $actualIndex < 9; $actualIndex++) {
                     <div class="game-sidebar">
 
                         <div class="game-picture">
-                            <img src="<?php echo $games[$actualIndex]->getFirstPicture(); ?>" height="110px" width="185px" alt="Imagen Juego"/>
+                            <img src="<?php echo $games[$actualIndex]->getFirstPicture(); ?>" height="110px" width="145px" alt="Imagen Juego"/>
                         </div>
                         <div class="game-title"><?php echo $games[$actualIndex]->getName(); ?></div>
                     </div>
