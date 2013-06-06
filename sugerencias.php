@@ -82,53 +82,14 @@ function orderArray($array) {
         <title>Sugerencias</title>
         <link href="css/estilos.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+        <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/main.js" ></script>
+        
     </head>
 
     <body>
         <script>
-            function reloadConsoles() {
-                
-                console.log('reload consoles');
-                
-                var gameSelected;
-                var radios = document.getElementsByName('games');
-
-                for (var i = 0, length = radios.length;
-                        i < length;
-                        i++) {
-                    if (radios[i].checked) {
-                        gameSelected = radios[i].value;
-                    }
-                }
-
-                request = $.ajax({
-                    type: "POST",
-                    url: "calls.php",
-                    data: {
-                        method: 'reloadConsoles',
-                        gid: gameSelected
-                    },
-                    success: function(data) {
-                        
-                        //console.log('118 reloadConsoles');
-                        
-                        var response = data.toString();
-                
-                        $('#consoles-select').empty();
-                        var parsedJSON = $.parseJSON(response);
-                  
-                        for(var i=0; i<parsedJSON.length;i++){
-
-                            $("#consoles-select").append('<option value='+parsedJSON[i].console_id+'>'+parsedJSON[i].name+'</option>');
-
-                          
-                        }
-                      
-                    }
-
-                });
-
-            }
+            
         </script>
         <script src="js/facebook.js" type="text/javascript"></script> 
         <div id="wrapper">
@@ -143,34 +104,37 @@ function orderArray($array) {
                     <div class="sugerencia">
 
                         <img src="<?php echo $showGame->getFirstPicture(); ?>" alt="Imagen" width="185px" height="110px"/>
-                        <input type="radio" name="games" checked="checked" onchange="reloadConsoles();" value="<?php echo $showGame->getGame_id(); ?>" id="<?php echo $showGame->getGame_id(); ?>"/>
+                        <input type="radio" name="games" onchange="reloadConsoles();" value="<?php echo $showGame->getGame_id(); ?>" id="<?php echo $showGame->getGame_id(); ?>"/>
                         <label for="<?php echo $showGame->getGame_id(); ?>" class="paragraphs" style="text-transform:uppercase">
                             <a class="fancybox iframe" rel="group" href="juego.php?game_id=<?php echo $showGame->getGame_id(); ?>"><?php echo $showGame->getName(); ?></a>
                         </label>
 
                     </div>
 
-                <?php } ?>
+                <?php }
+                
+                $game0 = $showGames[0]->getGame_id();
+                
+                //echo ("<script>document.getElementById('#$game0').onchange();</script>");
+                
+                echo ("<script>$('#$game0').attr('checked','checked');</script>");
+                echo ("<script>$('#$game0').change();</script>");
+                
+                 ?>
 
                 
 
-                <div id="choose-console" class="styled">
+                <div  id="choose-console" class="styled" on>
 
                     <select id="consoles-select" name="console">
-                        <!--option value="1">Consola1</option>
-                        <option value="2">Consola2</option>
-                        <option value="3">Consola3</option>
-                        <option value="4">Consola4</option>
-                        <option value="5">Consola5</option-->
                     </select>
                 </div>
 
                 
-                <a id="contenedor-boton" onclick="postAndChoose();return false;" href="#">ESCOGER</a>
+                <a  id="contenedor-boton" onclick="postAndChoose();return false;" href="#">ESCOGER</a>
 
 
-                <!--a id="contenedor-boton" href="#">ESCOGER</a-->
-                <p class="paragraphs-15" id="share-obligation">DEBES COMPARTIR LA PUBLICACIÓN PARA PARTICIPAR</p>
+                <p  class="paragraphs-15" id="share-obligation">DEBES COMPARTIR LA PUBLICACIÓN PARA PARTICIPAR</p>
 
             </div>
             <div id="sidebar">
@@ -186,11 +150,11 @@ function orderArray($array) {
 
         </div>
     </body>
-    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    
     <script src="js/jquery.cycle.all.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.4"></script>
     <script src="js/fancybox.js" type="text/javascript"></script>
     <script src="js/sidebar.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/main.js" ></script>
-    <script src="js/main2.js" type="text/javascript"></script>
+    
+    <!--script src="js/main2.js" type="text/javascript"></script-->
 </html>

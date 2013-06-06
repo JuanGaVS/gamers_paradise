@@ -55,8 +55,8 @@ $questions = $quuestionDAL->getQuestions();
         </div>
     </div>
   <?php $number += 1; }//Fin de foreach question. ?>
-  <input type="button" class="buttonNext contenedor-boton-encuesta" name="button" value="Siguiente"/>
-  <input type="button" class="buttonSend contenedor-boton-encuesta contenedor-boton-encuesta-enviar" name="button2" value="Enviar" />
+  <input type="button" class="buttonNext contenedor-boton-encuesta pointer" name="button" value="Siguiente"/>
+  <input type="button" class="buttonSend contenedor-boton-encuesta contenedor-boton-encuesta-enviar pointer" name="button2" value="Enviar" />
   </form>
   </div>
   <div id="sidebar">

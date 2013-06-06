@@ -190,7 +190,7 @@ function postAndChoose() {
                     }
                 }
                 
-                
+                console.log(gameSelected);
 
                 request = $.ajax({
                     type: "POST",
@@ -199,9 +199,10 @@ function postAndChoose() {
                         method: 'saveContestantGame',
                         uid: uid,
                         game: gameSelected,
-                        console: document.getElementById('consoles-select').value,
+                        console: document.getElementById('consoles-select').value
                     },
                     success: function(data) {
+                        console.log('success');
                         window.location = "exitos.php";
                     }
 
@@ -213,3 +214,53 @@ function postAndChoose() {
     }
     );
 }
+
+
+function reloadConsoles() {
+                
+                console.log('reload consoles');
+                
+                var gameSelected;
+                var radios = document.getElementsByName('games');
+
+                for (var i = 0, length = radios.length;
+                        i < length;
+                        i++) {
+                    if (radios[i].checked) {
+                        gameSelected = radios[i].value;
+                    }
+                }
+
+                request = $.ajax({
+                    type: "POST",
+                    url: "calls.php",
+                    data: {
+                        method: 'reloadConsoles',
+                        gid: gameSelected
+                    },
+                    success: function(data) {
+                        
+                        //console.log('118 reloadConsoles');
+                        
+                        var response = data.toString();
+                
+                        $('#consoles-select').empty();
+                        var parsedJSON = $.parseJSON(response);
+                  
+                        for(var i=0; i<parsedJSON.length;i++){
+
+                            $("#consoles-select").append('<option value='+parsedJSON[i].console_id+'>'+parsedJSON[i].name+'</option>');
+
+                          
+                        }
+                      
+                    }
+
+                });
+
+
+               // $('#choose-console').show();
+               // $('#contenedor-boton').show();
+               // $('#share-obligation').show();
+
+            }
