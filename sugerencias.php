@@ -39,8 +39,8 @@ foreach ($datos["choices"] as $choice) {
     }//Fin de foreach.
 }//Fin de foreach.
 
-print_r( $gamesValues );
-print_r( "____________________________________________________________________________________________________" );
+//print_r( $gamesValues );
+//print_r( "____________________________________________________________________________________________________" );
 
 //orderArray($gamesValues);
 
@@ -59,7 +59,7 @@ $maxSize = sizeof($gamesValues);
 
 //________________________________________
 
-print_r( $gamesValues );
+//print_r( $gamesValues );
 
 $topGames = array( );
 
