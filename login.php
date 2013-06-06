@@ -28,7 +28,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $cDAL = new ContestantDAL();
         $result = $cDAL->contestantAdd($cont);
         
-    //echo "id ".$uid." first name ".$first_name."  last name ".$last_name."  locale  ".$locale."  birthday  ".$birthday."  date  ".$date."  middle name  ".$middle_name."  gender  ".$gender."  age min  ".$min;
+   
     echo $result;
 
 }
