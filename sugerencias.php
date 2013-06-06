@@ -17,31 +17,27 @@ $gamesValues = array();
 for ($index = 0; $index < $size; $index++) {
     $gameValue = new GameValue();
     $gameValue->setGame_id($gamesIDFromDB[$index]);
-
     $gamesValues[] = $gameValue;
-}
+}//Fin de for.
 
 $datos = json_decode($respuestas, true);
 
 foreach ($datos["choices"] as $choice) {
-
     $idQuestion = $choice["idQuestion"];
     $idSelectedChoise = $choice["idSelectedChoise"];
-
-
     $games = $choiceDAL->getGamesFromChoice($idSelectedChoise);
 
     foreach ($games as $game) {
         $maxSize = sizeof($gamesValues);
         for ($index = 0; $index < $maxSize; $index++) {
             $gameValue = $gamesValues[$index];
-
             if ($gameValue->getGame_id() == $game) {
                 $gameValue->addPoint();
                 break;
-            }
-        }
-    }
+            }//Fin de if.
+        }//Fin de for.
+    }//Fin de foreach.
+	print_r( $gamesValues );
 
     orderArray($gamesValues);
 
