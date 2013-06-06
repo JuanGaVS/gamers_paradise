@@ -31,38 +31,55 @@ foreach ($datos["choices"] as $choice) {
         $maxSize = sizeof($gamesValues);
         for ($index = 0; $index < $maxSize; $index++) {
             $gameValue = $gamesValues[$index];
-            if ($gameValue->getGame_id() == $game) {
+            if ($gameValue->getGame_id() == $game->getGame_id( ) ) {
                 $gameValue->addPoint();
                 break;
             }//Fin de if.
         }//Fin de for.
     }//Fin de foreach.
-	print_r( $gamesValues );
-
-    orderArray($gamesValues);
-
-    $topGames = array( );
-
-    for ($index = 0; $index < 5; $index++) {
-        $topGames[] = $gamesValues[$index];
-    }//Fin de for.
-
-    $showGames = array();
-
-    foreach ($topGames as $topGame) {
-        $id = $topGame->getGame_id( );
-        $game = $gameDAL->getGame( $id );
-        $showGames[] = $game;
-    }//Fin de foreach.
 }//Fin de foreach.
 
+print_r( $gamesValues );
+print_r( "____________________________________________________________________________________________________" );
 
+//orderArray($gamesValues);
+
+$maxSize = sizeof($gamesValues);
+    $gameValueJoker = new GameValue( );
+    for ($index = 0; $index < $maxSize; $index++) {
+        for ($index2 = 1; $index2 < $maxSize; $index2++) {
+            if ($gamesValues[$index]->getPoints() < $gamesValues[$index2]->getPoints()) {
+                $gameValueJoker = $gamesValues[$index2];
+                $gamesValues[$index2] = $gamesValues[$index];
+                $gamesValues[$index] = $gameValueJoker;
+            }//Fin de if.
+        }//Fin de for.
+    }//Fin de for.
+
+
+//________________________________________
+
+print_r( $gamesValues );
+
+$topGames = array( );
+
+for ($index = 0; $index < 5; $index++) {
+	$topGames[] = $gamesValues[$index];
+}//Fin de for.
+
+$showGames = array();
+
+foreach ($topGames as $topGame) {
+	$id = $topGame->getGame_id( );
+	$game = $gameDAL->getGame( $id );
+	$showGames[] = $game;
+}//Fin de foreach.
 
 function orderArray($array) {
     $maxSize = sizeof($array);
     $gameValueJoker = new GameValue( );
     for ($index = 0; $index < $maxSize; $index++) {
-        for ($index2 = 0; $index2 < $maxSize; $index2++) {
+        for ($index2 = 1; $index2 < $maxSize; $index2++) {
             if ($array[$index]->getPoints() < $array[$index2]->getPoints()) {
                 $gameValueJoker = $array[$index2];
                 $array[$index2] = $array[$index];
@@ -71,8 +88,6 @@ function orderArray($array) {
         }//Fin de for.
     }//Fin de for.
 }//Fin de orderArray.
-
-//Fin de function orderArray.
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
